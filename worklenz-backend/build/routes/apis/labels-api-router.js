@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const labels_controller_1 = tslib_1.__importDefault(require("../../controllers/labels-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const team_owner_or_admin_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/team-owner-or-admin-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const labelsApiRouter = express_1.default.Router();
+labelsApiRouter.get("/", (0, safe_controller_function_1.default)(labels_controller_1.default.get));
+labelsApiRouter.get("/tasks/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(labels_controller_1.default.getByTask));
+labelsApiRouter.get("/project/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(labels_controller_1.default.getByProject));
+labelsApiRouter.put("/tasks/:id", id_param_validator_1.default, team_owner_or_admin_validator_1.default, (0, safe_controller_function_1.default)(labels_controller_1.default.updateColor));
+labelsApiRouter.delete("/team/:id", id_param_validator_1.default, team_owner_or_admin_validator_1.default, (0, safe_controller_function_1.default)(labels_controller_1.default.deleteById));
+exports.default = labelsApiRouter;

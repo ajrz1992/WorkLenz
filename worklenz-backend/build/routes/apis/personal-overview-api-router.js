@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const personal_overview_controller_1 = tslib_1.__importDefault(require("../../controllers/personal-overview-controller"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const personalOverviewApiRouter = express_1.default.Router();
+personalOverviewApiRouter.get("/tasks-due-today", (0, safe_controller_function_1.default)(personal_overview_controller_1.default.getTasksDueToday));
+personalOverviewApiRouter.get("/tasks-remaining", (0, safe_controller_function_1.default)(personal_overview_controller_1.default.getTasksRemaining));
+personalOverviewApiRouter.get("/tasks-overview", (0, safe_controller_function_1.default)(personal_overview_controller_1.default.getTaskOverview));
+exports.default = personalOverviewApiRouter;

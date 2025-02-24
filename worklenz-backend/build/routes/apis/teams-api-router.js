@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const teams_controller_1 = tslib_1.__importDefault(require("../../controllers/teams-controller"));
+const teams_activate_body_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/teams-activate-body-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const teamsApiRouter = express_1.default.Router();
+teamsApiRouter.get("/", (0, safe_controller_function_1.default)(teams_controller_1.default.get));
+teamsApiRouter.get("/invites", (0, safe_controller_function_1.default)(teams_controller_1.default.getTeamInvites));
+teamsApiRouter.put("/activate", teams_activate_body_validator_1.default, (0, safe_controller_function_1.default)(teams_controller_1.default.activate));
+teamsApiRouter.put("/pik-name", (0, safe_controller_function_1.default)(teams_controller_1.default.updateNameOnce));
+teamsApiRouter.put("/", (0, safe_controller_function_1.default)(teams_controller_1.default.update));
+teamsApiRouter.post("/", (0, safe_controller_function_1.default)(teams_controller_1.default.create));
+exports.default = teamsApiRouter;

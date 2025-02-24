@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.IEmailTemplateType = void 0;
+var IEmailTemplateType;
+(function (IEmailTemplateType) {
+    IEmailTemplateType[IEmailTemplateType["None"] = 0] = "None";
+    IEmailTemplateType[IEmailTemplateType["NewSubscriber"] = 1] = "NewSubscriber";
+    IEmailTemplateType[IEmailTemplateType["TeamMemberInvitation"] = 2] = "TeamMemberInvitation";
+    IEmailTemplateType[IEmailTemplateType["UnregisteredTeamMemberInvitation"] = 3] = "UnregisteredTeamMemberInvitation";
+    IEmailTemplateType[IEmailTemplateType["PasswordChange"] = 4] = "PasswordChange";
+    IEmailTemplateType[IEmailTemplateType["Welcome"] = 5] = "Welcome";
+    IEmailTemplateType[IEmailTemplateType["OTPVerification"] = 6] = "OTPVerification";
+    IEmailTemplateType[IEmailTemplateType["ResetPassword"] = 7] = "ResetPassword";
+    IEmailTemplateType[IEmailTemplateType["TaskAssigneeChange"] = 8] = "TaskAssigneeChange";
+    IEmailTemplateType[IEmailTemplateType["DailyDigest"] = 9] = "DailyDigest";
+    IEmailTemplateType[IEmailTemplateType["TaskDone"] = 10] = "TaskDone";
+    IEmailTemplateType[IEmailTemplateType["ProjectDailyDigest"] = 11] = "ProjectDailyDigest";
+    IEmailTemplateType[IEmailTemplateType["TaskComment"] = 12] = "TaskComment";
+    IEmailTemplateType[IEmailTemplateType["ProjectComment"] = 13] = "ProjectComment";
+})(IEmailTemplateType = exports.IEmailTemplateType || (exports.IEmailTemplateType = {}));

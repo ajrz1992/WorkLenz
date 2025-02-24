@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const project_comments_controller_1 = tslib_1.__importDefault(require("../../controllers/project-comments-controller"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const projectCommentsApiRouter = express_1.default.Router();
+projectCommentsApiRouter.post("/", (0, safe_controller_function_1.default)(project_comments_controller_1.default.create));
+projectCommentsApiRouter.get("/project-members/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_comments_controller_1.default.getMembers));
+projectCommentsApiRouter.get("/project-comments/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_comments_controller_1.default.getByProjectId));
+projectCommentsApiRouter.get("/comments-count/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_comments_controller_1.default.getCountByProjectId));
+projectCommentsApiRouter.delete("/delete/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_comments_controller_1.default.deleteById));
+exports.default = projectCommentsApiRouter;

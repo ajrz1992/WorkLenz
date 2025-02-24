@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const project_categories_controller_1 = tslib_1.__importDefault(require("../../controllers/project-categories-controller"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const projectCategoriesApiRouter = express_1.default.Router();
+projectCategoriesApiRouter.post("/", (0, safe_controller_function_1.default)(project_categories_controller_1.default.create));
+projectCategoriesApiRouter.get("/", (0, safe_controller_function_1.default)(project_categories_controller_1.default.get));
+projectCategoriesApiRouter.get("/org-categories", (0, safe_controller_function_1.default)(project_categories_controller_1.default.getByMultipleTeams));
+projectCategoriesApiRouter.get("/:id", (0, safe_controller_function_1.default)(project_categories_controller_1.default.getById));
+projectCategoriesApiRouter.put("/:id", (0, safe_controller_function_1.default)(project_categories_controller_1.default.update));
+projectCategoriesApiRouter.delete("/:id", (0, safe_controller_function_1.default)(project_categories_controller_1.default.deleteById));
+exports.default = projectCategoriesApiRouter;

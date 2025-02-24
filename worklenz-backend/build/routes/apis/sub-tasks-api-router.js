@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const sub_tasks_controller_1 = tslib_1.__importDefault(require("../../controllers/sub-tasks-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const subTasksApiRouter = express_1.default.Router();
+subTasksApiRouter.get("/names/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(sub_tasks_controller_1.default.getNames));
+subTasksApiRouter.post("/roadmap/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(sub_tasks_controller_1.default.getSubTasksRoadMap));
+subTasksApiRouter.get("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(sub_tasks_controller_1.default.get));
+exports.default = subTasksApiRouter;

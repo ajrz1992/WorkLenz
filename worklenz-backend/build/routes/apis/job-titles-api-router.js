@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const job_titles_controller_1 = tslib_1.__importDefault(require("../../controllers/job-titles-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const job_titles_body_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/job-titles-body-validator"));
+const team_owner_or_admin_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/team-owner-or-admin-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const jobTitlesApiRouter = express_1.default.Router();
+jobTitlesApiRouter.post("/", team_owner_or_admin_validator_1.default, job_titles_body_validator_1.default, (0, safe_controller_function_1.default)(job_titles_controller_1.default.create));
+jobTitlesApiRouter.get("/", (0, safe_controller_function_1.default)(job_titles_controller_1.default.get));
+jobTitlesApiRouter.get("/:id", team_owner_or_admin_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(job_titles_controller_1.default.getById));
+jobTitlesApiRouter.put("/:id", team_owner_or_admin_validator_1.default, job_titles_body_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(job_titles_controller_1.default.update));
+jobTitlesApiRouter.delete("/:id", team_owner_or_admin_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(job_titles_controller_1.default.deleteById));
+exports.default = jobTitlesApiRouter;

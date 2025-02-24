@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const pt_templates_controller_1 = tslib_1.__importDefault(require("../../controllers/project-templates/pt-templates-controller"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const projectTemplatesApiRouter = express_1.default.Router();
+projectTemplatesApiRouter.get("/create", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.createTemplates));
+projectTemplatesApiRouter.post("/setup", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.setupAccount));
+projectTemplatesApiRouter.post("/import-template", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.importTemplates));
+projectTemplatesApiRouter.get("/worklenz-templates", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.getTemplates));
+projectTemplatesApiRouter.get("/worklenz-templates/:id", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.getTemplateById));
+projectTemplatesApiRouter.post("/custom-template", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.createCustomTemplate));
+projectTemplatesApiRouter.get("/custom-templates", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.getCustomTemplates));
+projectTemplatesApiRouter.post("/import-custom-template", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.importCustomTemplate));
+projectTemplatesApiRouter.delete("/:id", (0, safe_controller_function_1.default)(pt_templates_controller_1.default.deleteCustomTemplate));
+exports.default = projectTemplatesApiRouter;

@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const shared_projects_controller_1 = tslib_1.__importDefault(require("../../controllers/shared-projects-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const shared_projects_create_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/shared-projects-create-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const sharedProjectsApiRouter = express_1.default.Router();
+sharedProjectsApiRouter.post("/", shared_projects_create_validator_1.default, (0, safe_controller_function_1.default)(shared_projects_controller_1.default.create));
+sharedProjectsApiRouter.get("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(shared_projects_controller_1.default.getById));
+sharedProjectsApiRouter.delete("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(shared_projects_controller_1.default.deleteById));
+exports.default = sharedProjectsApiRouter;

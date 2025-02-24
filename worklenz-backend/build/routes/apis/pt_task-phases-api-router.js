@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const team_owner_or_admin_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/team-owner-or-admin-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const task_phase_name_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/task-phase-name-validator"));
+const schema_validator_1 = tslib_1.__importDefault(require("../../middlewares/schema-validator"));
+const pt_task_phases_controller_1 = tslib_1.__importDefault(require("../../controllers/project-templates/pt-task-phases-controller"));
+const task_phase_create_schema_1 = tslib_1.__importDefault(require("../../json_schemas/task-phase-create-schema"));
+const ptTaskPhasesApiRouter = express_1.default.Router();
+ptTaskPhasesApiRouter.post("/", team_owner_or_admin_validator_1.default, (0, safe_controller_function_1.default)(pt_task_phases_controller_1.default.create));
+ptTaskPhasesApiRouter.get("/", (0, safe_controller_function_1.default)(pt_task_phases_controller_1.default.get));
+ptTaskPhasesApiRouter.put("/label/:id", team_owner_or_admin_validator_1.default, task_phase_name_validator_1.default, (0, safe_controller_function_1.default)(pt_task_phases_controller_1.default.updateLabel));
+ptTaskPhasesApiRouter.put("/change-color/:id", team_owner_or_admin_validator_1.default, (0, safe_controller_function_1.default)(pt_task_phases_controller_1.default.updateColor));
+ptTaskPhasesApiRouter.put("/:id", team_owner_or_admin_validator_1.default, task_phase_name_validator_1.default, (0, schema_validator_1.default)(task_phase_create_schema_1.default), (0, safe_controller_function_1.default)(pt_task_phases_controller_1.default.update));
+ptTaskPhasesApiRouter.delete("/:id", team_owner_or_admin_validator_1.default, (0, safe_controller_function_1.default)(pt_task_phases_controller_1.default.deleteById));
+exports.default = ptTaskPhasesApiRouter;

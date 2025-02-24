@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const task_work_log_controller_1 = tslib_1.__importDefault(require("../../controllers/task-work-log-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const task_time_log_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/task-time-log-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const taskWorkLogApiRouter = express_1.default.Router();
+taskWorkLogApiRouter.post("/", task_time_log_validator_1.default, (0, safe_controller_function_1.default)(task_work_log_controller_1.default.create));
+taskWorkLogApiRouter.get("/task/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_work_log_controller_1.default.getByTask));
+taskWorkLogApiRouter.get("/export/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_work_log_controller_1.default.exportLog));
+taskWorkLogApiRouter.put("/:id", task_time_log_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(task_work_log_controller_1.default.update));
+taskWorkLogApiRouter.delete("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_work_log_controller_1.default.deleteById));
+exports.default = taskWorkLogApiRouter;

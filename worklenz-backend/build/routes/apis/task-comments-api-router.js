@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const task_comments_controller_1 = tslib_1.__importDefault(require("../../controllers/task-comments-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const task_comment_body_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/task-comment-body-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const taskCommentsApiRouter = express_1.default.Router();
+taskCommentsApiRouter.post("/", task_comment_body_validator_1.default, (0, safe_controller_function_1.default)(task_comments_controller_1.default.create));
+taskCommentsApiRouter.get("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_comments_controller_1.default.getByTaskId));
+taskCommentsApiRouter.delete("/:id/:taskId", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_comments_controller_1.default.deleteById));
+exports.default = taskCommentsApiRouter;

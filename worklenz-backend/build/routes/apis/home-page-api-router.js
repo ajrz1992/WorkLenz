@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const home_page_controller_1 = tslib_1.__importDefault(require("../../controllers/home-page-controller"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const homePageApiRouter = express_1.default.Router();
+homePageApiRouter.post("/personal-task", (0, safe_controller_function_1.default)(home_page_controller_1.default.createPersonalTask));
+homePageApiRouter.get("/tasks", (0, safe_controller_function_1.default)(home_page_controller_1.default.getTasks));
+homePageApiRouter.get("/personal-tasks", (0, safe_controller_function_1.default)(home_page_controller_1.default.getPersonalTasks));
+homePageApiRouter.get("/projects", (0, safe_controller_function_1.default)(home_page_controller_1.default.getProjects));
+homePageApiRouter.get("/team-projects", (0, safe_controller_function_1.default)(home_page_controller_1.default.getProjectsByTeam));
+homePageApiRouter.put("/update-personal-task", (0, safe_controller_function_1.default)(home_page_controller_1.default.updatePersonalTask));
+exports.default = homePageApiRouter;

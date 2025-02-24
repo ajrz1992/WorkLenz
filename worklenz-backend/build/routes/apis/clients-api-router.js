@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const clients_controller_1 = tslib_1.__importDefault(require("../../controllers/clients-controller"));
+const clients_body_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/clients-body-validator"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const team_owner_or_admin_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/team-owner-or-admin-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const project_manager_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/project-manager-validator"));
+const clientsApiRouter = express_1.default.Router();
+clientsApiRouter.post("/", project_manager_validator_1.default, clients_body_validator_1.default, (0, safe_controller_function_1.default)(clients_controller_1.default.create));
+clientsApiRouter.get("/", (0, safe_controller_function_1.default)(clients_controller_1.default.get));
+clientsApiRouter.get("/:id", team_owner_or_admin_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(clients_controller_1.default.getById));
+clientsApiRouter.put("/:id", team_owner_or_admin_validator_1.default, clients_body_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(clients_controller_1.default.update));
+clientsApiRouter.delete("/:id", team_owner_or_admin_validator_1.default, id_param_validator_1.default, (0, safe_controller_function_1.default)(clients_controller_1.default.deleteById));
+exports.default = clientsApiRouter;

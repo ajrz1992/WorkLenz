@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const task_templates_controller_1 = tslib_1.__importDefault(require("../../controllers/task-templates-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const import_task_templates_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/import-task-templates-validator"));
+const body_name_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/body-name-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const taskTemplatesApiRouter = express_1.default.Router();
+taskTemplatesApiRouter.post("/", body_name_validator_1.default, (0, safe_controller_function_1.default)(task_templates_controller_1.default.create));
+taskTemplatesApiRouter.post("/import/:id", import_task_templates_validator_1.default, (0, safe_controller_function_1.default)(task_templates_controller_1.default.import));
+taskTemplatesApiRouter.get("/", (0, safe_controller_function_1.default)(task_templates_controller_1.default.get));
+taskTemplatesApiRouter.get("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_templates_controller_1.default.getById));
+taskTemplatesApiRouter.put("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_templates_controller_1.default.update));
+taskTemplatesApiRouter.delete("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(task_templates_controller_1.default.deleteById));
+exports.default = taskTemplatesApiRouter;

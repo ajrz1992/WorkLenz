@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const todo_list_controller_1 = tslib_1.__importDefault(require("../../controllers/todo-list-controller"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const todo_list_body_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/todo-list-body-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const todoListApiRouter = express_1.default.Router();
+todoListApiRouter.post("/", todo_list_body_validator_1.default, (0, safe_controller_function_1.default)(todo_list_controller_1.default.create));
+todoListApiRouter.get("/", (0, safe_controller_function_1.default)(todo_list_controller_1.default.get));
+todoListApiRouter.put("/index", (0, safe_controller_function_1.default)(todo_list_controller_1.default.updateIndex));
+todoListApiRouter.put("/status/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(todo_list_controller_1.default.updateStatus));
+todoListApiRouter.put("/:id", id_param_validator_1.default, todo_list_body_validator_1.default, (0, safe_controller_function_1.default)(todo_list_controller_1.default.update));
+todoListApiRouter.delete("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(todo_list_controller_1.default.deleteById));
+exports.default = todoListApiRouter;

@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const project_folders_controller_1 = tslib_1.__importDefault(require("../../controllers/project-folders-controller"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const schema_validator_1 = tslib_1.__importDefault(require("../../middlewares/schema-validator"));
+const project_folder_schema_1 = tslib_1.__importDefault(require("../../json_schemas/project-folder-schema"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const projectFoldersApiRouter = express_1.default.Router();
+projectFoldersApiRouter.post("/", (0, schema_validator_1.default)(project_folder_schema_1.default), (0, safe_controller_function_1.default)(project_folders_controller_1.default.create));
+projectFoldersApiRouter.get("/", (0, safe_controller_function_1.default)(project_folders_controller_1.default.get));
+projectFoldersApiRouter.get("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_folders_controller_1.default.getById));
+projectFoldersApiRouter.put("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_folders_controller_1.default.update));
+projectFoldersApiRouter.delete("/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(project_folders_controller_1.default.deleteById));
+exports.default = projectFoldersApiRouter;

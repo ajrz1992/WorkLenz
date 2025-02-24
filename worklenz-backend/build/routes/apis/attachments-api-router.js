@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const express_1 = tslib_1.__importDefault(require("express"));
+const attachment_controller_1 = tslib_1.__importDefault(require("../../controllers/attachment-controller"));
+const image_to_webp_1 = tslib_1.__importDefault(require("../../middlewares/image-to-webp"));
+const avatar_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/avatar-validator"));
+const id_param_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/id-param-validator"));
+const task_attachments_validator_1 = tslib_1.__importDefault(require("../../middlewares/validators/task-attachments-validator"));
+const safe_controller_function_1 = tslib_1.__importDefault(require("../../shared/safe-controller-function"));
+const attachmentsApiRouter = express_1.default.Router();
+attachmentsApiRouter.post("/tasks", task_attachments_validator_1.default, (0, safe_controller_function_1.default)(attachment_controller_1.default.createTaskAttachment));
+attachmentsApiRouter.post("/avatar", avatar_validator_1.default, (0, safe_controller_function_1.default)(image_to_webp_1.default), (0, safe_controller_function_1.default)(attachment_controller_1.default.createAvatarAttachment));
+attachmentsApiRouter.get("/tasks/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(attachment_controller_1.default.get));
+attachmentsApiRouter.get("/download", (0, safe_controller_function_1.default)(attachment_controller_1.default.download));
+attachmentsApiRouter.get("/project/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(attachment_controller_1.default.getByProjectId));
+attachmentsApiRouter.delete("/tasks/:id", id_param_validator_1.default, (0, safe_controller_function_1.default)(attachment_controller_1.default.deleteById));
+exports.default = attachmentsApiRouter;
