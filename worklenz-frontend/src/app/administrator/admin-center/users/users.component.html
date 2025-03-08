@@ -1,8 +1,8 @@
 <nz-page-header [nzGhost]="false" class="px-0">
-  <nz-page-header-title>Users</nz-page-header-title>
+  <nz-page-header-title>Usuarios</nz-page-header-title>
 </nz-page-header>
 <nz-page-header class="site-page-header pt-0 ps-0">
-  <nz-page-header-subtitle>{{total}} users</nz-page-header-subtitle>
+  <nz-page-header-subtitle>{{total}} Usuarios</nz-page-header-subtitle>
   <nz-page-header-extra>
     <nz-space>
       <button *nzSpaceItem nz-button nz-tooltip nzShape="circle" (click)="getUsers()"
@@ -36,9 +36,9 @@
               nzSize="small" [nzNoResult]="noDataTemplate">
       <thead>
       <tr>
-        <th scope="col">User</th>
-        <th scope="col">Email</th>
-        <th scope="col">Last Activity</th>
+        <th scope="col">Usuario</th>
+        <th scope="col">Correo</th>
+        <th scope="col">Ultima Actividad</th>
       </tr>
       </thead>
       <tbody>
@@ -70,6 +70,6 @@
     <div class="no-data-img-holder mx-auto mb-3">
       <img src="/assets/images/empty-box.webp" class="img-fluid" alt="">
     </div>
-    <span nz-typography class="no-data-text">No users found in the organization.</span>
+    <span nz-typography class="no-data-text">No se encontraron usuarios en la organización.</span>
   </div>
 </ng-template>
