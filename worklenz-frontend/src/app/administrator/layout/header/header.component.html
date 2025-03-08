@@ -60,7 +60,7 @@
           </div>
           <div class="lg-none">
             <button nz-button nzType="dashed" (click)="openAddMemberForm()" nz-tooltip [nzTooltipPlacement]="'bottom'"
-                    [nzTooltipTitle]="'Add Team Member'" nzShape="round"
+                    [nzTooltipTitle]="'Agregar miembro al equipo'" nzShape="round"
                     class="invite-btn p-0" [style]="'width: 32px;'">
               <span nz-icon nzType="usergroup-add" nzTheme="outline" [style]="'font-size: 18px;'"></span>
             </button>
@@ -118,7 +118,7 @@
 
         <div class="profile-details-dropdown prevent-default pt-def" *ngIf="showProfileDropdown">
           <div class="account-heading prevent-default pl-def pr-def">
-            <h2 class="prevent-default">Account</h2>
+            <h2 class="prevent-default">Cuenta</h2>
           </div>
           <div class="account-details pl-def prevent-default pr-def">
             <div class="d-flex align-items-center prevent-default">
@@ -136,11 +136,11 @@
           </div>
           <div class="actions prevent-default">
             <ul nz-menu>
-              <li nz-menu-item [routerLink]="['/worklenz/admin-center']" *ngIf="isOwnerOrAdmin();">Admin Center</li>
+              <li nz-menu-item [routerLink]="['/worklenz/admin-center']" *ngIf="isOwnerOrAdmin();">Administracion</li>
               <li nz-menu-item
-                  [routerLink]="['/worklenz/settings']">Settings
+                  [routerLink]="['/worklenz/settings']">Configuración
               </li>
-              <li nz-menu-item (click)="signOut()" class="pl-def pr-def">Log Out</li>
+              <li nz-menu-item (click)="signOut()" class="pl-def pr-def">Cerrar sesión</li>
             </ul>
           </div>
         </div>
@@ -168,11 +168,11 @@
           <div class="align-items-baseline flex-column justify-content-start">
             <small nz-typography nzType="secondary" nzEllipsis
                    class="d-block">
-              {{ getTeamStatus(item) !== TEAM_STATUSES.OwnerAndNameNotChanged ? 'Owned by ' + item.owns_by : 'Click to setup your own account' }}
+              {{ getTeamStatus(item) !== TEAM_STATUSES.OwnerAndNameNotChanged ? 'Owned by ' + item.owns_by : 'Haz clic para configurar tu propia cuenta.' }}
             </small>
             <span class="d-block" *ngIf="getTeamStatus(item) === TEAM_STATUSES.NotTheOwner">{{ item.name }}</span>
             <span class="d-block"
-                  *ngIf="getTeamStatus(item) === TEAM_STATUSES.OwnerAndNameNotChanged">Setup my account</span>
+                  *ngIf="getTeamStatus(item) === TEAM_STATUSES.OwnerAndNameNotChanged">Configurar mi cuenta</span>
             <span class="d-block"
                   *ngIf="getTeamStatus(item) === TEAM_STATUSES.OwnerAndNameChanged">{{ item.name }}</span>
           </div>
