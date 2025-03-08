@@ -1,17 +1,17 @@
 <nz-page-header [nzGhost]="false" class="px-0">
-  <nz-page-header-title>Teams</nz-page-header-title>
+  <nz-page-header-title>Equipos</nz-page-header-title>
 </nz-page-header>
 <nz-page-header class="site-page-header pt-0 ps-0">
   <nz-page-header-subtitle>{{this.total ? this.total : 0}} teams</nz-page-header-subtitle>
   <nz-page-header-extra>
     <nz-space>
       <button *nzSpaceItem nz-button nz-tooltip nzShape="circle" (click)="getTeams()"
-              nzTooltipTitle="Refresh teams" nzType="default">
+              nzTooltipTitle="Actualizar equipos" nzType="default">
         <span nz-icon nzTheme="outline" nzType="sync"></span>
       </button>
       <form *nzSpaceItem [nzLayout]="'vertical'" nz-form [formGroup]="searchForm">
         <nz-input-group [nzSuffix]="suffixIconSearch">
-          <input nz-input placeholder="Search by name" [formControlName]="'search'"
+          <input nz-input placeholder="Buscar por nombre" [formControlName]="'search'"
                  type="text"/>
         </nz-input-group>
         <ng-template #suffixIconSearch>
@@ -19,8 +19,8 @@
         </ng-template>
       </form>
       <span *nzSpaceItem>
-                    <button nz-button nzType="primary" (click)="openNewTeam()">Add
-                        Team</button>
+                    <button nz-button nzType="primary" (click)="openNewTeam()">Anadir
+                        Equipo</button>
                 </span>
     </nz-space>
   </nz-page-header-extra>
@@ -41,9 +41,9 @@
               nzSize="small" [nzNoResult]="currentTeam ? noDataTemplate1  : noDataTemplate">
       <thead>
       <tr>
-        <th scope="col">Team</th>
-        <th scope="col" class="text-center">Members Count</th>
-        <th scope="col">Members</th>
+        <th scope="col">Equipo</th>
+        <th scope="col" class="text-center">Recuento de miembros</th>
+        <th scope="col">Miembros</th>
         <th scope="col" class="text-center"></th>
       </tr>
       </thead>
@@ -64,15 +64,15 @@
               <button *nzSpaceItem nz-button nz-tooltip
                       nzSize="small"
                       [nzTooltipPlacement]="'top'"
-                      [nzTooltipTitle]="'Settings'"
+                      [nzTooltipTitle]="'Configuración'"
                       [nzType]="'default'"
                       (click)="openTeamDrawer(currentTeam)">
                 <span nz-icon nzType="setting"></span>
               </button>
               <button *nzSpaceItem (nzOnConfirm)="deleteTeam(currentTeam.id)"
                       nz-button nz-popconfirm nz-tooltip [nzOkText]="'Yes'"
-                      [nzPopconfirmTitle]="'Are you sure?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
-                      [nzTooltipTitle]="'Delete'"
+                      [nzPopconfirmTitle]="'¿Estás seguro?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
+                      [nzTooltipTitle]="'Eliminar'"
                       [nzType]="'default'">
                 <span nz-icon nzType="delete"></span>
               </button>
@@ -96,15 +96,15 @@
               <button *nzSpaceItem nz-button nz-tooltip
                       nzSize="small"
                       [nzTooltipPlacement]="'top'"
-                      [nzTooltipTitle]="'Settings'"
+                      [nzTooltipTitle]="'Configuración'"
                       [nzType]="'default'"
                       (click)="openTeamDrawer(team)">
                 <span nz-icon nzType="setting"></span>
               </button>
               <button *nzSpaceItem (nzOnConfirm)="deleteTeam(team.id)"
                       nz-button nz-popconfirm nz-tooltip [nzOkText]="'Yes'"
-                      [nzPopconfirmTitle]="'Are you sure?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
-                      [nzTooltipTitle]="'Delete'"
+                      [nzPopconfirmTitle]="'¿Estás seguro?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
+                      [nzTooltipTitle]="'Eliminar'"
                       [nzType]="'default'">
                 <span nz-icon nzType="delete"></span>
               </button>
@@ -122,7 +122,7 @@
     <div class="no-data-img-holder mx-auto mb-3">
       <img src="/assets/images/empty-box.webp" class="img-fluid" alt="">
     </div>
-    <span nz-typography class="no-data-text">No teams found in the organization.</span>
+    <span nz-typography class="no-data-text">No se encontraron equipos en la organización.</span>
   </div>
 </ng-template>
 
@@ -144,9 +144,9 @@
         <nz-form-label
           [nzSpan]="null"
           nzRequired>
-          Team Name
+          Nombre del equipo
         </nz-form-label>
-        <input nz-input [formControlName]="'name'" placeholder="Name of the team"/>
+        <input nz-input [formControlName]="'name'" placeholder="Nombre del equipo"/>
       </nz-form-item>
 
       <nz-form-item class="d-block">
@@ -194,8 +194,8 @@
                   [nzNoResult]="emptyData">
           <thead>
           <tr>
-            <th>User</th>
-            <th style="width: 150px;">Role</th>
+            <th>Usuario</th>
+            <th style="width: 150px;">Rol</th>
             <th></th>
           </tr>
           </thead>
@@ -218,8 +218,8 @@
             <td>
               <button *ngIf="item.value.role_name !== 'Owner'" (nzOnConfirm)="deleteTeamMember(item.value.id)"
                       nz-button nz-popconfirm nz-tooltip [nzOkText]="'Yes'"
-                      [nzPopconfirmTitle]="'Are you sure?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
-                      [nzTooltipTitle]="'Delete'"
+                      [nzPopconfirmTitle]="'¿Estás seguro?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
+                      [nzTooltipTitle]="'Eliminar'"
                       [nzType]="'default'">
                 <span nz-icon nzType="delete"></span>
               </button>
@@ -228,7 +228,7 @@
           </tbody>
         </nz-table>
       </nz-form-item>
-      <button nz-button nzType="primary" nzBlock>Save</button>
+      <button nz-button nzType="primary" nzBlock>Guardar</button>
     </form>
   </ng-container>
 </nz-drawer>
@@ -245,13 +245,13 @@
     <form nz-form [formGroup]="form" (submit)="createTeam()">
       <nz-form-item class="d-block">
         <nz-form-label nzRequired>
-          Team name
+         Nombre del equipo
         </nz-form-label>
         <nz-form-control>
           <input nz-input type="text" [formControlName]="'name'">
         </nz-form-control>
       </nz-form-item>
-      <button nz-button nzType="primary" type="submit" nzBlock>Create</button>
+      <button nz-button nzType="primary" type="submit" nzBlock>Crear</button>
     </form>
   </ng-container>
 </nz-drawer>
