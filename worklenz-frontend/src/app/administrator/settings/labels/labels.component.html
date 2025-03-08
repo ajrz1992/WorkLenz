@@ -5,8 +5,8 @@
               nzPaginationType="small" nzSize="small" #table>
       <thead>
       <tr>
-        <th scope="col" [nzWidth]="'300px'" nzAlign="left">Label</th>
-        <th scope="col" nzAlign="left" colspan="2">Associated tasks</th>
+        <th scope="col" [nzWidth]="'300px'" nzAlign="left">Etiqueta</th>
+        <th scope="col" nzAlign="left" colspan="2">Tareas asociadas</th>
       </tr>
       </thead>
       <tbody>
@@ -36,8 +36,8 @@
           <div class="actions">
             <nz-space>
               <button (nzOnConfirm)="deleteLabel(data)" nz-button nz-popconfirm nz-tooltip [nzOkText]="'Yes'"
-                      [nzPopconfirmTitle]="'Are you sure?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
-                      [nzTooltipTitle]="'Delete'"
+                      [nzPopconfirmTitle]="'¿Estás seguro?'" [nzSize]="'small'" [nzTooltipPlacement]="'top'"
+                      [nzTooltipTitle]="'Eliminar'"
                       [nzType]="'default'">
                 <span nz-icon nzType="delete"></span>
               </button>
@@ -55,7 +55,7 @@
     <form *nzSpaceItem [nzLayout]="'vertical'" nz-form>
       <nz-input-group [nzSuffix]="suffixIconSearch">
         <input nz-input [(ngModel)]="labelsSearch" name="search" (ngModelChange)="searchLabels($event)"
-               placeholder="Search by name"
+               placeholder="Buscar por nombre"
                type="text"/>
       </nz-input-group>
       <ng-template #suffixIconSearch>
