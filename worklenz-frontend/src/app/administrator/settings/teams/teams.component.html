@@ -11,9 +11,9 @@
               nzPaginationType="small" nzSize="small" [nzNoResult]="currentTeam ? noDataTemplate1  : noDataTemplate">
       <thead>
       <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Created</th>
-        <th colspan="2" nzAlign="left" scope="col">Owns By</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Creado</th>
+        <th colspan="2" nzAlign="left" scope="col">Propietario de</th>
       </tr>
       </thead>
       <tbody>
@@ -65,7 +65,7 @@
     <div class="no-data-img-holder mx-auto mb-3">
       <img src="/assets/images/empty-box.webp" class="img-fluid" alt="">
     </div>
-    <span nz-typography class="no-data-text">No teams found.</span>
+    <span nz-typography class="no-data-text">No se encontraron equipos.</span>
   </div>
 </ng-template>
 
@@ -79,8 +79,8 @@
 
     <form [formGroup]="form" [nzLayout]="'vertical'" nz-form>
       <nz-form-item>
-        <nz-form-label [nzSpan]="null" nzRequired>Name</nz-form-label>
-        <nz-form-control [nzSpan]="null" nzErrorTip="Please enter a name!">
+        <nz-form-label [nzSpan]="null" nzRequired>Nombre</nz-form-label>
+        <nz-form-control [nzSpan]="null" nzErrorTip="¡Por favor, ingresa un nombre!">
           <input [formControlName]="'name'" nz-input placeholder="Name"/>
         </nz-form-control>
       </nz-form-item>
