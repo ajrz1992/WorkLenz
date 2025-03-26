@@ -182,7 +182,7 @@
               (this.passwordVisible = !1),
               (this.loadingGoogle = !1),
               (this.teamId = null),
-              this.app.setTitle("Login"),
+              this.app.setTitle("Iniciar sesión"),
               (this.teamId = this.route.snapshot.queryParamMap.get("team")),
               (this.projectId =
                 this.route.snapshot.queryParamMap.get("project")),
@@ -310,7 +310,16 @@
             consts: [
               [4, "ngIf"],
               [1, "text-center"],
-              ["alt", "Worklenz", "height", "50", "width", "235", 3, "ngSrc"],
+              [
+                "alt",
+                "LegalAgenda",
+                "height",
+                "50",
+                "width",
+                "235",
+                3,
+                "ngSrc",
+              ],
               [1, "text-muted", "mb-4", "mt-1", "text-center"],
               ["nz-form", "", 1, "login-form", 3, "formGroup", "submit"],
               [3, "nzErrorTip"],
@@ -369,7 +378,7 @@
               ],
               [
                 "alt",
-                "Worklenz",
+                "LegalAgenda",
                 "width",
                 "18",
                 "height",
@@ -609,7 +618,16 @@
               vars: 28,
               consts: [
                 [1, "text-center"],
-                ["alt", "Worklenz", "height", "50", "width", "235", 3, "ngSrc"],
+                [
+                  "alt",
+                  "LegalAgenda",
+                  "height",
+                  "50",
+                  "width",
+                  "235",
+                  3,
+                  "ngSrc",
+                ],
                 [1, "text-muted", "mb-4", "mt-1", "text-center"],
                 [3, "nzSpinning"],
                 ["nz-form", "", 1, "login-form", 3, "formGroup", "submit"],
@@ -699,7 +717,7 @@
                 ],
                 [
                   "alt",
-                  "Worklenz",
+                  "LegalAgenda",
                   "width",
                   "18",
                   "height",
@@ -1175,7 +1193,7 @@
                         [1, "text-center"],
                         [
                           "alt",
-                          "Worklenz",
+                          "LegalAgenda",
                           "height",
                           "50",
                           "src",
@@ -1397,7 +1415,7 @@
                         [1, "text-center"],
                         [
                           "alt",
-                          "Worklenz",
+                          "LegalAgenda",
                           "height",
                           "50",
                           "src",
