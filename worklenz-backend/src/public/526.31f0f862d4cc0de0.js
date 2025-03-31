@@ -2774,20 +2774,20 @@
               type: P.MenuItem,
             }),
               a.push({
-                label: "Projects",
+                label: "Proyectos",
                 icon: "project",
                 url: "projects",
                 type: P.MenuItem,
               }),
               (this.profile?.owner || this.profile?.is_admin) &&
                 (a.push({
-                  label: "Schedule",
+                  label: "Cronograma",
                   icon: "team",
                   url: "schedule",
                   type: P.MenuItem,
                 }),
                 a.push({
-                  label: "Reporting",
+                  label: "Reportería",
                   icon: "team",
                   url: "reporting",
                   type: P.MenuItem,
