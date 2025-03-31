@@ -967,7 +967,7 @@
         ye = "PREV_MONTH",
         de = "ALL_TIME",
         Ie =
-          "Minimum of 8 characters, with upper and lowercase and a number and a symbol.",
+          "Mínimo de 8 caracteres, con mayúsculas y minúsculas, un número y un símbolo.",
         ft = /<\/?[^>]+>/gi,
         O = "Unmapped",
         ue = 200,
