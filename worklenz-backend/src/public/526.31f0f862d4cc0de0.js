@@ -2768,7 +2768,7 @@
           buildNavigation() {
             const a = [];
             a.push({
-              label: "Home",
+              label: "Inicio",
               icon: "appstore",
               url: "home",
               type: P.MenuItem,
