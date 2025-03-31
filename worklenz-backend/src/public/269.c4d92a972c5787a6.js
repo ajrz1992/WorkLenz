@@ -3043,7 +3043,7 @@
               const t = n.oxw(4);
               return n.KtG((t.isVisible = !0));
             }),
-            n._uU(1, "Actualizar Plan "),
+            n._uU(1, "Upgrade Plan"),
             n.qZA();
         }
         2 & a && n.Q6J("nzType", "primary");
