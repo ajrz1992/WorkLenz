@@ -299,11 +299,7 @@
       }
       function Ft(c, U) {
         1 & c &&
-          (e.ynx(0),
-          e.TgZ(1, "span", 39)(2, "a", 40),
-          /*e._uU(3, " Upgrade Plan "),*/
-          e.qZA()(),
-          e.BQk());
+          (e.ynx(0), e.TgZ(1, "span", 39)(2, "a", 40), e.qZA()(), e.BQk());
       }
       function Zt(c, U) {
         if (
