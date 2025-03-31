@@ -491,7 +491,7 @@
                 (this.passwordStrength = null),
                 (this.passwordPolicy = h.QW),
                 (this.model = null),
-                this.app.setTitle("Signup"),
+                this.app.setTitle("Registro"),
                 v.s.track(x.ge),
                 (this.email = this.route.snapshot.queryParamMap.get("email")),
                 (this.name = this.route.snapshot.queryParamMap.get("name")),
