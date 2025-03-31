@@ -301,7 +301,7 @@
         1 & c &&
           (e.ynx(0),
           e.TgZ(1, "span", 39)(2, "a", 40),
-          e._uU(3, " Upgrade "),
+          e._uU(3, " Actualizar Plan "),
           e.qZA()(),
           e.BQk());
       }
