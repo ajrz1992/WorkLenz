@@ -3857,7 +3857,7 @@
                       return n.openTemplateSelector();
                     }),
                     e._UZ(15, "span", 11),
-                    e._uU(16, " Import from template "),
+                    e._uU(16, " Crear desde Plantilla Legal "),
                     e.qZA()()()()(),
                     e.TgZ(17, "div", 12),
                     e.ynx(18),
