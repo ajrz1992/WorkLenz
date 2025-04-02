@@ -5872,7 +5872,7 @@
                 labels: [],
                 datasets: [
                   {
-                    label: "Projects",
+                    label: "Expedientes",
                     data: [],
                     backgroundColor: this.statusColors,
                     hoverOffset: 2,
@@ -5883,7 +5883,7 @@
                 labels: [],
                 datasets: [
                   {
-                    label: "Projects",
+                    label: "Expedientes",
                     data: [],
                     backgroundColor: this.categoryColors,
                     hoverOffset: 2,
@@ -5894,7 +5894,7 @@
                 labels: [],
                 datasets: [
                   {
-                    label: "Projects",
+                    label: "Expedientes",
                     data: [],
                     backgroundColor: this.healthColors,
                     hoverOffset: 2,
