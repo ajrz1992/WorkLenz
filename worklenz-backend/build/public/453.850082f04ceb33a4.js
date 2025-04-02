@@ -126,7 +126,7 @@
           const a = e.oxw(2).$implicit;
           e.Q6J(
             "nzTooltipTitle",
-            a.favorite ? "Remove from favorites" : "Add to favorites"
+            a.favorite ? "Remover de Favoritos" : "Añadir a Favoritos"
           )("nzCount", 1)("ngModel", a.favorite ? 1 : 0);
         }
       }
@@ -393,7 +393,7 @@
                 e.qZA()()),
                 2 & t &&
                   (e.xp6(4),
-                  e.hij("Expedientes Legales (", n.projects.length, ")"),
+                  e.hij("Expedientes (", n.projects.length, ")"),
                   e.xp6(6),
                   e.Q6J("nzActive", !0)("nzLoading", n.loading),
                   e.xp6(2),
