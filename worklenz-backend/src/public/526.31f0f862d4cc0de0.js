@@ -3129,7 +3129,7 @@
                     .then((c) => c.MyDashboardModule),
               },
               {
-                path: "proyectos",
+                path: "projects",
                 canActivate: [ze.T, me],
                 loadChildren: () =>
                   Promise.all([
