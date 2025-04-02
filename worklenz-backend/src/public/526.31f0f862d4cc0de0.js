@@ -2774,7 +2774,7 @@
               type: P.MenuItem,
             }),
               a.push({
-                label: "Proyectos",
+                label: "projects",
                 icon: "project",
                 url: "projects",
                 type: P.MenuItem,
