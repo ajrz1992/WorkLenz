@@ -892,9 +892,9 @@
             if ("All" !== this.homePageService.tasksViewConfig?.current_tab) {
               if (!this.task.end_date) {
                 switch (this.homePageService.tasksViewConfig?.current_tab) {
-                  case "Today":
-                  case "Upcoming":
-                  case "Overdue":
+                  case "Hoy":
+                  case "Próximo":
+                  case "Vencido":
                     this.homePageService.tasksModel.tasks.splice(t, 1);
                 }
                 return;
@@ -907,8 +907,8 @@
                   n.toDateString() === s.toDateString())
                 ) {
                   switch (this.homePageService.tasksViewConfig?.current_tab) {
-                    case "Upcoming":
-                    case "Overdue":
+                    case "Próximo":
+                    case "Vencido":
                     case "NoDueDate":
                       this.homePageService.tasksModel.tasks.splice(t, 1);
                   }
@@ -2940,7 +2940,7 @@
       const jt = ["due_date_selector"],
         Nt = ["project_selector"];
       function It(o, i) {
-        1 & o && (e.TgZ(0, "p", 10), e._uU(1, "Tasks"), e.qZA());
+        1 & o && (e.TgZ(0, "p", 10), e._uU(1, "Tareas"), e.qZA());
       }
       function Jt(o, i) {
         if ((1 & o && e._UZ(0, "nz-option", 13), 2 & o)) {
@@ -3129,11 +3129,11 @@
             (this.cdr = t),
               (this.service = n),
               (this.tasksModes = [
-                { label: "assigned to me", value: 0 },
-                { label: "assigned by me", value: 1 },
+                { label: "Asignadas a mi", value: 0 },
+                { label: "Asignadas por mi", value: 1 },
               ]),
               (this.selectedTasksMode = this.tasksModes[0].value),
-              (this.defaultTasksTab = "All"),
+              (this.defaultTasksTab = "Todas"),
               (this.tasks = []),
               (this.taskStatuses = []),
               (this.groups = []),
