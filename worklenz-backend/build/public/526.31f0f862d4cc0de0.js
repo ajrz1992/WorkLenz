@@ -301,7 +301,7 @@
         1 & c &&
           (e.ynx(0),
           e.TgZ(1, "span", 39)(2, "a", 40),
-          e._uU(3, " Upgrade Plan "),
+          /*e._uU(3, " Upgrade Plan "),*/
           e.qZA()(),
           e.BQk());
       }
@@ -327,7 +327,7 @@
               return e.KtG(_.openAddMemberForm());
             }),
             e._UZ(3, "span", 44),
-            e._uU(4, "Invite "),
+            e._uU(4, "Invitar "),
             e.qZA()(),
             e.TgZ(5, "div", 45)(6, "button", 46),
             e.NdJ("click", function () {
@@ -2768,7 +2768,7 @@
           buildNavigation() {
             const a = [];
             a.push({
-              label: "Home",
+              label: "Inicio",
               icon: "appstore",
               url: "home",
               type: P.MenuItem,
