@@ -3138,7 +3138,7 @@
               (this.loading = !1),
               (this.showTaskDrawer = !1),
               (this.updating = !1),
-              (this.options = ["List", "Calendar"]),
+              (this.options = ["Lista", "Calendario"]),
               (this.myTasksActiveFilterKey = "my-dashboard-active-filter"),
               (this.deleteMap = {}),
               (this.projectId = null),
