@@ -1318,11 +1318,11 @@
       function qe(o, i) {
         1 & o &&
           (e.TgZ(0, "small", 17),
-          e._uU(1, "Press "),
+          e._uU(1, "Presione "),
           e.TgZ(2, "b"),
           e._uU(3, "Enter"),
           e.qZA(),
-          e._uU(4, " to create."),
+          e._uU(4, " para crear."),
           e.qZA());
       }
       function Xe(o, i) {
@@ -2073,7 +2073,7 @@
             e._uU(7, "Expediente Legal"),
             e.qZA(),
             e.TgZ(8, "th", 12),
-            e._uU(9, "Estado"),
+            e._uU(9, "Progreso"),
             e.qZA(),
             e.TgZ(10, "th", 13),
             e._uU(11, "Fecha límite"),
@@ -3449,7 +3449,11 @@
         if ((1 & o && (e.TgZ(0, "p", 13), e._uU(1), e.qZA()), 2 & o)) {
           const a = e.oxw();
           e.xp6(1),
-            e.hij("To do list (", a.homePageService.personal_tasks.length, ")");
+            e.hij(
+              "Lista de tareas (",
+              a.homePageService.personal_tasks.length,
+              ")"
+            );
         }
       }
       function Kt(o, i) {
