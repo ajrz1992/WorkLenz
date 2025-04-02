@@ -193,7 +193,7 @@
               (this.homePageApi = l),
               (this.projects = []),
               (this.loading = !0),
-              (this.options = ["Recent", "Favorites"]),
+              (this.options = ["Recientes", "Favoritos"]),
               (this.myProjectsActiveFilterKey =
                 "my-dashboard-active-projects-filter");
           }
@@ -393,7 +393,7 @@
                 e.qZA()()),
                 2 & t &&
                   (e.xp6(4),
-                  e.hij("Projects (", n.projects.length, ")"),
+                  e.hij("Expedientes Legales (", n.projects.length, ")"),
                   e.xp6(6),
                   e.Q6J("nzActive", !0)("nzLoading", n.loading),
                   e.xp6(2),
@@ -3358,7 +3358,7 @@
         if (2 & o) {
           const a = e.oxw();
           e.xp6(1),
-            e.Q6J("nzTooltipTitle", "Mark as done"),
+            e.Q6J("nzTooltipTitle", "Marcar Como Completada"),
             e.xp6(1),
             e.Q6J("ngClass", a.loading ? "green" : "");
         }
