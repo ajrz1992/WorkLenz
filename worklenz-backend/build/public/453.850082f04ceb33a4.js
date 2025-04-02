@@ -892,9 +892,9 @@
             if ("All" !== this.homePageService.tasksViewConfig?.current_tab) {
               if (!this.task.end_date) {
                 switch (this.homePageService.tasksViewConfig?.current_tab) {
-                  case "Hoy":
-                  case "Próximo":
-                  case "Vencido":
+                  case "Today":
+                  case "Upcoming":
+                  case "Overdue":
                     this.homePageService.tasksModel.tasks.splice(t, 1);
                 }
                 return;
@@ -907,8 +907,8 @@
                   n.toDateString() === s.toDateString())
                 ) {
                   switch (this.homePageService.tasksViewConfig?.current_tab) {
-                    case "Próximo":
-                    case "Vencido":
+                    case "Upcoming":
+                    case "Overdue":
                     case "NoDueDate":
                       this.homePageService.tasksModel.tasks.splice(t, 1);
                   }
@@ -3055,20 +3055,17 @@
           e.xp6(1),
             e.Q6J("nzActive", !0)("nzLoading", a.loading),
             e.xp6(2),
-            e.Q6J("nzTitle", "All (" + a.service.tasksModel.total + ")"),
+            e.Q6J("nzTitle", "Todo (" + a.service.tasksModel.total + ")"),
             e.xp6(1),
-            e.Q6J("nzTitle", "Today (" + a.service.tasksModel.today + ")"),
+            e.Q6J("nzTitle", "Hoy (" + a.service.tasksModel.today + ")"),
             e.xp6(1),
-            e.Q6J(
-              "nzTitle",
-              "Upcoming (" + a.service.tasksModel.upcoming + ")"
-            ),
+            e.Q6J("nzTitle", "Próximo (" + a.service.tasksModel.upcoming + ")"),
             e.xp6(1),
-            e.Q6J("nzTitle", "Overdue (" + a.service.tasksModel.overdue + ")"),
+            e.Q6J("nzTitle", "Vencido (" + a.service.tasksModel.overdue + ")"),
             e.xp6(1),
             e.Q6J(
               "nzTitle",
-              "No due date (" + a.service.tasksModel.no_due_date + ")"
+              "Sin Vencimiento (" + a.service.tasksModel.no_due_date + ")"
             );
         }
       }
