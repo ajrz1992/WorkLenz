@@ -3884,10 +3884,20 @@
                     2 & t &&
                       (e.xp6(7),
                       e.hij(
-                        "Today is ",
-                        e.xi3(8, 4, n.currentDate, "EEEE, MMMM d, y"),
+                        "Hoy es ",
+                        n.currentDate.toLocaleDateString("es-ES", {
+                          weekday: "long", // Día completo (ej. lunes)
+                          year: "numeric", // Año completo (ej. 2025)
+                          month: "long", // Mes completo (ej. abril)
+                          day: "numeric", // Día del mes (ej. 1)
+                        }),
                         ""
                       ),
+                      /*e.hij(
+                        "Hoy es ",
+                        e.xi3(8, 4, n.currentDate, "EEEE, MMMM d, y"),
+                        ""
+                      ),*/
                       e.xp6(3),
                       e.Q6J("ngIf", n.isOwnerOrAdmin()),
                       e.xp6(9),
