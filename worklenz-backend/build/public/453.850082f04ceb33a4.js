@@ -3679,7 +3679,7 @@
               return e.KtG(n.openProjectForm());
             }),
             e._UZ(2, "span", 23),
-            e._uU(3, "Create Project "),
+            e._uU(3, "Crear Expediente "),
             e.qZA(),
             e.TgZ(4, "button", 24),
             e._UZ(5, "span", 25),
