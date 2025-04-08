@@ -61517,7 +61517,7 @@
           },
           Calendar: {
             lang: {
-              placeholder: "Select date",
+              placeholder: "Selecciona la Fecha",
               yearPlaceholder: "Select year",
               quarterPlaceholder: "Select quarter",
               monthPlaceholder: "Select month",

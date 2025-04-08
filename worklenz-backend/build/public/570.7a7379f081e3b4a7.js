@@ -84,7 +84,7 @@
               return e.KtG(_.newCategory());
             }),
             e._UZ(5, "span", 9),
-            e._uU(6, " New Category "),
+            e._uU(6, " Nueva Categoría "),
             e.qZA()()(),
             e.BQk();
         }
