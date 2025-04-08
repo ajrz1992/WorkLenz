@@ -93,7 +93,7 @@
           e.xp6(1),
             e.Q6J("ngModel", C.categoryId)("nzLoading", C.loading)(
               "nzPlaceHolder",
-              "Add a category to the project"
+              "Agrega una categoría al expediente"
             )("nzDisabled", C.disabled)("nzAllowClear", !0),
             e.xp6(1),
             e.Q6J("ngForOf", C.categories),
@@ -447,7 +447,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Select client",
+                "Selecciona el Cliente",
                 3,
                 "formControlName",
                 "nzAutocomplete",
@@ -1683,7 +1683,7 @@
                 "ngForOf",
               ],
               [3, "categoryId", "disabled", "categoryIdChange"],
-              ["nz-input", "", "placeholder", "Notes", 3, "formControlName"],
+              ["nz-input", "", "placeholder", "Notas Adicionales", 3, "formControlName"],
               [3, "name", "nameChange", 4, "ngIf"],
               [
                 "nz-dropdown",
