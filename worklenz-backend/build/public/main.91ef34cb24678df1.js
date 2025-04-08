@@ -61469,7 +61469,7 @@
           },
           DatePicker: {
             lang: {
-              placeholder: "Select date",
+              placeholder: "Selecciona la Fecha",
               yearPlaceholder: "Select year",
               quarterPlaceholder: "Select quarter",
               monthPlaceholder: "Select month",
@@ -61487,7 +61487,7 @@
               month: "Month",
               year: "Year",
               timeSelect: "select time",
-              dateSelect: "select date",
+              dateSelect: "Selecciona la Fecha",
               weekSelect: "Choose a week",
               monthSelect: "Choose a month",
               yearSelect: "Choose a year",
@@ -61535,7 +61535,7 @@
               month: "Month",
               year: "Year",
               timeSelect: "select time",
-              dateSelect: "select date",
+              dateSelect: "Selecciona la Fecha",
               weekSelect: "Choose a week",
               monthSelect: "Choose a month",
               yearSelect: "Choose a year",
