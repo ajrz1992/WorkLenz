@@ -5630,7 +5630,7 @@
             t.xp6(2),
             t.Q6J("nzColor", "#cbc8a1")(
               "nzText",
-              "Propuesto (" +
+              "Proposed (" +
                 ((null == rt.model.by_status
                   ? null
                   : rt.model.by_status.proposed) || 0) +
