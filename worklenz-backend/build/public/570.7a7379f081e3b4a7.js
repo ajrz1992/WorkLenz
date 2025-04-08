@@ -259,7 +259,7 @@
                   e.xp6(2),
                   e.Q6J("ngSwitch", _.showCategoryInput)("nzSpan", null)(
                     "nzExtra",
-                    _.showCategoryInput ? "Hit enter to create!" : ""
+                    _.showCategoryInput ? "Presiona enter para guardar!" : ""
                   ),
                   e.xp6(1),
                   e.Q6J("ngSwitchCase", !0),
