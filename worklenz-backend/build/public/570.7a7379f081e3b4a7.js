@@ -211,7 +211,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Enter a name for the category",
+                "Indique un nombre para la categoría",
                 3,
                 "ngModel",
                 "disabled",
