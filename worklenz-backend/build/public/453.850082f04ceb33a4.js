@@ -2629,8 +2629,8 @@
                   "nzSize",
                   "ngModelChange",
                 ],
-                ["nz-radio-button", "", "nzValue", "month"],
-                ["nz-radio-button", "", "nzValue", "year"],
+                ["nz-radio-button", "", "nzValue", "Mes"],
+                ["nz-radio-button", "", "nzValue", "Año"],
                 [3, "nzLabel", "nzValue"],
                 [
                   1,
