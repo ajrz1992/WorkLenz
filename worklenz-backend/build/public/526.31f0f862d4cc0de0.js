@@ -2000,7 +2000,7 @@
         var c;
         class U {
           get title() {
-            return `${this.selectedFilter} Notificaciones (${this.dataset.length})`;
+            return `Notificaciones ${this.selectedFilter}  (${this.dataset.length})`;
           }
           constructor(a, _, b, ht, zt, Lt, Kt, $t, ge, fe) {
             var At = this;
@@ -2018,8 +2018,8 @@
               (this.showChange = new e.vpe()),
               (this.count = 0),
               (this.countChange = new e.vpe()),
-              (this.OPTION_UNREAD = "No leído"),
-              (this.OPTION_READ = "Leído"),
+              (this.OPTION_UNREAD = "No leídas"),
+              (this.OPTION_READ = "Leídas"),
               (this.options = [this.OPTION_UNREAD, this.OPTION_READ]),
               (this.invitations = []),
               (this.notifications = []),
