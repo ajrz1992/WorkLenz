@@ -636,7 +636,7 @@
             e.hij(
               " ",
               a.getTeamStatus(z) !== a.TEAM_STATUSES.OwnerAndNameNotChanged
-                ? "Propiedad de " + z.owns_by
+                ? "Controlado por ti " /* + z.owns_by*/
                 : "Haz clic para configurar tu propia cuenta",
               " "
             ),
