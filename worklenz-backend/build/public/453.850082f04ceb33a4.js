@@ -3105,19 +3105,8 @@
                 4,
                 null == t.service.tasksViewConfig
                   ? null
-                  : (function () {
-                      var date = new Date(
-                        t.service.tasksViewConfig.selected_date
-                      );
-                      return date
-                        .toLocaleDateString("es-ES", {
-                          day: "numeric",
-                          month: "long",
-                          year: "numeric",
-                        })
-                        .replace(" de ", " del "); // Ajusta el "de" por "del"
-                    })(),
-                "" // Sin formato extra porque ya formateamos la fecha
+                  : t.service.tasksViewConfig.selected_date,
+                "MMM d, y"
               ),
               ""
             ),
