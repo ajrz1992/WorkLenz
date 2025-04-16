@@ -3434,7 +3434,7 @@
                     "nz-form-label",
                     1
                   ),
-                  n._uU(3, "Job Title"),
+                  n._uU(3, "Cargo"),
                   n.qZA(),
                   n.TgZ(4, "nz-form-control", 1)(5, "input", 2),
                   n.NdJ("ngModelChange", function () {
@@ -3528,8 +3528,8 @@
             n.xp6(1),
             n.Q6J(
               "nzNotFoundContent",
-              "Type an email address and hit enter..."
-            )("nzPlaceHolder", "Add team members by email")(
+              "Escribe una dirección de correo y presiona Enter.."
+            )("nzPlaceHolder", "Correo electrónico para Invitación")(
               "formControlName",
               "email"
             );
