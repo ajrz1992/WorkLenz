@@ -343,13 +343,13 @@
           e.xp6(2),
             e.Q6J("nzTooltipPlacement", "bottom")(
               "nzTooltipTitle",
-              "Add Team Member"
+              "Agregar miembro del equipo"
             )("disabled", z.profile.is_expired),
             e.xp6(4),
             e.Akn("width: 32px;"),
             e.Q6J("nzTooltipPlacement", "bottom")(
               "nzTooltipTitle",
-              "Add Team Member"
+              "Agregar miembro del equipo"
             )("disabled", z.profile.is_expired),
             e.xp6(1),
             e.Akn("font-size: 18px;");
@@ -371,7 +371,7 @@
             e.Q6J("nzDropdownMenu", a)("nzPlacement", "bottomRight")(
               "nzTooltipPlacement",
               "bottom"
-            )("nzTooltipTitle", "Switch Team")("nzTrigger", "click"),
+            )("nzTooltipTitle", "Cambiar Bufete")("nzTrigger", "click"),
             e.xp6(3),
             e.hij(" ", z.profile.team_name, " ");
         }
@@ -549,7 +549,7 @@
             e.Q6J("nzDisabled", a.profile.is_expired)(
               "nzTooltipPlacement",
               "bottom"
-            )("nzTooltipTitle", "Notifications"),
+            )("nzTooltipTitle", "Notificaciones"),
             e.xp6(1),
             e.Q6J("ngSwitch", a.showUnreadNotificationsCount()),
             e.xp6(1),
@@ -557,10 +557,7 @@
             e.xp6(1),
             e.Q6J("ngSwitchCase", !1),
             e.xp6(1),
-            e.Q6J("nzTooltipPlacement", "bottom")(
-              "nzTooltipTitle",
-              "Help (Coming Soon)"
-            ),
+            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Ayuda "),
             e.xp6(2),
             e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Profile"),
             e.xp6(1),
@@ -639,8 +636,8 @@
             e.hij(
               " ",
               a.getTeamStatus(z) !== a.TEAM_STATUSES.OwnerAndNameNotChanged
-                ? "Owned by " + z.owns_by
-                : "Click to setup your own account",
+                ? "Propiedad de " + z.owns_by
+                : "Haz clic para configurar tu propia cuenta",
               " "
             ),
             e.xp6(1),

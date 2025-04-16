@@ -557,10 +557,7 @@
             e.xp6(1),
             e.Q6J("ngSwitchCase", !1),
             e.xp6(1),
-            e.Q6J("nzTooltipPlacement", "bottom")(
-              "nzTooltipTitle",
-              "Help (Coming Soon)"
-            ),
+            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Ayuda "),
             e.xp6(2),
             e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Profile"),
             e.xp6(1),
