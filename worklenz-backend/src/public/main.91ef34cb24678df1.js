@@ -44702,7 +44702,7 @@
             "Friday",
             "Saturday",
           ],
-          ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+          ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
         ],
         Ia,
         [
