@@ -2057,7 +2057,7 @@
           e._UZ(2, "img", 4),
           e.qZA(),
           e.TgZ(3, "div", 5)(4, "span", 6),
-          e._uU(5, "No tasks to show."),
+          e._uU(5, "Todo en orden. No tienes tareas por el momento."),
           e.qZA()(),
           e.BQk());
       }
