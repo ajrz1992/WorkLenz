@@ -3540,7 +3540,7 @@
           (n.TgZ(0, "span", 20),
           n._uU(
             1,
-            " Invitees will be added to the team either they accept the invitation or not. "
+            " Los invitados serán añadidos al equipo, acepten o no la invitación. "
           ),
           n.qZA());
       }
