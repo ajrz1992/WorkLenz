@@ -3105,7 +3105,9 @@
                 4,
                 null == t.service.tasksViewConfig
                   ? null
-                  : t.service.tasksViewConfig.selected_date,
+                  : t.service.tasksViewConfig.selected_date.toLocaleDateString(
+                      "es-ES"
+                    ),
                 "MMM d, y"
               ),
               ""
