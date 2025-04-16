@@ -3106,7 +3106,7 @@
                 null == t.service.tasksViewConfig
                   ? null
                   : t.service.tasksViewConfig.selected_date,
-                "MMM d, y"
+                "d/M/yyyy"
               ),
               ""
             ),
