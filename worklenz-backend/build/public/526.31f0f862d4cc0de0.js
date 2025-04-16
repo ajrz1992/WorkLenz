@@ -2000,7 +2000,7 @@
         var c;
         class U {
           get title() {
-            return `Notificaciones ${this.selectedFilter}  (${this.dataset.length})`;
+            return `${this.selectedFilter}  (${this.dataset.length})`;
           }
           constructor(a, _, b, ht, zt, Lt, Kt, $t, ge, fe) {
             var At = this;
