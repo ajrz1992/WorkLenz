@@ -3744,7 +3744,7 @@
               : "Agregar Integrante";
           }
           get okButtonText() {
-            return this.isEditMember() ? "Update" : "Add to team";
+            return this.isEditMember() ? "Update" : "Añadir al Equipo";
           }
           get email() {
             return this.form.value.email;
