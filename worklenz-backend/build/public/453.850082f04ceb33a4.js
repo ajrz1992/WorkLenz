@@ -3099,14 +3099,14 @@
             e.xp6(3),
             e.MGl(
               "nzMessage",
-              "Tasks due on : ",
+              "Tareas con vencimiento el : ",
               e.xi3(
                 5,
                 4,
                 null == t.service.tasksViewConfig
                   ? null
                   : t.service.tasksViewConfig.selected_date,
-                "MMM d, y"
+                /*"MMM d, y"*/ "D de MMMM del YYYY"
               ),
               ""
             ),

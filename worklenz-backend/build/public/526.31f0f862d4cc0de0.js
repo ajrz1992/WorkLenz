@@ -559,7 +559,7 @@
             e.xp6(1),
             e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Ayuda "),
             e.xp6(2),
-            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Profile"),
+            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Perfil"),
             e.xp6(1),
             e.Q6J("ngIf", !a.profile.avatar_url),
             e.xp6(1),
