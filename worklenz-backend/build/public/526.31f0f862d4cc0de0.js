@@ -3324,7 +3324,7 @@
               (this.fb = O),
               (this.titleChange = new n.vpe()),
               (this.title = null),
-              (this.placeholder = "Job Title"),
+              (this.placeholder = "Cargo"),
               (this.loading = !1),
               (this.loadingChange = new n.vpe()),
               (this.searching = !1),
@@ -3508,7 +3508,7 @@
         if (
           (1 & K &&
             (n.TgZ(0, "nz-form-item")(1, "nz-form-label", 17),
-            n._uU(2, " Email(s) "),
+            n._uU(2, " Correo Electrónico "),
             n.qZA(),
             n.TgZ(3, "nz-form-control", 18),
             n._UZ(4, "nz-select", 19),
@@ -3563,7 +3563,7 @@
           const M = n.oxw(2);
           n.Q6J("title", M.jobTitle)(
             "placeholder",
-            "Select the job title (Optional)"
+            "Seleccione el Cargo (Opcional)"
           );
         }
       }
@@ -3632,7 +3632,7 @@
             n.YNc(4, T, 2, 0, "ng-template", null, 6, n.W1O),
             n.YNc(6, S, 1, 2, "worklenz-job-titles-autocomplete", 7),
             n.TgZ(7, "nz-form-item")(8, "nz-form-label", 8),
-            n._uU(9, "Access "),
+            n._uU(9, "Tipo de Acceso "),
             n.qZA(),
             n.TgZ(10, "nz-form-control", 9)(11, "nz-select", 10),
             n._UZ(12, "nz-option", 11)(13, "nz-option", 12),
@@ -3741,7 +3741,7 @@
           get title() {
             return this.isEditMember()
               ? this.model.name || "Edit Member"
-              : "Add Member";
+              : "Agregar Integrante";
           }
           get okButtonText() {
             return this.isEditMember() ? "Update" : "Add to team";
@@ -3946,8 +3946,8 @@
               ],
               [3, "nzSpan"],
               [3, "formControlName"],
-              ["nzValue", "admin", "nzLabel", "Admin"],
-              ["nzValue", "member", "nzLabel", "Member"],
+              ["nzValue", "admin", "nzLabel", "Administrador"],
+              ["nzValue", "member", "nzLabel", "Miembro"],
               [
                 "nz-button",
                 "",
