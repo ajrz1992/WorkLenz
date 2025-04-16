@@ -1775,7 +1775,7 @@
       function he(c, U) {
         1 & c && e._UZ(0, "nz-empty", 12),
           2 & c &&
-            e.Q6J("nzNotFoundContent", "You've read all your notifications");
+            e.Q6J("nzNotFoundContent", "Has leído todas tus notificaciones.");
       }
       function ve(c, U) {
         1 & c && e.GkF(0);
@@ -2000,7 +2000,7 @@
         var c;
         class U {
           get title() {
-            return `${this.selectedFilter} Notifications (${this.dataset.length})`;
+            return `${this.selectedFilter} Notificaciones (${this.dataset.length})`;
           }
           constructor(a, _, b, ht, zt, Lt, Kt, $t, ge, fe) {
             var At = this;
@@ -2018,8 +2018,8 @@
               (this.showChange = new e.vpe()),
               (this.count = 0),
               (this.countChange = new e.vpe()),
-              (this.OPTION_UNREAD = "Unread"),
-              (this.OPTION_READ = "Read"),
+              (this.OPTION_UNREAD = "No leído"),
+              (this.OPTION_READ = "Leído"),
               (this.options = [this.OPTION_UNREAD, this.OPTION_READ]),
               (this.invitations = []),
               (this.notifications = []),
