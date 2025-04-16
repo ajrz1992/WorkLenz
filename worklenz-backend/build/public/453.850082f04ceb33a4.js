@@ -3105,20 +3105,11 @@
                 4,
                 null == t.service.tasksViewConfig
                   ? null
-                  : new Date(t.service.tasksViewConfig.selected_date)
-                      .toLocaleDateString("es-ES", {
-                        day: "numeric",
-                        month: "long",
-                        year: "numeric",
-                      })
-                      .replace(" de ", " de ")
-                      .replace(" de ", " del "),
-                "d de MMMM del YYYY"
-              )
-              /*: t.service.tasksViewConfig.selected_date,*/
-              /*"MMM d, y"*/
+                  : t.service.tasksViewConfig.selected_date,
+                "MMM d, y"
+              ),
+              ""
             ),
-            +"",
             e.Q6J("nzIcon", a);
         }
       }
