@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "worklenz",
+      "prefix": "legalAgenda",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
