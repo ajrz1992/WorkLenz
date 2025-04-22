@@ -686,7 +686,7 @@
           }
           signOutWithConfirm() {
             this.modal.confirm({
-              nzTitle: "Sign out from the Worklenz?",
+              nzTitle: "¿Desea cerrar sesión en LegalAgenda?",
               nzOnOk: () => {
                 this.onSignOutConfirm();
               },
@@ -5846,7 +5846,7 @@
               (this.router = Q),
               (this.app = ve),
               (this.auth = dt),
-              (this.title = "worklenz"),
+              (this.title = "LegalAgenda"),
               Ps.s.init(),
               this.router.events.subscribe(
                 (function () {
