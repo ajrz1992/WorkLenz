@@ -2057,7 +2057,7 @@
           e._UZ(2, "img", 4),
           e.qZA(),
           e.TgZ(3, "div", 5)(4, "span", 6),
-          e._uU(5, "No tasks to show."),
+          e._uU(5, "Todo en orden. No tienes tareas por el momento."),
           e.qZA()(),
           e.BQk());
       }
@@ -3099,14 +3099,14 @@
             e.xp6(3),
             e.MGl(
               "nzMessage",
-              "Tasks due on : ",
+              "Tareas con vencimiento el : ",
               e.xi3(
                 5,
                 4,
                 null == t.service.tasksViewConfig
                   ? null
                   : t.service.tasksViewConfig.selected_date,
-                "MMM d, y"
+                "d/M/yyyy"
               ),
               ""
             ),
@@ -3478,7 +3478,7 @@
           e._UZ(2, "img", 19),
           e.qZA(),
           e.TgZ(3, "div", 20)(4, "span", 21),
-          e._uU(5, "No tasks to show."),
+          e._uU(5, "No hay tareas para mostrar."),
           e.qZA()(),
           e.BQk());
       }
