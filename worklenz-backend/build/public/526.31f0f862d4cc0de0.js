@@ -343,13 +343,13 @@
           e.xp6(2),
             e.Q6J("nzTooltipPlacement", "bottom")(
               "nzTooltipTitle",
-              "Add Team Member"
+              "Agregar miembro del equipo"
             )("disabled", z.profile.is_expired),
             e.xp6(4),
             e.Akn("width: 32px;"),
             e.Q6J("nzTooltipPlacement", "bottom")(
               "nzTooltipTitle",
-              "Add Team Member"
+              "Agregar miembro del equipo"
             )("disabled", z.profile.is_expired),
             e.xp6(1),
             e.Akn("font-size: 18px;");
@@ -371,7 +371,7 @@
             e.Q6J("nzDropdownMenu", a)("nzPlacement", "bottomRight")(
               "nzTooltipPlacement",
               "bottom"
-            )("nzTooltipTitle", "Switch Team")("nzTrigger", "click"),
+            )("nzTooltipTitle", "Cambiar Bufete")("nzTrigger", "click"),
             e.xp6(3),
             e.hij(" ", z.profile.team_name, " ");
         }
@@ -549,7 +549,7 @@
             e.Q6J("nzDisabled", a.profile.is_expired)(
               "nzTooltipPlacement",
               "bottom"
-            )("nzTooltipTitle", "Notifications"),
+            )("nzTooltipTitle", "Notificaciones"),
             e.xp6(1),
             e.Q6J("ngSwitch", a.showUnreadNotificationsCount()),
             e.xp6(1),
@@ -557,12 +557,9 @@
             e.xp6(1),
             e.Q6J("ngSwitchCase", !1),
             e.xp6(1),
-            e.Q6J("nzTooltipPlacement", "bottom")(
-              "nzTooltipTitle",
-              "Help (Coming Soon)"
-            ),
+            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Ayuda "),
             e.xp6(2),
-            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Profile"),
+            e.Q6J("nzTooltipPlacement", "bottom")("nzTooltipTitle", "Perfil"),
             e.xp6(1),
             e.Q6J("ngIf", !a.profile.avatar_url),
             e.xp6(1),
@@ -639,8 +636,8 @@
             e.hij(
               " ",
               a.getTeamStatus(z) !== a.TEAM_STATUSES.OwnerAndNameNotChanged
-                ? "Owned by " + z.owns_by
-                : "Click to setup your own account",
+                ? "Controlado por ti " /* + z.owns_by*/
+                : "Haz clic para configurar tu propia cuenta",
               " "
             ),
             e.xp6(1),
@@ -1778,7 +1775,7 @@
       function he(c, U) {
         1 & c && e._UZ(0, "nz-empty", 12),
           2 & c &&
-            e.Q6J("nzNotFoundContent", "You've read all your notifications");
+            e.Q6J("nzNotFoundContent", "Has leído todas tus notificaciones.");
       }
       function ve(c, U) {
         1 & c && e.GkF(0);
@@ -2003,7 +2000,7 @@
         var c;
         class U {
           get title() {
-            return `${this.selectedFilter} Notifications (${this.dataset.length})`;
+            return `${this.selectedFilter}  (${this.dataset.length})`;
           }
           constructor(a, _, b, ht, zt, Lt, Kt, $t, ge, fe) {
             var At = this;
@@ -2021,8 +2018,8 @@
               (this.showChange = new e.vpe()),
               (this.count = 0),
               (this.countChange = new e.vpe()),
-              (this.OPTION_UNREAD = "Unread"),
-              (this.OPTION_READ = "Read"),
+              (this.OPTION_UNREAD = "No leídas"),
+              (this.OPTION_READ = "Leídas"),
               (this.options = [this.OPTION_UNREAD, this.OPTION_READ]),
               (this.invitations = []),
               (this.notifications = []),
@@ -3327,7 +3324,7 @@
               (this.fb = O),
               (this.titleChange = new n.vpe()),
               (this.title = null),
-              (this.placeholder = "Job Title"),
+              (this.placeholder = "Cargo"),
               (this.loading = !1),
               (this.loadingChange = new n.vpe()),
               (this.searching = !1),
@@ -3437,7 +3434,7 @@
                     "nz-form-label",
                     1
                   ),
-                  n._uU(3, "Job Title"),
+                  n._uU(3, "Cargo"),
                   n.qZA(),
                   n.TgZ(4, "nz-form-control", 1)(5, "input", 2),
                   n.NdJ("ngModelChange", function () {
@@ -3511,7 +3508,7 @@
         if (
           (1 & K &&
             (n.TgZ(0, "nz-form-item")(1, "nz-form-label", 17),
-            n._uU(2, " Email(s) "),
+            n._uU(2, " Correo Electrónico "),
             n.qZA(),
             n.TgZ(3, "nz-form-control", 18),
             n._UZ(4, "nz-select", 19),
@@ -3531,8 +3528,8 @@
             n.xp6(1),
             n.Q6J(
               "nzNotFoundContent",
-              "Type an email address and hit enter..."
-            )("nzPlaceHolder", "Add team members by email")(
+              "Escribe una dirección de correo y presiona Enter.."
+            )("nzPlaceHolder", "Correo electrónico para Invitación")(
               "formControlName",
               "email"
             );
@@ -3543,7 +3540,7 @@
           (n.TgZ(0, "span", 20),
           n._uU(
             1,
-            " Invitees will be added to the team either they accept the invitation or not. "
+            " Los invitados serán añadidos al equipo, acepten o no la invitación. "
           ),
           n.qZA());
       }
@@ -3566,7 +3563,7 @@
           const M = n.oxw(2);
           n.Q6J("title", M.jobTitle)(
             "placeholder",
-            "Select the job title (Optional)"
+            "Seleccione el Cargo (Opcional)"
           );
         }
       }
@@ -3635,7 +3632,7 @@
             n.YNc(4, T, 2, 0, "ng-template", null, 6, n.W1O),
             n.YNc(6, S, 1, 2, "worklenz-job-titles-autocomplete", 7),
             n.TgZ(7, "nz-form-item")(8, "nz-form-label", 8),
-            n._uU(9, "Access "),
+            n._uU(9, "Tipo de Acceso "),
             n.qZA(),
             n.TgZ(10, "nz-form-control", 9)(11, "nz-select", 10),
             n._UZ(12, "nz-option", 11)(13, "nz-option", 12),
@@ -3744,10 +3741,10 @@
           get title() {
             return this.isEditMember()
               ? this.model.name || "Edit Member"
-              : "Add Member";
+              : "Agregar Integrante";
           }
           get okButtonText() {
-            return this.isEditMember() ? "Update" : "Add to team";
+            return this.isEditMember() ? "Update" : "Añadir al Equipo";
           }
           get email() {
             return this.form.value.email;
@@ -3949,8 +3946,8 @@
               ],
               [3, "nzSpan"],
               [3, "formControlName"],
-              ["nzValue", "admin", "nzLabel", "Admin"],
-              ["nzValue", "member", "nzLabel", "Member"],
+              ["nzValue", "admin", "nzLabel", "Administrador"],
+              ["nzValue", "member", "nzLabel", "Miembro"],
               [
                 "nz-button",
                 "",
