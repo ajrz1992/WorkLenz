@@ -22,10 +22,10 @@
         if (
           (1 & i &&
             (t.TgZ(0, "nz-form-item")(1, "h2", 21),
-            t._uU(2, "Name your organization."),
+            t._uU(2, "Elige un nombre para tu bufete."),
             t.qZA(),
             t.TgZ(3, "span", 22),
-            t._uU(4, " Pick a name for your Worklenz account. "),
+            t._uU(4, " Elige un nombre para tu cuenta en LegalAgenda. "),
             t.qZA(),
             t.TgZ(5, "nz-form-control", 23),
             t._UZ(6, "input", 24),
@@ -75,7 +75,7 @@
             t.xp6(1),
             t.Q6J("formControlName", "project_name")(
               "placeholder",
-              "e.g. Worklenz marketing plan"
+              "Ejem. Bufete ABC"
             )("id", s.projectNameId),
             t.xp6(5),
             t.Q6J("nzType", "primary");
