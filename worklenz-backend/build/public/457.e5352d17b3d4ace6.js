@@ -46,16 +46,16 @@
         if (1 & i) {
           const s = t.EpF();
           t.TgZ(0, "nz-form-item")(1, "h2", 21),
-            t._uU(2, "Create your first project."),
+            t._uU(2, "Crea tu primer expediente legal."),
             t.qZA(),
             t.TgZ(3, "span", 22),
-            t._uU(4, " What project are you working on right now? "),
+            t._uU(4, " Que expediente legal estas gestionando ahora mismo? "),
             t.qZA(),
             t.TgZ(5, "nz-form-control", 23),
             t._UZ(6, "input", 24),
             t.qZA(),
             t.TgZ(7, "div", 25)(8, "h4", 26),
-            t._uU(9, "or"),
+            t._uU(9, "o bien"),
             t.qZA(),
             t._UZ(10, "div", 27),
             t.qZA(),
@@ -65,7 +65,7 @@
               const n = t.oxw(2);
               return t.KtG(n.openTemplateSelector());
             }),
-            t._uU(12, "Import from templates "),
+            t._uU(12, "Crea el expediente desde nuestras plantillas de procesos "),
             t.qZA()();
         }
         if (2 & i) {
@@ -75,7 +75,7 @@
             t.xp6(1),
             t.Q6J("formControlName", "project_name")(
               "placeholder",
-              "Ejem. Bufete ABC"
+              "Ejem. Demanda Laboral"
             )("id", s.projectNameId),
             t.xp6(5),
             t.Q6J("nzType", "primary");
@@ -208,7 +208,7 @@
               const n = t.oxw(2);
               return t.KtG(n.previous());
             }),
-            t._uU(1, " Go back "),
+            t._uU(1, " Ir Atrás "),
             t.qZA();
         }
       }
