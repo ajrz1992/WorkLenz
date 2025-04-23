@@ -166,7 +166,7 @@
         if (1 & i) {
           const s = t.EpF();
           t.TgZ(0, "nz-form-item")(1, "h2", 21),
-            t._uU(2, " Invite your team to work with "),
+            t._uU(2, " Invita a otro colega para trabajar con "),
             t._UZ(3, "br"),
             t.TgZ(4, "span", 36),
             t._uU(5, ' "'),
@@ -176,7 +176,7 @@
             t._uU(8, '". '),
             t.qZA()(),
             t.TgZ(9, "span", 22),
-            t._uU(10, " Invite with email "),
+            t._uU(10, " Invitar por Correo Electrónico "),
             t._UZ(11, "span", 37),
             t.qZA(),
             t.TgZ(12, "nz-list"),
@@ -188,7 +188,7 @@
               return t.KtG(c.addNewTeamMemberRow(n));
             }),
             t._UZ(16, "span", 31),
-            t._uU(17, " Add another "),
+            t._uU(17, " añadir otro "),
             t.qZA()()()();
         }
         if (2 & i) {
@@ -222,7 +222,7 @@
               return t.KtG(n.skipInvite());
             }),
             t.TgZ(1, "span", 41),
-            t._uU(2, "Skip for now"),
+            t._uU(2, "Omitir por ahora"),
             t.qZA()();
         }
         if (2 & i) {
@@ -723,7 +723,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Email address",
+                "Correo Electrónico",
                 3,
                 "formControlName",
               ],
