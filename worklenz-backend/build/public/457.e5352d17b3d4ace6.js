@@ -55,7 +55,7 @@
             t._UZ(6, "input", 24),
             t.qZA(),
             t.TgZ(7, "div", 25)(8, "h4", 26),
-            t._uU(9, "o bien"),
+            t._uU(9, "Ó"),
             t.qZA(),
             t._UZ(10, "div", 27),
             t.qZA(),
