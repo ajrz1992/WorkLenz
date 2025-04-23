@@ -342,7 +342,7 @@
             return this.auth.getCurrentSession();
           }
           get teamSetupPlaceholder() {
-            return `e.g., ${this.profile?.name}'s Team`;
+            return `ejemplo., ${this.profile?.name} Bufete`;
           }
           get projectName() {
             return this.form.value.project_name;
