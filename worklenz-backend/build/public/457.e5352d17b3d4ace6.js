@@ -25,7 +25,7 @@
             t._uU(2, "Elige un nombre para tu bufete."),
             t.qZA(),
             t.TgZ(3, "span", 22),
-            t._uU(4, " Elige un nombre para tu cuenta en LegalAgenda. "),
+            t._uU(4, " Elige un nombre para tu cuenta en Legal Agenda. "),
             t.qZA(),
             t.TgZ(5, "nz-form-control", 23),
             t._UZ(6, "input", 24),
@@ -261,7 +261,7 @@
             t.YNc(13, d, 2, 0, "button", 18),
             t.YNc(14, h, 3, 1, "button", 19),
             t.TgZ(15, "button", 20),
-            t._uU(16, "Continue "),
+            t._uU(16, "Continuar "),
             t.qZA()()()();
         }
         if (2 & i) {
@@ -342,7 +342,7 @@
             return this.auth.getCurrentSession();
           }
           get teamSetupPlaceholder() {
-            return `ejemplo., ${this.profile?.name} Bufete`;
+            return `Bufete Jurídico ${this.profile?.name} `;
           }
           get projectName() {
             return this.form.value.project_name;
