@@ -106,10 +106,10 @@
         if (1 & i) {
           const s = t.EpF();
           t.TgZ(0, "div")(1, "h2", 21),
-            t._uU(2, "Create your first task."),
+            t._uU(2, "Crea tu primer tarea."),
             t.qZA(),
             t.TgZ(3, "span", 22),
-            t._uU(4, " Type few tasks that you are going to do in "),
+            t._uU(4, " Escribe algunas tareas que vas a realizar para "),
             t.TgZ(5, "span", 21),
             t._uU(6, '"'),
             t.TgZ(7, "mark"),
@@ -126,7 +126,7 @@
               return t.KtG(c.addNewTaskRow(n));
             }),
             t._UZ(14, "span", 31),
-            t._uU(15, " Add another "),
+            t._uU(15, " Añadir otra"),
             t.qZA()()()();
         }
         if (2 & i) {
@@ -683,7 +683,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Your Task",
+                "Tu Tarea",
                 "tabindex",
                 "0",
                 3,
