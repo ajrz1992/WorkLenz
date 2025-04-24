@@ -1516,7 +1516,7 @@
                 (1 & t &&
                   (e.TgZ(0, "div", 0)(1, "nz-page-header", 1)(
                     2,
-                    ""
+                    "nz-page-header-title"
                   ),
                   e._uU(3),
                   e.qZA(),
