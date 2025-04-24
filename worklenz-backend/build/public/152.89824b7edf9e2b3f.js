@@ -27881,14 +27881,14 @@
                 n.done &&
                   ((t.categories = n.body),
                   (t.toDoColorCode =
-                    t.categories.find((s) => "To do" === s.name)?.color_code ||
-                    ""),
+                    t.categories.find((s) => "Pendientes" === s.name)
+                      ?.color_code || ""),
                   (t.pendingColorCode =
-                    t.categories.find((s) => "Doing" === s.name)?.color_code ||
-                    ""),
+                    t.categories.find((s) => "En Proceso" === s.name)
+                      ?.color_code || ""),
                   (t.completedColorCode =
-                    t.categories.find((s) => "Done" === s.name)?.color_code ||
-                    "")),
+                    t.categories.find((s) => "Finalizadas" === s.name)
+                      ?.color_code || "")),
                   (t.loadingCategories = !1),
                   t.cdr.markForCheck();
               } catch (n) {
