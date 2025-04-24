@@ -61527,7 +61527,7 @@
               rangeMonthPlaceholder: ["Start month", "End month"],
               rangeWeekPlaceholder: ["Start week", "End week"],
               locale: "en_US",
-              today: "Today",
+              today: "Hoy",
               now: "Now",
               backToToday: "Back to today",
               ok: "Ok",
