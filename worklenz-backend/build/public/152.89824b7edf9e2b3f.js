@@ -397,7 +397,7 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J("nzShape", "circle")("nzTooltipTitle", "Refresh projects")(
+          e.Q6J("nzShape", "circle")("nzTooltipTitle", "Refrescar Expedientes")(
             "nzType",
             "default"
           ),
@@ -463,7 +463,7 @@
               return e.KtG(n.openProjectForm());
             }),
             e._UZ(1, "span", 41),
-            e._uU(2, "Create Project"),
+            e._uU(2, "Crear Expediente"),
             e.qZA();
         }
         2 & r && e.Q6J("nzType", "primary");
@@ -718,7 +718,7 @@
           e.xp6(3),
             e.Q6J(
               "nzTooltipTitle",
-              A.favorite ? "Remove from favorites" : "Add to favorites"
+              A.favorite ? "Remover de favoritos" : "Añadir a Favoritos"
             )("nzCount", 1)("ngModel", A.favorite ? 1 : 0),
             e.xp6(2),
             e.Q6J("nzColor", A.color_code)("nzSize", "default"),
@@ -774,7 +774,7 @@
       function fo(r, i) {
         1 & r &&
           (e.ynx(0),
-          e._uU(1, "The selected team has no archived projects."),
+          e._uU(1, "El equipo seleccionado no tiene expedientes archivados."),
           e.BQk());
       }
       function Gc(r, i) {
@@ -918,12 +918,12 @@
               (this.showStatusesFilter = !1),
               (this.filteredByCategory = !1),
               (this.filteredByStatus = !1),
-              (this.filters = ["All", "Favorites", "Archived"]),
+              (this.filters = ["Todos", "Favoritos", "Archivados"]),
               (this.displayModes = [
                 { label: "List", value: "list", useTemplate: !0 },
                 { label: "Folder", value: "folder", useTemplate: !0 },
               ]),
-              this.app.setTitle("Projects"),
+              this.app.setTitle("Expedientes"),
               this.trackVisit(),
               (this.pageSize = +(
                 this.route.snapshot.queryParamMap.get("size") || Ot.L8
@@ -1292,7 +1292,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Search by name",
+                "Buscar por expediente",
                 "type",
                 "text",
                 3,
@@ -1536,13 +1536,13 @@
                     return n.onQueryParamsChange(o);
                   }),
                   e.TgZ(14, "thead")(15, "tr")(16, "th", 9),
-                  e._uU(17, "Name"),
+                  e._uU(17, "Expediente"),
                   e.qZA(),
                   e.TgZ(18, "th", 9),
-                  e._uU(19, "Client"),
+                  e._uU(19, "Cliente"),
                   e.qZA(),
                   e.TgZ(20, "th", 10),
-                  e._uU(21, " Category "),
+                  e._uU(21, " Categoría "),
                   e.TgZ(22, "nz-filter-trigger", 11),
                   e.NdJ("nzVisibleChange", function (o) {
                     return (n.showCategoriesFilter = o);
@@ -1550,7 +1550,7 @@
                   e._UZ(23, "span", 12),
                   e.qZA()(),
                   e.TgZ(24, "th", 13),
-                  e._uU(25, " Status "),
+                  e._uU(25, " Estado "),
                   e.TgZ(26, "nz-filter-trigger", 11),
                   e.NdJ("nzVisibleChange", function (o) {
                     return (n.showStatusesFilter = o);
@@ -1558,13 +1558,13 @@
                   e._UZ(27, "span", 12),
                   e.qZA()(),
                   e.TgZ(28, "th", 14),
-                  e._uU(29, "Tasks Progress"),
+                  e._uU(29, "Progreso"),
                   e.qZA(),
                   e.TgZ(30, "th", 15),
-                  e._uU(31, "Last Updated"),
+                  e._uU(31, "Ultima Actualización"),
                   e.qZA(),
                   e.TgZ(32, "th", 16),
-                  e._uU(33, "Members"),
+                  e._uU(33, "Abogados"),
                   e.qZA()()(),
                   e.TgZ(34, "tbody"),
                   e.YNc(35, Zc, 30, 30, "tr", 17),
@@ -28323,7 +28323,7 @@
               const n = e.oxw();
               return e.KtG(n.close());
             }),
-            e._uU(2, "Cancel"),
+            e._uU(2, "Cancelar"),
             e.qZA(),
             e.TgZ(3, "button", 20),
             e.NdJ("click", function () {
@@ -43571,18 +43571,14 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J(
-            "nzTooltipTitle",
-            "Recibir un resumen del expediente cada noche."
-          )("nzShape", "round")("nzType", "default"),
+          e.Q6J("nzTooltipTitle", "Receive a project summary every evening.")(
+            "nzShape",
+            "round"
+          )("nzType", "default"),
             e.xp6(1),
             e.Q6J("nzTheme", A.project.subscribed ? "fill" : "outline"),
             e.xp6(1),
-            e.hij(
-              " ",
-              A.project.subscribed ? "DesInscribirse" : "Suscribirse",
-              " "
-            );
+            e.hij(" ", A.project.subscribed ? "Unsubscribe" : "Subscribe", " ");
         }
       }
       function $2(r, i) {
@@ -43896,37 +43892,32 @@
                 ]),
                 (this.tabs = [
                   {
-                    label: "Tareas",
+                    label: "Task List",
                     tab: "tasks-list",
                     index: 0,
                     isPinned: !1,
                   },
-                  { label: "Tablero", tab: "board", index: 1, isPinned: !1 },
+                  { label: "Board", tab: "board", index: 1, isPinned: !1 },
                   {
-                    label: "Carga de trabajo",
+                    label: "Workload",
                     tab: "workload",
                     index: 2,
                     isPinned: !1,
                   },
+                  { label: "Roadmap", tab: "roadmap", index: 3, isPinned: !1 },
                   {
-                    label: "Hoja de ruta",
-                    tab: "roadmap",
-                    index: 3,
-                    isPinned: !1,
-                  },
-                  {
-                    label: "Indicadores",
+                    label: "Insights",
                     tab: "project-insights-member-overview",
                     index: 4,
                     isPinned: !1,
                   },
                   {
-                    label: "Archivos",
+                    label: "Files",
                     tab: "all-attachments",
                     index: 5,
                     isPinned: !1,
                   },
-                  { label: "Miembros", tab: "members", index: 6, isPinned: !1 },
+                  { label: "Members", tab: "members", index: 6, isPinned: !1 },
                 ]),
                 (this.projects = []),
                 (this.project = {}),
@@ -43951,7 +43942,7 @@
                 (this.defaultView = 0),
                 (this.pinnedTabIndex = 0),
                 (this.enableBadge = !1),
-                this.app.setTitle("Cargando..."),
+                this.app.setTitle("Loading..."),
                 this.setProjectId(),
                 this.setDefaultTab(),
                 this.setPinnedTab(),
@@ -47887,11 +47878,13 @@
           scrollToDate(t) {
             return (0, ce.Z)(function* () {
               setTimeout(() => {
-                document.getElementById(`date_${t}`)?.scrollIntoView({
-                  behavior: "auto",
-                  block: "center",
-                  inline: "center",
-                });
+                document
+                  .getElementById(`date_${t}`)
+                  ?.scrollIntoView({
+                    behavior: "auto",
+                    block: "center",
+                    inline: "center",
+                  });
               }, 0);
             })();
           }
