@@ -43702,7 +43702,7 @@
         if (
           (1 & r &&
             (e.TgZ(0, "a", 64),
-            e._uU(1, "Updates "),
+            e._uU(1, "Actualizaciones "),
             e.YNc(2, cw, 1, 0, "span", 65),
             e.qZA()),
           2 & r)
@@ -43892,32 +43892,37 @@
                 ]),
                 (this.tabs = [
                   {
-                    label: "Task List",
+                    label: "Tareas",
                     tab: "tasks-list",
                     index: 0,
                     isPinned: !1,
                   },
-                  { label: "Board", tab: "board", index: 1, isPinned: !1 },
+                  { label: "Tablero", tab: "board", index: 1, isPinned: !1 },
                   {
-                    label: "Workload",
+                    label: "Carga de Trabajo",
                     tab: "workload",
                     index: 2,
                     isPinned: !1,
                   },
-                  { label: "Roadmap", tab: "roadmap", index: 3, isPinned: !1 },
                   {
-                    label: "Insights",
+                    label: "Cronograma",
+                    tab: "roadmap",
+                    index: 3,
+                    isPinned: !1,
+                  },
+                  {
+                    label: "Indicadores",
                     tab: "project-insights-member-overview",
                     index: 4,
                     isPinned: !1,
                   },
                   {
-                    label: "Files",
+                    label: "Archivos",
                     tab: "all-attachments",
                     index: 5,
                     isPinned: !1,
                   },
-                  { label: "Members", tab: "members", index: 6, isPinned: !1 },
+                  { label: "Abogados", tab: "members", index: 6, isPinned: !1 },
                 ]),
                 (this.projects = []),
                 (this.project = {}),
@@ -47878,13 +47883,11 @@
           scrollToDate(t) {
             return (0, ce.Z)(function* () {
               setTimeout(() => {
-                document
-                  .getElementById(`date_${t}`)
-                  ?.scrollIntoView({
-                    behavior: "auto",
-                    block: "center",
-                    inline: "center",
-                  });
+                document.getElementById(`date_${t}`)?.scrollIntoView({
+                  behavior: "auto",
+                  block: "center",
+                  inline: "center",
+                });
               }, 0);
             })();
           }
