@@ -6072,7 +6072,7 @@
         if (2 & o) {
           const i = e.oxw();
           e.xp6(1),
-            e.Q6J("nzMode", 0 === i.dateModeModel ? "week" : "month")(
+            e.Q6J("nzMode", 0 === i.dateModeModel ? "Semana" : "Mes")(
               "ngModel",
               i.dateRange
             )(
