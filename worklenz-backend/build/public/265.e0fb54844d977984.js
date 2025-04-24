@@ -6072,7 +6072,7 @@
         if (2 & o) {
           const i = e.oxw();
           e.xp6(1),
-            e.Q6J("nzMode", 0 === i.dateModeModel ? "Semana" : "Mes")(
+            e.Q6J("nzMode", 0 === i.dateModeModel ? "week" : "month")(
               "ngModel",
               i.dateRange
             )(
@@ -6098,8 +6098,8 @@
                   (this.selectedChartType = q.Projects),
                   (this.dateRange = null),
                   (this.dateModes = [
-                    { value: 0, label: "Week" },
-                    { value: 1, label: "Month" },
+                    { value: 0, label: "Semana" },
+                    { value: 1, label: "Mes" },
                   ]),
                   (this.dateModeModel = 0),
                   (this.selectedWeek = {
