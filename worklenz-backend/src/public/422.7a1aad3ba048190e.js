@@ -11676,7 +11676,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 17),
-          e._uU(2, "Priority"),
+          e._uU(2, "Prioridad"),
           e.qZA(),
           e.BQk());
       }
