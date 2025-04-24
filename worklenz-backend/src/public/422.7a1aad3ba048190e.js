@@ -16359,7 +16359,7 @@
                 "ngFor",
                 "ngForOf",
               ],
-              ["nz-submenu", "", "nzTitle", "Priority"],
+              ["nz-submenu", "", "nzTitle", "Prioridad"],
               ["nz-submenu", "", "nzTitle", "Phase"],
               ["custom", ""],
               ["labelsTooltipTitle", ""],
