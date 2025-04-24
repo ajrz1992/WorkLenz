@@ -2678,7 +2678,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Priority"),
+            t._uU(2, "Prioridad"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 2)(4, "nz-select", 3),
             t.NdJ("ngModelChange", function (O) {
@@ -9695,9 +9695,9 @@
               (this.GROUP_BY_PRIORITY_VALUE = "priority"),
               (this.GROUP_BY_PHASE_VALUE = "phase"),
               (this.GROUP_BY_OPTIONS = [
-                { label: "Status", value: this.GROUP_BY_STATUS_VALUE },
-                { label: "Priority", value: this.GROUP_BY_PRIORITY_VALUE },
-                { label: "Phase", value: this.GROUP_BY_PHASE_VALUE },
+                { label: "Estado", value: this.GROUP_BY_STATUS_VALUE },
+                { label: "Prioridad", value: this.GROUP_BY_PRIORITY_VALUE },
+                { label: "Fase", value: this.GROUP_BY_PHASE_VALUE },
               ]),
               (this.groups = []),
               (this._projectId = null),
@@ -10832,27 +10832,35 @@
               (this.selectedMembersCount = 0),
               (this.statuses = []),
               (this.sortableColumns = [
-                { label: "Task", key: "name", sort_order: this.ASCEND },
-                { label: "Status", key: "status", sort_order: this.ASCEND },
-                { label: "Priority", key: "priority", sort_order: this.ASCEND },
+                { label: "Tarea", key: "name", sort_order: this.ASCEND },
+                { label: "Estado", key: "status", sort_order: this.ASCEND },
                 {
-                  label: "Start Date",
+                  label: "Prioridad",
+                  key: "priority",
+                  sort_order: this.ASCEND,
+                },
+                {
+                  label: "Fecha Inicio",
                   key: "start_date",
                   sort_order: this.ASCEND,
                 },
-                { label: "End Date", key: "end_date", sort_order: this.ASCEND },
                 {
-                  label: "Completed Date",
+                  label: "Fecha Cierre",
+                  key: "end_date",
+                  sort_order: this.ASCEND,
+                },
+                {
+                  label: "Fecha Completado",
                   key: "completed_at",
                   sort_order: this.ASCEND,
                 },
                 {
-                  label: "Created Data",
+                  label: "Fecha Creación",
                   key: "created_at",
                   sort_order: this.ASCEND,
                 },
                 {
-                  label: "Last Updated",
+                  label: "Ultima Actualización",
                   key: "updated_at",
                   sort_order: this.ASCEND,
                 },
