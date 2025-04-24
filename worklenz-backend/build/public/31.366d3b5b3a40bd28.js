@@ -3588,7 +3588,7 @@
             t.xp6(1),
             t.Q6J("projectId", mt.project.id),
             t.xp6(2),
-            t.Q6J("nzTitle", "Members"),
+            t.Q6J("nzTitle", "Miembros"),
             t.xp6(1),
             t.Q6J("projectId", mt.project.id),
             t.xp6(1),
