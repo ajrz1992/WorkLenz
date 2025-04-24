@@ -774,7 +774,7 @@
       function fo(r, i) {
         1 & r &&
           (e.ynx(0),
-          e._uU(1, "El equipo seleccionado no tiene proyectos archivados."),
+          e._uU(1, "El equipo seleccionado no tiene expedientes archivados."),
           e.BQk());
       }
       function Gc(r, i) {
