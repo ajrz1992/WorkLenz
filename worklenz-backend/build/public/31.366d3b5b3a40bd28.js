@@ -2101,7 +2101,7 @@
             t.xp6(2),
             t.Q6J("nzColor", "#a9a9a9")(
               "nzText",
-              "To Do (" +
+              "Por hacer (" +
                 ((null == mt.model.by_status
                   ? null
                   : mt.model.by_status.todo) || 0) +
@@ -2110,7 +2110,7 @@
             t.xp6(2),
             t.Q6J("nzColor", "#70a6f3")(
               "nzText",
-              "Doing (" +
+              "En progreso (" +
                 ((null == mt.model.by_status
                   ? null
                   : mt.model.by_status.doing) || 0) +
@@ -2119,7 +2119,7 @@
             t.xp6(2),
             t.Q6J("nzColor", "#75c997")(
               "nzText",
-              "Done (" +
+              "Hecho (" +
                 ((null == mt.model.by_status
                   ? null
                   : mt.model.by_status.done) || 0) +

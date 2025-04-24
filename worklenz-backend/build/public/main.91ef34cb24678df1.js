@@ -686,7 +686,7 @@
           }
           signOutWithConfirm() {
             this.modal.confirm({
-              nzTitle: "Sign out from the Worklenz?",
+              nzTitle: "¿Desea cerrar sesión en LegalAgenda?",
               nzOnOk: () => {
                 this.onSignOutConfirm();
               },
@@ -5846,7 +5846,7 @@
               (this.router = Q),
               (this.app = ve),
               (this.auth = dt),
-              (this.title = "worklenz"),
+              (this.title = "LegalAgenda"),
               Ps.s.init(),
               this.router.events.subscribe(
                 (function () {
@@ -6282,7 +6282,7 @@
             values: {
               narrow: ["D", "L", "M", "M", "J", "V", "S"],
               short: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
-              abbreviated: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+              abbreviated: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
               wide: [
                 "Domingo",
                 "Lunes",
@@ -14249,10 +14249,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "h:mm A",
@@ -14318,10 +14318,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "h:mm A",
@@ -14386,10 +14386,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "HH:mm",
@@ -14455,10 +14455,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "HH:mm",
@@ -14524,10 +14524,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "HH:mm",
@@ -14592,10 +14592,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "h:mm A",
@@ -14661,10 +14661,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "h:mm A",
@@ -14730,10 +14730,10 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
-          weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
+          weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
             LT: "HH:mm",
@@ -25212,7 +25212,7 @@
             M[X] = Xe(d);
           });
         var Zi =
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           lr = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
@@ -61455,10 +61455,10 @@
         fr = {
           locale: "en",
           Pagination: {
-            items_per_page: "/ page",
+            items_per_page: "/ página",
             jump_to: "Go to",
             jump_to_confirm: "confirm",
-            page: "Page",
+            page: "Página",
             prev_page: "Previous Page",
             next_page: "Next Page",
             prev_5: "Previous 5 Pages",
@@ -61472,14 +61472,14 @@
               placeholder: "Selecciona la Fecha",
               yearPlaceholder: "Select year",
               quarterPlaceholder: "Select quarter",
-              monthPlaceholder: "Select month",
-              weekPlaceholder: "Select week",
+              monthPlaceholder: "Seleccionar Mes",
+              weekPlaceholder: "Seleccionar Semana",
               rangePlaceholder: ["Start date", "End date"],
               rangeYearPlaceholder: ["Start year", "End year"],
               rangeMonthPlaceholder: ["Start month", "End month"],
               rangeWeekPlaceholder: ["Start week", "End week"],
               locale: "en_US",
-              today: "Today",
+              today: "Hoy",
               now: "Now",
               backToToday: "Back to today",
               ok: "Ok",
@@ -61527,7 +61527,7 @@
               rangeMonthPlaceholder: ["Start month", "End month"],
               rangeWeekPlaceholder: ["Start week", "End week"],
               locale: "en_US",
-              today: "Today",
+              today: "Hoy",
               now: "Now",
               backToToday: "Back to today",
               ok: "Ok",
@@ -61617,7 +61617,7 @@
             hour: "hour",
             day: "day",
             month: "month",
-            week: "week",
+            week: "Semana",
             secondError:
               "<p><span>*</span>Any value</p><p><span>,</span>Separator between multiple values</p><p><span>-</span>Connector for interval values</p><p><span>/</span>Equally distributed</p><p><span>0-59</span>Allowable range</p>",
             minuteError:
