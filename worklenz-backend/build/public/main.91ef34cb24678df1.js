@@ -6282,7 +6282,7 @@
             values: {
               narrow: ["D", "L", "M", "M", "J", "V", "S"],
               short: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
-              abbreviated: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+              abbreviated: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
               wide: [
                 "Domingo",
                 "Lunes",
@@ -61479,7 +61479,7 @@
               rangeMonthPlaceholder: ["Start month", "End month"],
               rangeWeekPlaceholder: ["Start week", "End week"],
               locale: "en_US",
-              today: "Today",
+              today: "Hoy",
               now: "Now",
               backToToday: "Back to today",
               ok: "Ok",
@@ -61617,7 +61617,7 @@
             hour: "hour",
             day: "day",
             month: "month",
-            week: "week",
+            week: "Semana",
             secondError:
               "<p><span>*</span>Any value</p><p><span>,</span>Separator between multiple values</p><p><span>-</span>Connector for interval values</p><p><span>/</span>Equally distributed</p><p><span>0-59</span>Allowable range</p>",
             minuteError:
