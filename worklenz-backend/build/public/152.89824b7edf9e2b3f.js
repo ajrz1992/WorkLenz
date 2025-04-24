@@ -397,7 +397,7 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J("nzShape", "circle")("nzTooltipTitle", "Refresh projects")(
+          e.Q6J("nzShape", "circle")("nzTooltipTitle", "Refrescar Expedientes")(
             "nzType",
             "default"
           ),
@@ -718,7 +718,7 @@
           e.xp6(3),
             e.Q6J(
               "nzTooltipTitle",
-              A.favorite ? "Remove from favorites" : "Add to favorites"
+              A.favorite ? "Remover de favoritos" : "Añadir a Favoritos"
             )("nzCount", 1)("ngModel", A.favorite ? 1 : 0),
             e.xp6(2),
             e.Q6J("nzColor", A.color_code)("nzSize", "default"),
