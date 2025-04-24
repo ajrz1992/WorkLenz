@@ -14249,7 +14249,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14318,7 +14318,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14386,7 +14386,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14455,7 +14455,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14524,7 +14524,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14592,7 +14592,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14661,7 +14661,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -14730,7 +14730,7 @@
             "_"
           ),
           weekdays:
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
@@ -25212,7 +25212,7 @@
             M[X] = Xe(d);
           });
         var Zi =
-            "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split(
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
               "_"
             ),
           lr = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
