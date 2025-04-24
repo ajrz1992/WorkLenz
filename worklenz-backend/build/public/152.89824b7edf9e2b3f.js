@@ -31908,7 +31908,7 @@
         }
       }
       function gg(r, i) {
-        1 & r && (e._UZ(0, "span", 48), e._uU(1, " Change category "));
+        1 & r && (e._UZ(0, "span", 48), e._uU(1, " Cambiar Categoría "));
       }
       function mg(r, i) {
         1 & r && e._UZ(0, "span", 52);
@@ -31963,7 +31963,7 @@
               return s.onBoardSettingsClick("Rename"), e.KtG(s.editColumn(n));
             }),
             e._UZ(7, "span", 35),
-            e._uU(8, " Rename "),
+            e._uU(8, " Renombrar "),
             e.qZA(),
             e.TgZ(9, "li", 36)(10, "ul"),
             e.YNc(11, fg, 6, 8, "li", 37),
@@ -31976,7 +31976,7 @@
               return s.deleteStatus(n), e.KtG(s.onBoardSettingsClick("Delete"));
             }),
             e._UZ(13, "span", 39),
-            e._uU(14, " Delete "),
+            e._uU(14, " Eliminar "),
             e.qZA()()(),
             e.YNc(15, gg, 2, 0, "ng-template", null, 40, e.W1O),
             e.YNc(17, _g, 3, 6, "span", 41),
