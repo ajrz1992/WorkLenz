@@ -1244,7 +1244,7 @@
             e.xp6(1),
             e.Q6J("memberId", n.member.id),
             e.xp6(2),
-            e.Q6J("nzTitle", "Projects"),
+            e.Q6J("nzTitle", "Expedientes"),
             e.xp6(1),
             e.Q6J("ngIf", n.team),
             e.xp6(1),
