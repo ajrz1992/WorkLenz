@@ -28323,7 +28323,7 @@
               const n = e.oxw();
               return e.KtG(n.close());
             }),
-            e._uU(2, "Cancel"),
+            e._uU(2, "Cancelar"),
             e.qZA(),
             e.TgZ(3, "button", 20),
             e.NdJ("click", function () {
