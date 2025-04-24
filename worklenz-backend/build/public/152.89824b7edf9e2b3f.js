@@ -923,7 +923,7 @@
                 { label: "List", value: "list", useTemplate: !0 },
                 { label: "Folder", value: "folder", useTemplate: !0 },
               ]),
-              this.app.setTitle("Projects"),
+              this.app.setTitle("Expedientes"),
               this.trackVisit(),
               (this.pageSize = +(
                 this.route.snapshot.queryParamMap.get("size") || Ot.L8
