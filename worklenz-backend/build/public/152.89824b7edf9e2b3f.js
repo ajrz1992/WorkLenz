@@ -28107,7 +28107,7 @@
               const s = e.oxw(2);
               return e.KtG((s.tPhaseCheck = n));
             }),
-            e._uU(2, "Phase"),
+            e._uU(2, "Fase"),
             e.qZA(),
             e.BQk();
         }
