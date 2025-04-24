@@ -35872,7 +35872,7 @@
       function Y1(r, i) {
         1 & r &&
           (e.TgZ(0, "div", 35)(1, "span", 36),
-          e._uU(2, "No tasks available"),
+          e._uU(2, "No se encontraron tareas"),
           e.qZA()());
       }
       function q1(r, i) {
