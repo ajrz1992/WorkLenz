@@ -1282,7 +1282,7 @@
                       P.done &&
                         ((o.total = P.body.total || 0),
                         (o.projects = P.body.projects || []),
-                        (o.pageTitle = o.total + " Projects")),
+                        (o.pageTitle = o.total + "Expedientes")),
                         (o.loading = !1);
                     } catch {
                       o.loading = !1;
