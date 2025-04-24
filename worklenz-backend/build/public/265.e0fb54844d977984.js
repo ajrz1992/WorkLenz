@@ -3518,7 +3518,7 @@
                   e.Q6J("ngModel", n.task.phase_id)("nzLoading", n.loading)(
                     "nzDropdownMatchSelectWidth",
                     !1
-                  )("nzSize", "small")("nzPlaceHolder", "Select"),
+                  )("nzSize", "small")("nzPlaceHolder", "Seleccionar"),
                   e.xp6(1),
                   e.Q6J("ngForOf", n.phases)("ngForTrackBy", n.trackById));
             },
