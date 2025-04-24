@@ -24868,7 +24868,7 @@
             e._uU(12, "Days Overdue"),
             e.qZA(),
             e.TgZ(13, "div", 29),
-            e._uU(14, "Completed Date"),
+            e._uU(14, "Fecha Finalizado"),
             e.qZA(),
             e.TgZ(15, "div", 29),
             e._uU(16, "Total Allocation"),
@@ -27107,7 +27107,7 @@
                   x: {
                     title: {
                       display: !0,
-                      text: "Priority",
+                      text: "Prioridad",
                       align: "end",
                       font: { family: "Helvetica" },
                     },
@@ -28214,7 +28214,7 @@
               const s = e.oxw();
               return e.KtG((s.checked = n));
             }),
-            e._uU(30, "Priority"),
+            e._uU(30, "Prioridad"),
             e.qZA()(),
             e.TgZ(31, "div", 15),
             e.YNc(32, Of, 3, 3, "ng-container", 16),
@@ -38796,9 +38796,9 @@
                 (this.GROUP_BY_PRIORITY_VALUE = "priority"),
                 (this.GROUP_BY_PHASE_VALUE = "phase"),
                 (this.GROUP_BY_OPTIONS = [
-                  { label: "Status", value: this.GROUP_BY_STATUS_VALUE },
-                  { label: "Priority", value: this.GROUP_BY_PRIORITY_VALUE },
-                  { label: "Phase", value: this.GROUP_BY_PHASE_VALUE },
+                  { label: "Estado", value: this.GROUP_BY_STATUS_VALUE },
+                  { label: "Prioridad", value: this.GROUP_BY_PRIORITY_VALUE },
+                  { label: "Fase", value: this.GROUP_BY_PHASE_VALUE },
                 ]),
                 (this.groups = []),
                 (this._members = []),
