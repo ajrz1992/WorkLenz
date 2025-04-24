@@ -24510,7 +24510,7 @@
             e._UZ(3, "img", 8),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Project Members"),
+            e._uU(6, "Miembros"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -29102,9 +29102,9 @@
             e.xp6(1),
             e.Q6J("nzLayout", "vertical"),
             e.xp6(1),
-            e.Q6J("label", "Add members by adding their name or email")(
+            e.Q6J("label", "Añade miembros por su nombre o correo electrónico")(
               "placeholder",
-              "Type name or email..."
+              "Escribe un nombre o correo..."
             )("autofocus", A.autofocus)(
               "disableTeamInvites",
               A.adminAndManager()
@@ -29344,7 +29344,7 @@
                   e.Q6J("nzVisible", n.show)("nzClosable", !0)(
                     "nzPlacement",
                     "right"
-                  )("nzTitle", "Project Members");
+                  )("nzTitle", "Miembros");
             },
             dependencies: [
               QA.j,
@@ -43554,7 +43554,7 @@
             e._UZ(1, "span", 44),
             e.qZA();
         }
-        2 & r && e.Q6J("nzTooltipTitle", "Project settings");
+        2 & r && e.Q6J("nzTooltipTitle", "Ajustes");
       }
       function X2(r, i) {
         if (1 & r) {

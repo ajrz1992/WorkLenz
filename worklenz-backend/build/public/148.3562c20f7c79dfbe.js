@@ -7355,7 +7355,7 @@
           _scriptable: (s) => !s.startsWith("on"),
           labels: {
             _scriptable: (s) =>
-              !["generateLabels", "filter", "sort"].includes(s),
+              !["generateLabels", "filter", "filtrar"].includes(s),
           },
         },
       };
