@@ -918,7 +918,7 @@
               (this.showStatusesFilter = !1),
               (this.filteredByCategory = !1),
               (this.filteredByStatus = !1),
-              (this.filters = ["All", "Favorites", "Archived"]),
+              (this.filters = ["Todos", "Favoritos", "Archivados"]),
               (this.displayModes = [
                 { label: "List", value: "list", useTemplate: !0 },
                 { label: "Folder", value: "folder", useTemplate: !0 },
