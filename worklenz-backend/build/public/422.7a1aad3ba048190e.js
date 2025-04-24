@@ -9288,11 +9288,11 @@
         ) {
           const a0 = n.oxw(2);
           n.xp6(2),
-            n.hij("Done: ", n.lcZ(3, 3, a0.done), ""),
+            n.hij("Finalizadas: ", n.lcZ(3, 3, a0.done), ""),
             n.xp6(3),
-            n.hij("Doing: ", n.lcZ(6, 5, a0.doing), ""),
+            n.hij("En Proceso: ", n.lcZ(6, 5, a0.doing), ""),
             n.xp6(3),
-            n.hij("Todo: ", n.lcZ(9, 7, a0.todo), "");
+            n.hij("Pendientes: ", n.lcZ(9, 7, a0.todo), "");
         }
       }
       function x(Q, f0) {
@@ -10161,7 +10161,7 @@
               (this.projectId = null),
               (this.parentTask = null),
               (this.groupId = null),
-              (this.label = "Add Task"),
+              (this.label = "Añadir Tarea"),
               (this.focusChange = new t.vpe()),
               (this.taskInputVisible = !1),
               (this.creating = !1),
@@ -11692,7 +11692,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 18),
-          e._uU(2, "Registro de Tiempo"),
+          e._uU(2, "Tiempo Registrado"),
           e.qZA(),
           e.BQk());
       }
@@ -11700,7 +11700,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 19),
-          e._uU(2, "Estimation"),
+          e._uU(2, "Estimación"),
           e.qZA(),
           e.BQk());
       }
@@ -14396,7 +14396,7 @@
                 e.Q6J("ngModel", o.task.end_date)("nzFormat", "MMM dd,yyyy")(
                   "nzSuffixIcon",
                   ""
-                )("nzPlaceHolder", "Set a due date")(
+                )("nzPlaceHolder", "Elija una fecha")(
                   "nzDisabledDate",
                   e.lcZ(6, 12, o.task.start_date)
                 ));
