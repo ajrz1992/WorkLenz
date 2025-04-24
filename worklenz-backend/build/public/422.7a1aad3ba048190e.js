@@ -9364,10 +9364,10 @@
               ["class", "position-relative doing", 3, "width", 4, "ngIf"],
               ["class", "position-relative todo", 3, "width", 4, "ngIf"],
               ["titleTemplate", ""],
-              [1, "position-relative", "done"],
+              [1, "position-relative", "Finalizadas"],
               ["nz-typography", ""],
-              [1, "position-relative", "doing"],
-              [1, "position-relative", "todo"],
+              [1, "position-relative", "En Proceso"],
+              [1, "position-relative", "Pendientes"],
               [1, "text-white"],
             ],
             template: function (I, t0) {
