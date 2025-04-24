@@ -11609,7 +11609,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 7),
-          e._uU(2, "Description"),
+          e._uU(2, "Descripción"),
           e.qZA(),
           e.BQk());
       }
@@ -11617,7 +11617,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 8),
-          e._uU(2, "Progress"),
+          e._uU(2, "Progreso"),
           e.qZA(),
           e.BQk());
       }
@@ -11678,7 +11678,7 @@
       }
       function Fe(l, E) {
         1 & l &&
-          (e.ynx(0), e.TgZ(1, "div", 16), e._uU(2, "Status"), e.qZA(), e.BQk());
+          (e.ynx(0), e.TgZ(1, "div", 16), e._uU(2, "Estado"), e.qZA(), e.BQk());
       }
       function ke(l, E) {
         1 & l &&
@@ -11692,7 +11692,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 18),
-          e._uU(2, "Time Tracking"),
+          e._uU(2, "Registro de Tiempo"),
           e.qZA(),
           e.BQk());
       }
@@ -11716,7 +11716,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 21),
-          e._uU(2, "Due Date"),
+          e._uU(2, "Fecha Vencimiento"),
           e.qZA(),
           e.BQk());
       }
@@ -11965,7 +11965,7 @@
                 e.YNc(3, Ae, 3, 0, "ng-container", 3),
                 e._UZ(4, "div", 4),
                 e.TgZ(5, "div", 5),
-                e._uU(6, "Task"),
+                e._uU(6, "Tareas"),
                 e.qZA(),
                 e.YNc(7, ve, 3, 0, "ng-container", 3),
                 e.YNc(8, Ze, 3, 0, "ng-container", 3),
@@ -18657,7 +18657,7 @@
               const o = e.oxw(2);
               return e.KtG(o.onArchiveChange());
             }),
-            e._uU(1, "Show archived"),
+            e._uU(1, "Mostrar Archivadas"),
             e.qZA();
         }
         if (2 & l) {
