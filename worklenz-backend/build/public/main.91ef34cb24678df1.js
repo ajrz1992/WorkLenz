@@ -61455,7 +61455,7 @@
         fr = {
           locale: "en",
           Pagination: {
-            items_per_page: "/ page",
+            items_per_page: "/ página",
             jump_to: "Go to",
             jump_to_confirm: "confirm",
             page: "Página",
