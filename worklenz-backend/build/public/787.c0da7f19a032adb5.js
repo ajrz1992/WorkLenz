@@ -1128,7 +1128,7 @@
                     (this.sortOrder = null),
                     (this.categorySearchText = null),
                     (this.projectManagerSearchText = null),
-                    (this.pageTitle = "Projects"),
+                    (this.pageTitle = "Expedientes"),
                     (this.COLUMN_KEYS = {
                       CLIENT: "CLIENT",
                       ESTIMATED_VS_ACTUAL: "ESTIMATED_VS_ACTUAL",
