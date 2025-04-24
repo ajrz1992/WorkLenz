@@ -551,7 +551,7 @@
           2 & o)
         ) {
           const l = e.oxw(2);
-          e.Q6J("nzTitle", "Your Library"),
+          e.Q6J("nzTitle", "Tu Librería"),
             e.xp6(1),
             e.Q6J("ngIf", l.drawerVisible);
         }
