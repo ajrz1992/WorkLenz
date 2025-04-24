@@ -28526,7 +28526,7 @@
                 const s = e.MAs(3);
                 e.Q6J("nzClosable", !0)("nzVisible", n.show)("nzWidth", 420)(
                   "nzTitle",
-                  "Save as template"
+                  "Guardar como Plantilla"
                 )("nzFooter", s);
               }
             },
@@ -29697,7 +29697,7 @@
                 e.Q6J("nzBodyStyle", e.DdM(5, jf))("nzWidth", 650)(
                   "nzVisible",
                   n.drawerVisible
-                )("nzTitle", "Import tasks")("nzFooter", s);
+                )("nzTitle", "Importar Tareas")("nzFooter", s);
               }
             },
             dependencies: [
@@ -38193,7 +38193,7 @@
               return e.oxw().applyUpdates(), e.KtG(s.close());
             }),
             e.TgZ(8, "span"),
-            e._uU(9, "Refresh Project"),
+            e._uU(9, "Actualizar tareas"),
             e.qZA()()()()();
         }
         if (2 & r) {
@@ -43517,7 +43517,7 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J("nzTooltipTitle", "Refresh project"),
+          e.Q6J("nzTooltipTitle", "Actualizar Tareas"),
             e.xp6(1),
             e.Q6J("nzSpin", A.refreshing)("nzTheme", "outline");
         }
@@ -43535,7 +43535,7 @@
             e.qZA();
         }
         2 & r &&
-          (e.Q6J("nzTooltipTitle", "Save as template"),
+          (e.Q6J("nzTooltipTitle", "Guardar como Plantilla"),
           e.xp6(1),
           e.Q6J("nzTheme", "outline"));
       }
@@ -43571,14 +43571,18 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J("nzTooltipTitle", "Receive a project summary every evening.")(
-            "nzShape",
-            "round"
-          )("nzType", "default"),
+          e.Q6J(
+            "nzTooltipTitle",
+            "Recibir un resumen del expediente cada noche."
+          )("nzShape", "round")("nzType", "default"),
             e.xp6(1),
             e.Q6J("nzTheme", A.project.subscribed ? "fill" : "outline"),
             e.xp6(1),
-            e.hij(" ", A.project.subscribed ? "Unsubscribe" : "Subscribe", " ");
+            e.hij(
+              " ",
+              A.project.subscribed ? "Desinscribirse" : "Suscribirse",
+              " "
+            );
         }
       }
       function $2(r, i) {
@@ -47622,7 +47626,7 @@
               const n = e.oxw();
               return e.KtG(n.showModal());
             }),
-            e._uU(7, "Create Task"),
+            e._uU(7, "Crear Tarea"),
             e.qZA()(),
             e.TgZ(8, "div", 8)(9, "div", 4),
             e.YNc(10, Mv, 1, 0, "nz-empty", 0),
