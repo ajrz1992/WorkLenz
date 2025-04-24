@@ -463,7 +463,7 @@
               return e.KtG(n.openProjectForm());
             }),
             e._UZ(1, "span", 41),
-            e._uU(2, "Create Project"),
+            e._uU(2, "Crear Expediente"),
             e.qZA();
         }
         2 & r && e.Q6J("nzType", "primary");
@@ -1292,7 +1292,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Search by name",
+                "Buscar por expediente",
                 "type",
                 "text",
                 3,
