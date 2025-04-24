@@ -1024,11 +1024,11 @@
             n.xp6(1),
             n.Q6J("ngSwitch", Q.name),
             n.xp6(1),
-            n.Q6J("ngSwitchCase", "Low"),
+            n.Q6J("ngSwitchCase", "Baja"),
             n.xp6(1),
-            n.Q6J("ngSwitchCase", "Medium"),
+            n.Q6J("ngSwitchCase", "Media"),
             n.xp6(1),
-            n.Q6J("ngSwitchCase", "High");
+            n.Q6J("ngSwitchCase", "Alta");
         }
       }
       let k = (() => {
@@ -2899,7 +2899,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Labels"),
+            t._uU(2, "Etiquetas"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 2)(4, "span", 3),
             t.NdJ("nzVisibleChange", function (O) {
@@ -11623,11 +11623,19 @@
       }
       function he(l, E) {
         1 & l &&
-          (e.ynx(0), e.TgZ(1, "div", 9), e._uU(2, "Members"), e.qZA(), e.BQk());
+          (e.ynx(0),
+          e.TgZ(1, "div", 9),
+          e._uU(2, "Miembros"),
+          e.qZA(),
+          e.BQk());
       }
       function Ce(l, E) {
         1 & l &&
-          (e.ynx(0), e.TgZ(1, "div", 10), e._uU(2, "Labels"), e.qZA(), e.BQk());
+          (e.ynx(0),
+          e.TgZ(1, "div", 10),
+          e._uU(2, "Etiquetas"),
+          e.qZA(),
+          e.BQk());
       }
       function Le(l, E) {
         if (1 & l) {
@@ -11676,7 +11684,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 17),
-          e._uU(2, "Priority"),
+          e._uU(2, "Prioridad"),
           e.qZA(),
           e.BQk());
       }
@@ -12676,7 +12684,7 @@
                 "type",
                 "text",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "nz-input",
                 "",
                 3,
@@ -16359,7 +16367,7 @@
                 "ngFor",
                 "ngForOf",
               ],
-              ["nz-submenu", "", "nzTitle", "Priority"],
+              ["nz-submenu", "", "nzTitle", "Prioridad"],
               ["nz-submenu", "", "nzTitle", "Phase"],
               ["custom", ""],
               ["labelsTooltipTitle", ""],
