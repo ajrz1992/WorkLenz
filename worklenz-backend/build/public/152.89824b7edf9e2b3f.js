@@ -28126,7 +28126,7 @@
               const s = e.oxw(2);
               return e.KtG((s.tLabelsCheck = n));
             }),
-            e._uU(2, "Labels"),
+            e._uU(2, "Etiquetas"),
             e.qZA(),
             e.BQk();
         }
@@ -28195,7 +28195,7 @@
               const s = e.oxw();
               return e.KtG(s.projectCheckChange("pLabels", n));
             }),
-            e._uU(20, "Labels"),
+            e._uU(20, "Etiquetas"),
             e.qZA()()()(),
             e.TgZ(21, "div")(22, "span", 9),
             e._uU(23, "What should be included in tasks ?"),
