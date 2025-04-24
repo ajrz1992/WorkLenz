@@ -344,7 +344,7 @@
         }
       }
       function E(o, i) {
-        1 & o && e._uU(0, " No custom templates are found! ");
+        1 & o && e._uU(0, " ¡No se encontraron plantillas de procesos! ");
       }
       let q = (() => {
         var o;
@@ -404,7 +404,7 @@
                 "type",
                 "text",
                 "placeholder",
-                "Search by template name",
+                "Buscar por nombre de proceso",
                 "nz-input",
                 "",
                 3,
