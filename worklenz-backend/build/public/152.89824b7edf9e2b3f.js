@@ -25383,7 +25383,7 @@
             e._UZ(3, "img", 8),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Completed tasks"),
+            e._uU(6, "Tareas Completadas"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
