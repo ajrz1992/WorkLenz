@@ -479,7 +479,7 @@
           const n = t.EpF();
           t.TgZ(0, "button", 27),
             t._UZ(1, "span", 28),
-            t._uU(2, " Show fields "),
+            t._uU(2, " Mostrar Campos "),
             t.qZA(),
             t.TgZ(3, "nz-dropdown-menu", null, 29)(5, "ul", 30),
             t.YNc(6, xt, 2, 2, "li", 31),
