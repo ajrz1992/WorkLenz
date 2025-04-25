@@ -11385,7 +11385,7 @@
                   e.YNc(20, l0, 5, 6, "li", 17),
                   e.qZA()(),
                   e.TgZ(21, "button", 18),
-                  e._uU(22, " Priority "),
+                  e._uU(22, " Prioridad "),
                   e._UZ(23, "nz-badge", 13)(24, "span", 19),
                   e.qZA(),
                   e.TgZ(25, "nz-dropdown-menu", null, 20)(27, "ul", 16),
