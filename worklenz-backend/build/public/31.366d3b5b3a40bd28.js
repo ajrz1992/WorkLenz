@@ -3399,7 +3399,7 @@
                     t.qZA()(),
                     t.YNc(3, w, 1, 1, "ng-template", null, 3, t.W1O),
                     t.TgZ(5, "nz-form-item", 4)(6, "nz-form-label"),
-                    t._uU(7, "Group by:\xa0"),
+                    t._uU(7, "Agrupar Por:\xa0"),
                     t.qZA(),
                     t.TgZ(8, "nz-form-control")(9, "nz-select", 5),
                     t.NdJ("ngModelChange", function (Rt) {
@@ -14866,15 +14866,13 @@
                               (yt.isActive = !0),
                               yt.attr({ text: X }),
                               z ||
-                                yt
-                                  .css(D.style)
-                                  .attr({
-                                    stroke:
-                                      D.borderColor ||
-                                      Ct.color ||
-                                      It.color ||
-                                      "#333333",
-                                  }),
+                                yt.css(D.style).attr({
+                                  stroke:
+                                    D.borderColor ||
+                                    Ct.color ||
+                                    It.color ||
+                                    "#333333",
+                                }),
                               (Tt = yt);
                           }
                           (Tt = ht.tt = Tt),
@@ -15704,11 +15702,9 @@
                           ? (n ||
                               (s.halo = n =
                                 $.renderer.path().add(D.parentGroup)),
-                            n
-                              .show()
-                              [e ? "animate" : "attr"]({
-                                d: this.haloPath(d.size),
-                              }),
+                            n.show()[e ? "animate" : "attr"]({
+                              d: this.haloPath(d.size),
+                            }),
                             n.attr({
                               class:
                                 "highcharts-halo highcharts-color-" +

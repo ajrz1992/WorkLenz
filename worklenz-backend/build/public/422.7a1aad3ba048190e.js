@@ -11408,7 +11408,7 @@
                   e.ALo(39, "searchByName"),
                   e.qZA()(),
                   e.TgZ(40, "button", 22),
-                  e._uU(41, " Members "),
+                  e._uU(41, " Miembros "),
                   e._UZ(42, "nz-badge", 13)(43, "span", 19),
                   e.qZA(),
                   e.TgZ(44, "nz-dropdown-menu", null, 27)(46, "ul", 28)(
