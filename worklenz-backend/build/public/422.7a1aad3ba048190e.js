@@ -17275,7 +17275,7 @@
             e.Q6J("ngModel", a.group.start_date)("nzFormat", "MMM dd,yyyy")(
               "nzSuffixIcon",
               ""
-            )("nzPlaceHolder", "Set start date")(
+            )("nzPlaceHolder", "Añadir Fecha Inicio")(
               "nzDisabledDate",
               e.lcZ(2, 5, a.group.end_date)
             );
