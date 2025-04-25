@@ -1899,7 +1899,7 @@
                       e._uU(13, "Projects"),
                       e.qZA(),
                       e.TgZ(14, "th"),
-                      e._uU(15, "Members"),
+                      e._uU(15, "Miembros"),
                       e.qZA()()(),
                       e.TgZ(16, "tbody"),
                       e.YNc(17, He, 9, 4, "tr", 5),
