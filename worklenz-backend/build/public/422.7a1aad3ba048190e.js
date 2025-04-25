@@ -11425,7 +11425,7 @@
                   e.qZA()(),
                   e._UZ(51, "nz-divider", 30),
                   e.TgZ(52, "label", 31),
-                  e._uU(53, "Group by: "),
+                  e._uU(53, "Agrupar Por: "),
                   e.qZA(),
                   e.TgZ(54, "button", 32)(55, "span", 33),
                   e._uU(56),
