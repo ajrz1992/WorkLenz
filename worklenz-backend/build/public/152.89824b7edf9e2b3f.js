@@ -32119,7 +32119,7 @@
                 s = e.oxw();
               return e.KtG(s.onCreateButtonClicked(n.id));
             }),
-            e._uU(20, "Add task "),
+            e._uU(20, "Añadir tarea "),
             e.qZA()()();
         }
         if (2 & r) {
@@ -35316,7 +35316,7 @@
               (this.parentTask = null),
               (this.groupId = null),
               (this.chartStart = null),
-              (this.label = "Add Task"),
+              (this.label = "Añadir Tarea"),
               (this.focusChange = new e.vpe()),
               (this.taskInputVisible = !1),
               (this.creating = !1),
@@ -40846,7 +40846,7 @@
                 (this.teamMember = null),
                 (this.projectId = null),
                 (this.groupId = null),
-                (this.label = "Add Task"),
+                (this.label = "Añadir Tarea"),
                 (this.focusChange = new e.vpe()),
                 (this.taskInputVisible = !1),
                 (this.creating = !1),
