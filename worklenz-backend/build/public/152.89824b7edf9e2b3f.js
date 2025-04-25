@@ -34408,7 +34408,7 @@
             e.Q6J("ngModel", A.task.start_date)("nzFormat", "MMM dd,yyyy")(
               "nzSuffixIcon",
               ""
-            )("nzPlaceHolder", "Set start date")(
+            )("nzPlaceHolder", "Añadir Fecha Inicio")(
               "nzDisabledDate",
               e.lcZ(6, 8, A.task.end_date)
             );
@@ -34561,7 +34561,7 @@
             e.Q6J("ngModel", A.task.end_date)("nzFormat", "MMM dd,yyyy")(
               "nzSuffixIcon",
               ""
-            )("nzPlaceHolder", "Set due date")(
+            )("nzPlaceHolder", "Añadir Fecha Vencimiento")(
               "nzDisabledDate",
               e.lcZ(6, 12, A.task.start_date)
             );
