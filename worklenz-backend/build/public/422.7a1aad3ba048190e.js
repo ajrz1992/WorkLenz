@@ -11708,7 +11708,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 20),
-          e._uU(2, "Start Date"),
+          e._uU(2, "Fecha Inicio"),
           e.qZA(),
           e.BQk());
       }
@@ -11724,7 +11724,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 22),
-          e._uU(2, "Completed Date"),
+          e._uU(2, "Fecha Completado"),
           e.qZA(),
           e.BQk());
       }
@@ -11732,7 +11732,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 23),
-          e._uU(2, "Created Date"),
+          e._uU(2, "Fecha de creación"),
           e.qZA(),
           e.BQk());
       }
@@ -11740,7 +11740,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 24),
-          e._uU(2, "Last Updated"),
+          e._uU(2, "Ultima Actualización"),
           e.qZA(),
           e.BQk());
       }
