@@ -1046,11 +1046,11 @@
           getTaskProgressTitle(t) {
             return t.all_tasks_count
               ? t.all_tasks_count == t.completed_tasks_count
-                ? "All tasks completed."
+                ? "Todas las tareas completadas."
                 : `${t.completed_tasks_count || 0}/${
                     t.all_tasks_count || 0
-                  } tasks completed.`
-              : "No tasks available.";
+                  } tareas completadas.`
+              : "No se encontró ninguna tarea.";
           }
           toggleFavorite(t) {
             var n = this;
@@ -24534,7 +24534,7 @@
             e._UZ(3, "img", 11),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Assignees with overdue tasks"),
+            e._uU(6, "Asignados con tareas vencidas"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -24558,7 +24558,7 @@
             e._UZ(3, "img", 12),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Unassigned Members"),
+            e._uU(6, "Miembros no asignados"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -24730,7 +24730,7 @@
           e._UZ(2, "img", 12),
           e.qZA(),
           e.TgZ(3, "span", 13),
-          e._uU(4, "The project does not have any members yet."),
+          e._uU(4, "El proyecto aún no tiene miembros."),
           e.qZA()());
       }
       function Xp(r, i) {
@@ -24953,25 +24953,25 @@
             (e.TgZ(0, "div", 5)(1, "div", 6),
             e._UZ(2, "div", 7)(3, "div", 7),
             e.TgZ(4, "div", 7),
-            e._uU(5, "Name"),
+            e._uU(5, "Nombre"),
             e.qZA(),
             e.TgZ(6, "div", 7),
             e._uU(7, "Conteo Tareas"),
             e.qZA(),
             e.TgZ(8, "div", 7),
-            e._uU(9, "Contribution"),
+            e._uU(9, "Contribución"),
             e.qZA(),
             e.TgZ(10, "div", 7),
-            e._uU(11, "Completed"),
+            e._uU(11, "Completado"),
             e.qZA(),
             e.TgZ(12, "div", 7),
-            e._uU(13, "Incomplete"),
+            e._uU(13, "Incompleto"),
             e.qZA(),
             e.TgZ(14, "div", 7),
-            e._uU(15, "Overdue"),
+            e._uU(15, "Vencido"),
             e.qZA(),
             e.TgZ(16, "div", 7),
-            e._uU(17, "Progress"),
+            e._uU(17, "Progreso"),
             e.qZA()(),
             e.YNc(18, Wp, 5, 0, "div", 8),
             e.YNc(19, nf, 21, 11, "div", 9),
@@ -25234,7 +25234,7 @@
                 e.YNc(4, Af, 20, 2, "div", 4),
                 e.qZA()()()),
                 2 & t &&
-                  (e.Q6J("nzTitle", "Tasks by members"),
+                  (e.Q6J("nzTitle", "Tareas por miembros"),
                   e.xp6(3),
                   e.Q6J("ngIf", n.loading),
                   e.xp6(1),
@@ -26452,16 +26452,16 @@
                     "th",
                     9
                   ),
-                  e._uU(35, "Name"),
+                  e._uU(35, "Nombre"),
                   e.qZA(),
                   e.TgZ(36, "th", 9),
-                  e._uU(37, "Status"),
+                  e._uU(37, "Estado"),
                   e.qZA(),
                   e.TgZ(38, "th", 9),
                   e._uU(39, "Miembros"),
                   e.qZA(),
                   e.TgZ(40, "th", 9),
-                  e._uU(41, "Over Logged Time"),
+                  e._uU(41, "Tiempo registrado excedido"),
                   e.qZA()()(),
                   e.TgZ(42, "tbody"),
                   e.YNc(43, hf, 16, 9, "tr", 11),
@@ -26653,7 +26653,7 @@
             (this.cdr = t),
               (this.projectName = null),
               (this.includeArchivedTasks = "include-archived-tasks"),
-              (this.options = ["Overview", "Members", "Tasks"]),
+              (this.options = ["Resumen", "Miembros", "Tareas"]),
               (this.selectedMode = Ga.overview),
               (this.modes = Ga),
               (this.isLoading = !1),
@@ -26747,14 +26747,14 @@
                 })("ngModelChange", function (o) {
                   return n.archivedChoiceChanged(o);
                 }),
-                e._uU(5, "Include Archived Tasks"),
+                e._uU(5, "Incluir Tareas Archivadas"),
                 e.qZA()(),
                 e.TgZ(6, "button", 4),
                 e.NdJ("click", function () {
                   return n.exportPdf();
                 }),
                 e._UZ(7, "span", 5),
-                e._uU(8, "Export "),
+                e._uU(8, "Exportar "),
                 e.qZA()()(),
                 e.YNc(9, vf, 1, 1, "worklenz-project-overview", 6),
                 e.YNc(
@@ -27449,7 +27449,7 @@
         if (
           (1 & r &&
             (e.TgZ(0, "span"),
-            e._uU(1, " Project Deadline "),
+            e._uU(1, " Plazo final "),
             e.YNc(2, Ou, 2, 2, "span", 14),
             e.qZA()),
           2 & r)
@@ -27465,7 +27465,7 @@
             e._UZ(3, "img", 19),
             e.qZA()(),
             e.TgZ(4, "nz-col", 3)(5, "h5", 20),
-            e._uU(6, "Overdue tasks (hours) "),
+            e._uU(6, "Tareas vencidas (horas) "),
             e._UZ(7, "span", 21),
             e.qZA(),
             e.TgZ(8, "h2", 22),
@@ -27495,7 +27495,7 @@
             e._UZ(3, "img", 19),
             e.qZA()(),
             e.TgZ(4, "nz-col", 3)(5, "h5", 20),
-            e._uU(6, "Overdue tasks "),
+            e._uU(6, "Tareas vencidas "),
             e._UZ(7, "span", 21),
             e.qZA(),
             e.TgZ(8, "h2", 22),
@@ -27741,13 +27741,13 @@
                     "th",
                     10
                   ),
-                  e._uU(17, "Name"),
+                  e._uU(17, "Nombre"),
                   e.qZA(),
                   e.TgZ(18, "th", 10),
-                  e._uU(19, "Status"),
+                  e._uU(19, "Estado"),
                   e.qZA(),
                   e.TgZ(20, "th", 10),
-                  e._uU(21, "End Date"),
+                  e._uU(21, "Fecha Vencimiento"),
                   e.qZA()()(),
                   e.TgZ(22, "tbody"),
                   e.YNc(23, Sf, 9, 7, "tr", 11),
@@ -37698,10 +37698,10 @@
       function E_(r, i) {
         1 & r &&
           (e.TgZ(0, "p", 29),
-          e._uU(1, "Coming soon!"),
+          e._uU(1, "Vendrá Pronto!"),
           e.qZA(),
           e.TgZ(2, "p", 29),
-          e._uU(3, "Switch between list view and thumbnail view."),
+          e._uU(3, "Cambiar entre vista de lista y vista en miniatura."),
           e.qZA());
       }
       function L_(r, i) {
@@ -37722,7 +37722,7 @@
           e._UZ(1, "span", 30),
           e._uU(
             2,
-            " All attachments to tasks in this project will appear here. "
+            " Todos los archivos adjuntos a las tareas en este expediente aparecerán aquí. "
           ),
           e.qZA());
       }
@@ -38042,19 +38042,19 @@
                     return n.onQueryParamsChange(o);
                   }),
                   e.TgZ(4, "thead")(5, "tr")(6, "th", 4),
-                  e._uU(7, "Name"),
+                  e._uU(7, "Nombre"),
                   e.qZA(),
                   e.TgZ(8, "th", 4),
-                  e._uU(9, "Attached Task"),
+                  e._uU(9, "Tarea adjunta"),
                   e.qZA(),
                   e.TgZ(10, "th", 4),
-                  e._uU(11, "Size"),
+                  e._uU(11, "Tamaño"),
                   e.qZA(),
                   e.TgZ(12, "th", 4),
-                  e._uU(13, "Uploaded by"),
+                  e._uU(13, "Cargado por"),
                   e.qZA(),
                   e.TgZ(14, "th", 5),
-                  e._uU(15, "Uploaded at"),
+                  e._uU(15, "Cargado el"),
                   e.qZA()()(),
                   e.TgZ(16, "tbody"),
                   e.YNc(17, M_, 21, 13, "tr", 6),
@@ -44798,7 +44798,7 @@
                     return n.openImportTasksDrawer();
                   }),
                   e._UZ(29, "span", 17),
-                  e._uU(30, "\xa0 Import Tasks "),
+                  e._uU(30, "\xa0 Importar Tareas "),
                   e.qZA()()(),
                   e.BQk(),
                   e.qZA()(),
