@@ -11392,7 +11392,7 @@
                   e.YNc(28, P, 6, 6, "li", 21),
                   e.qZA()(),
                   e.TgZ(29, "button", 22),
-                  e._uU(30, " Labels "),
+                  e._uU(30, " Etiquetas "),
                   e._UZ(31, "nz-badge", 13)(32, "span", 14),
                   e.qZA(),
                   e.TgZ(33, "nz-dropdown-menu", null, 23)(35, "ul", 24)(
