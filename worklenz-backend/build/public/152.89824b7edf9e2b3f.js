@@ -24956,7 +24956,7 @@
             e._uU(5, "Name"),
             e.qZA(),
             e.TgZ(6, "div", 7),
-            e._uU(7, "Task Count"),
+            e._uU(7, "Conteo Tareas"),
             e.qZA(),
             e.TgZ(8, "div", 7),
             e._uU(9, "Contribution"),
@@ -25815,7 +25815,7 @@
               const n = e.oxw();
               return e.KtG(n.goToList());
             }),
-            e._uU(1, "See all"),
+            e._uU(1, "Ver Todas"),
             e.qZA();
         }
       }
@@ -26430,13 +26430,13 @@
                     "th",
                     9
                   ),
-                  e._uU(15, "Name"),
+                  e._uU(15, "Nombre"),
                   e.qZA(),
                   e.TgZ(16, "th", 9),
-                  e._uU(17, "Status"),
+                  e._uU(17, "Estado"),
                   e.qZA(),
                   e.TgZ(18, "th", 9),
-                  e._uU(19, "End Date"),
+                  e._uU(19, "Fecha Finalización"),
                   e.qZA(),
                   e.TgZ(20, "th", 10),
                   e._uU(21, "Days overdue"),
@@ -27372,16 +27372,16 @@
               if (
                 (1 & t &&
                   (e.TgZ(0, "nz-table", 0, 1)(2, "thead")(3, "tr")(4, "th", 2),
-                  e._uU(5, "Name"),
+                  e._uU(5, "Nombre"),
                   e.qZA(),
                   e.TgZ(6, "th", 2),
-                  e._uU(7, "Status"),
+                  e._uU(7, "Estado"),
                   e.qZA(),
                   e.TgZ(8, "th", 2),
-                  e._uU(9, "Due Date"),
+                  e._uU(9, "Fecha Vencimiento"),
                   e.qZA(),
                   e.TgZ(10, "th", 2),
-                  e._uU(11, "Last Updated"),
+                  e._uU(11, "Ultima Actualización"),
                   e.qZA()()(),
                   e.TgZ(12, "tbody"),
                   e.YNc(13, Ff, 11, 8, "tr", 3),
@@ -28033,13 +28033,13 @@
                   e.xp6(1),
                   e.Q6J("nzSpan", 12),
                   e.xp6(1),
-                  e.Q6J("nzTitle", "Status Overview"),
+                  e.Q6J("nzTitle", "Estado General de Tareas"),
                   e.xp6(1),
                   e.Q6J("archived", n.archived),
                   e.xp6(1),
                   e.Q6J("nzSpan", 12),
                   e.xp6(1),
-                  e.Q6J("nzTitle", "Priority Overview"),
+                  e.Q6J("nzTitle", "Resumen de prioridades"),
                   e.xp6(1),
                   e.Q6J("archived", n.archived),
                   e.xp6(1),
@@ -28047,7 +28047,10 @@
                   e.xp6(1),
                   e.Q6J("nzSpan", 12),
                   e.xp6(1),
-                  e.Q6J("nzExtra", s)("nzTitle", "Last Updated Tasks"),
+                  e.Q6J("nzExtra", s)(
+                    "nzTitle",
+                    "Tareas actualizadas recientemente"
+                  ),
                   e.xp6(1),
                   e.Q6J("archived", n.archived),
                   e.xp6(3),
@@ -41687,7 +41690,7 @@
               A.activeTab
             ),
             e.xp6(1),
-            e.Q6J("nzTitle", "Overview"),
+            e.Q6J("nzTitle", "Resumen"),
             e.xp6(1),
             e.Q6J("teamMember", A.teamMember)("projectId", A.projectId),
             e.xp6(1),
