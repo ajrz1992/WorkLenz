@@ -35626,7 +35626,7 @@
               if (
                 (1 & t &&
                   (e.TgZ(0, "div", 0)(1, "label", 1),
-                  e._uU(2, "Group by: "),
+                  e._uU(2, "Agrupar Por: "),
                   e.qZA(),
                   e.TgZ(3, "button", 2)(4, "span", 3),
                   e._uU(5),
@@ -41474,7 +41474,7 @@
         );
       })();
       function V0(r, i) {
-        1 & r && (e.TgZ(0, "label", 18), e._uU(1, "Group by: "), e.qZA());
+        1 & r && (e.TgZ(0, "label", 18), e._uU(1, "Agrupar Por: "), e.qZA());
       }
       function W0(r, i) {
         if (
