@@ -11748,7 +11748,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 24),
-          e._uU(2, "Reporter"),
+          e._uU(2, "Reportado"),
           e.qZA(),
           e.BQk());
       }
@@ -12157,7 +12157,7 @@
                 (1 & p &&
                   (e.TgZ(0, "button", 0),
                   e._UZ(1, "span", 1),
-                  e._uU(2, " Show fields\n"),
+                  e._uU(2, " Mostrar campos\n"),
                   e.qZA(),
                   e.TgZ(3, "nz-dropdown-menu", null, 2)(5, "ul", 3),
                   e.YNc(6, H, 2, 2, "li", 4),
@@ -18640,7 +18640,7 @@
         1 & l &&
           (e.TgZ(0, "div", 18),
           e._UZ(1, "span", 19),
-          e._uU(2, " Show archived "),
+          e._uU(2, " Mostrar archivados "),
           e.qZA()),
           2 & l && (e.xp6(1), e.Q6J("nzType", "loading"));
       }

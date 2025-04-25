@@ -32203,7 +32203,7 @@
               return e.KtG(h.showTaskCreateInput(s.id, o));
             }),
             e._UZ(12, "span", 25),
-            e._uU(13, " Create Task "),
+            e._uU(13, " Crear Tarea "),
             e.qZA()(),
             e.TgZ(14, "nz-dropdown-menu", null, 26)(16, "ul", 27)(17, "li", 28),
             e.NdJ("click", function () {
@@ -32212,7 +32212,7 @@
               return e.KtG(n.assignToMe());
             }),
             e._UZ(18, "span", 29),
-            e._uU(19, " Assign to me "),
+            e._uU(19, " asignarme esta tarea "),
             e.qZA(),
             e.YNc(20, l, 3, 1, "li", 30),
             e.TgZ(21, "li", 28),
@@ -43595,7 +43595,7 @@
               return e.KtG(n.openInviteMembersDrawer());
             }),
             e._UZ(1, "span", 49),
-            e._uU(2, " Invite "),
+            e._uU(2, " Invitar "),
             e.qZA();
         }
       }
@@ -43622,7 +43622,7 @@
               return e.KtG(n.openCreateTaskModal());
             }),
             e._UZ(2, "span", 51),
-            e._uU(3, " Create Task "),
+            e._uU(3, " Crear Tarea "),
             e.qZA(),
             e.YNc(4, tw, 2, 1, "button", 52),
             e.qZA();
