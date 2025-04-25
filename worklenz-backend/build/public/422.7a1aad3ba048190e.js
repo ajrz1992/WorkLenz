@@ -11378,7 +11378,7 @@
                   e.qZA()()(),
                   e.TgZ(12, "button", 11),
                   e._UZ(13, "span", 12),
-                  e._uU(14, " Sort "),
+                  e._uU(14, " Filtrar "),
                   e._UZ(15, "nz-badge", 13)(16, "span", 14),
                   e.qZA(),
                   e.TgZ(17, "nz-dropdown-menu", null, 15)(19, "ul", 16),
