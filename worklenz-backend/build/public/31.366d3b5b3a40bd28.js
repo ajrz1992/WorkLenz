@@ -732,7 +732,7 @@
           at.Q6J("ngModel", null == y.project ? null : y.project.start_date)(
             "nzFormat",
             "MMM dd,yyyy"
-          )("nzSuffixIcon", "")("nzPlaceHolder", "Set start date")(
+          )("nzSuffixIcon", "")("nzPlaceHolder", "Añadir Fecha Inicio")(
             "nzDisabledDate",
             at.lcZ(1, 5, null == y.project ? null : y.project.end_date)
           );
@@ -2007,7 +2007,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.incompleted,
-              " Incomplete Tasks "
+              " Tareas Incompletas "
             ),
             t.xp6(2),
             t.Q6J("nzType", "exclamation-circle")("nzTheme", "outline"),
@@ -2015,7 +2015,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.overdue,
-              " Overdue Tasks "
+              " Tareas Vencidas "
             ),
             t.xp6(2),
             t.Q6J("nzType", "clock-circle")("nzTheme", "outline"),
@@ -2023,7 +2023,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.total_allocated,
-              " Allocated Hours "
+              " Horas asignadas "
             ),
             t.xp6(2),
             t.Q6J("nzType", "clock-circle")("nzTheme", "outline"),
@@ -2031,7 +2031,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.total_logged,
-              " Logged Hours "
+              " Horas registradas "
             );
         }
       }
@@ -3534,7 +3534,7 @@
               const _t = t.oxw();
               return t.KtG(_t.exportMembers());
             }),
-            t._uU(12, "Members"),
+            t._uU(12, "Miembros"),
             t.qZA(),
             t.TgZ(13, "li", 10),
             t.NdJ("click", function () {
@@ -3542,7 +3542,7 @@
               const _t = t.oxw();
               return t.KtG(_t.exportTasks());
             }),
-            t._uU(14, "Tasks"),
+            t._uU(14, "Tareas"),
             t.qZA()()()()()();
         }
         if (2 & ft) {
@@ -3584,7 +3584,7 @@
           t.xp6(1),
             t.Q6J("nzType", "card"),
             t.xp6(1),
-            t.Q6J("nzTitle", "Overview"),
+            t.Q6J("nzTitle", "Resumen"),
             t.xp6(1),
             t.Q6J("projectId", mt.project.id),
             t.xp6(2),
@@ -5469,7 +5469,7 @@
                   t._uU(19, "Overdue Tasks"),
                   t.qZA(),
                   t.TgZ(20, "th", 6),
-                  t._uU(21, "Completed Tasks"),
+                  t._uU(21, "Tareas Completadas"),
                   t.qZA(),
                   t.TgZ(22, "th", 6),
                   t._uU(23, "Ongoing Tasks"),
@@ -6238,7 +6238,7 @@
           t.xp6(1),
             t.Q6J("nzType", "card"),
             t.xp6(1),
-            t.Q6J("nzTitle", "Overview"),
+            t.Q6J("nzTitle", "Resumen"),
             t.xp6(1),
             t.Q6J("teamId", rt.team.id),
             t.xp6(1),
