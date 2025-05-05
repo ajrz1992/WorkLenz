@@ -407,7 +407,7 @@
         return ["/worklenz/admin-center"];
       };
       function ne(c, U) {
-        1 & c && (e.TgZ(0, "li", 70), e._uU(1, "Admin Center"), e.qZA()),
+        1 & c && (e.TgZ(0, "li", 70), e._uU(1, "Administración"), e.qZA()),
           2 & c && e.Q6J("routerLink", e.DdM(1, ee));
       }
       const ie = function () {
