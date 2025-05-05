@@ -417,7 +417,7 @@
         if (1 & c) {
           const z = e.EpF();
           e.TgZ(0, "div", 56)(1, "div", 57)(2, "h2", 58),
-            e._uU(3, "Account"),
+            e._uU(3, "Mi Cuenta"),
             e.qZA()(),
             e.TgZ(4, "div", 59)(5, "div", 60)(6, "div", 61),
             e._UZ(7, "nz-avatar", 62),
@@ -442,7 +442,7 @@
               const _ = e.oxw(2);
               return e.KtG(_.signOut());
             }),
-            e._uU(21, "Log Out"),
+            e._uU(21, "Cerrar Sesión"),
             e.qZA()()()();
         }
         if (2 & c) {
