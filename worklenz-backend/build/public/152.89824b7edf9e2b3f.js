@@ -1046,11 +1046,11 @@
           getTaskProgressTitle(t) {
             return t.all_tasks_count
               ? t.all_tasks_count == t.completed_tasks_count
-                ? "All tasks completed."
+                ? "Todas las tareas completadas."
                 : `${t.completed_tasks_count || 0}/${
                     t.all_tasks_count || 0
-                  } tasks completed.`
-              : "No tasks available.";
+                  } tareas completadas.`
+              : "No se encontró ninguna tarea.";
           }
           toggleFavorite(t) {
             var n = this;
@@ -24510,7 +24510,7 @@
             e._UZ(3, "img", 8),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Project Members"),
+            e._uU(6, "Miembros"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -24534,7 +24534,7 @@
             e._UZ(3, "img", 11),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Assignees with overdue tasks"),
+            e._uU(6, "Asignados con tareas vencidas"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -24558,7 +24558,7 @@
             e._UZ(3, "img", 12),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Unassigned Members"),
+            e._uU(6, "Miembros no asignados"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -24730,7 +24730,7 @@
           e._UZ(2, "img", 12),
           e.qZA(),
           e.TgZ(3, "span", 13),
-          e._uU(4, "The project does not have any members yet."),
+          e._uU(4, "El proyecto aún no tiene miembros."),
           e.qZA()());
       }
       function Xp(r, i) {
@@ -24868,7 +24868,7 @@
             e._uU(12, "Days Overdue"),
             e.qZA(),
             e.TgZ(13, "div", 29),
-            e._uU(14, "Completed Date"),
+            e._uU(14, "Fecha Finalizado"),
             e.qZA(),
             e.TgZ(15, "div", 29),
             e._uU(16, "Total Allocation"),
@@ -24953,25 +24953,25 @@
             (e.TgZ(0, "div", 5)(1, "div", 6),
             e._UZ(2, "div", 7)(3, "div", 7),
             e.TgZ(4, "div", 7),
-            e._uU(5, "Name"),
+            e._uU(5, "Nombre"),
             e.qZA(),
             e.TgZ(6, "div", 7),
-            e._uU(7, "Task Count"),
+            e._uU(7, "Conteo Tareas"),
             e.qZA(),
             e.TgZ(8, "div", 7),
-            e._uU(9, "Contribution"),
+            e._uU(9, "Contribución"),
             e.qZA(),
             e.TgZ(10, "div", 7),
-            e._uU(11, "Completed"),
+            e._uU(11, "Completado"),
             e.qZA(),
             e.TgZ(12, "div", 7),
-            e._uU(13, "Incomplete"),
+            e._uU(13, "Incompleto"),
             e.qZA(),
             e.TgZ(14, "div", 7),
-            e._uU(15, "Overdue"),
+            e._uU(15, "Vencido"),
             e.qZA(),
             e.TgZ(16, "div", 7),
-            e._uU(17, "Progress"),
+            e._uU(17, "Progreso"),
             e.qZA()(),
             e.YNc(18, Wp, 5, 0, "div", 8),
             e.YNc(19, nf, 21, 11, "div", 9),
@@ -25234,7 +25234,7 @@
                 e.YNc(4, Af, 20, 2, "div", 4),
                 e.qZA()()()),
                 2 & t &&
-                  (e.Q6J("nzTitle", "Tasks by members"),
+                  (e.Q6J("nzTitle", "Tareas por miembros"),
                   e.xp6(3),
                   e.Q6J("ngIf", n.loading),
                   e.xp6(1),
@@ -25383,7 +25383,7 @@
             e._UZ(3, "img", 8),
             e.qZA()(),
             e.TgZ(4, "nz-col", 1)(5, "h5", 9),
-            e._uU(6, "Completed tasks"),
+            e._uU(6, "Tareas Completadas"),
             e.qZA(),
             e.TgZ(7, "h2", 10),
             e._uU(8),
@@ -25815,7 +25815,7 @@
               const n = e.oxw();
               return e.KtG(n.goToList());
             }),
-            e._uU(1, "See all"),
+            e._uU(1, "Ver Todas"),
             e.qZA();
         }
       }
@@ -26389,7 +26389,7 @@
                 "type",
                 "text",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "nz-input",
                 "",
                 3,
@@ -26430,13 +26430,13 @@
                     "th",
                     9
                   ),
-                  e._uU(15, "Name"),
+                  e._uU(15, "Nombre"),
                   e.qZA(),
                   e.TgZ(16, "th", 9),
-                  e._uU(17, "Status"),
+                  e._uU(17, "Estado"),
                   e.qZA(),
                   e.TgZ(18, "th", 9),
-                  e._uU(19, "End Date"),
+                  e._uU(19, "Fecha Finalización"),
                   e.qZA(),
                   e.TgZ(20, "th", 10),
                   e._uU(21, "Days overdue"),
@@ -26452,16 +26452,16 @@
                     "th",
                     9
                   ),
-                  e._uU(35, "Name"),
+                  e._uU(35, "Nombre"),
                   e.qZA(),
                   e.TgZ(36, "th", 9),
-                  e._uU(37, "Status"),
+                  e._uU(37, "Estado"),
                   e.qZA(),
                   e.TgZ(38, "th", 9),
-                  e._uU(39, "Members"),
+                  e._uU(39, "Miembros"),
                   e.qZA(),
                   e.TgZ(40, "th", 9),
-                  e._uU(41, "Over Logged Time"),
+                  e._uU(41, "Tiempo registrado excedido"),
                   e.qZA()()(),
                   e.TgZ(42, "tbody"),
                   e.YNc(43, hf, 16, 9, "tr", 11),
@@ -26653,7 +26653,7 @@
             (this.cdr = t),
               (this.projectName = null),
               (this.includeArchivedTasks = "include-archived-tasks"),
-              (this.options = ["Overview", "Members", "Tasks"]),
+              (this.options = ["Resumen", "Miembros", "Tareas"]),
               (this.selectedMode = Ga.overview),
               (this.modes = Ga),
               (this.isLoading = !1),
@@ -26747,14 +26747,14 @@
                 })("ngModelChange", function (o) {
                   return n.archivedChoiceChanged(o);
                 }),
-                e._uU(5, "Include Archived Tasks"),
+                e._uU(5, "Incluir Tareas Archivadas"),
                 e.qZA()(),
                 e.TgZ(6, "button", 4),
                 e.NdJ("click", function () {
                   return n.exportPdf();
                 }),
                 e._UZ(7, "span", 5),
-                e._uU(8, "Export "),
+                e._uU(8, "Exportar "),
                 e.qZA()()(),
                 e.YNc(9, vf, 1, 1, "worklenz-project-overview", 6),
                 e.YNc(
@@ -27107,7 +27107,7 @@
                   x: {
                     title: {
                       display: !0,
-                      text: "Priority",
+                      text: "Prioridad",
                       align: "end",
                       font: { family: "Helvetica" },
                     },
@@ -27372,16 +27372,16 @@
               if (
                 (1 & t &&
                   (e.TgZ(0, "nz-table", 0, 1)(2, "thead")(3, "tr")(4, "th", 2),
-                  e._uU(5, "Name"),
+                  e._uU(5, "Nombre"),
                   e.qZA(),
                   e.TgZ(6, "th", 2),
-                  e._uU(7, "Status"),
+                  e._uU(7, "Estado"),
                   e.qZA(),
                   e.TgZ(8, "th", 2),
-                  e._uU(9, "Due Date"),
+                  e._uU(9, "Fecha Vencimiento"),
                   e.qZA(),
                   e.TgZ(10, "th", 2),
-                  e._uU(11, "Last Updated"),
+                  e._uU(11, "Ultima Actualización"),
                   e.qZA()()(),
                   e.TgZ(12, "tbody"),
                   e.YNc(13, Ff, 11, 8, "tr", 3),
@@ -27449,7 +27449,7 @@
         if (
           (1 & r &&
             (e.TgZ(0, "span"),
-            e._uU(1, " Project Deadline "),
+            e._uU(1, " Plazo final "),
             e.YNc(2, Ou, 2, 2, "span", 14),
             e.qZA()),
           2 & r)
@@ -27465,7 +27465,7 @@
             e._UZ(3, "img", 19),
             e.qZA()(),
             e.TgZ(4, "nz-col", 3)(5, "h5", 20),
-            e._uU(6, "Overdue tasks (hours) "),
+            e._uU(6, "Tareas vencidas (horas) "),
             e._UZ(7, "span", 21),
             e.qZA(),
             e.TgZ(8, "h2", 22),
@@ -27495,7 +27495,7 @@
             e._UZ(3, "img", 19),
             e.qZA()(),
             e.TgZ(4, "nz-col", 3)(5, "h5", 20),
-            e._uU(6, "Overdue tasks "),
+            e._uU(6, "Tareas vencidas "),
             e._UZ(7, "span", 21),
             e.qZA(),
             e.TgZ(8, "h2", 22),
@@ -27741,13 +27741,13 @@
                     "th",
                     10
                   ),
-                  e._uU(17, "Name"),
+                  e._uU(17, "Nombre"),
                   e.qZA(),
                   e.TgZ(18, "th", 10),
-                  e._uU(19, "Status"),
+                  e._uU(19, "Estado"),
                   e.qZA(),
                   e.TgZ(20, "th", 10),
-                  e._uU(21, "End Date"),
+                  e._uU(21, "Fecha Vencimiento"),
                   e.qZA()()(),
                   e.TgZ(22, "tbody"),
                   e.YNc(23, Sf, 9, 7, "tr", 11),
@@ -27881,14 +27881,14 @@
                 n.done &&
                   ((t.categories = n.body),
                   (t.toDoColorCode =
-                    t.categories.find((s) => "To do" === s.name)?.color_code ||
-                    ""),
+                    t.categories.find((s) => "Pendientes" === s.name)
+                      ?.color_code || ""),
                   (t.pendingColorCode =
-                    t.categories.find((s) => "Doing" === s.name)?.color_code ||
-                    ""),
+                    t.categories.find((s) => "En Proceso" === s.name)
+                      ?.color_code || ""),
                   (t.completedColorCode =
-                    t.categories.find((s) => "Done" === s.name)?.color_code ||
-                    "")),
+                    t.categories.find((s) => "Finalizadas" === s.name)
+                      ?.color_code || "")),
                   (t.loadingCategories = !1),
                   t.cdr.markForCheck();
               } catch (n) {
@@ -28033,13 +28033,13 @@
                   e.xp6(1),
                   e.Q6J("nzSpan", 12),
                   e.xp6(1),
-                  e.Q6J("nzTitle", "Status Overview"),
+                  e.Q6J("nzTitle", "Estado General de Tareas"),
                   e.xp6(1),
                   e.Q6J("archived", n.archived),
                   e.xp6(1),
                   e.Q6J("nzSpan", 12),
                   e.xp6(1),
-                  e.Q6J("nzTitle", "Priority Overview"),
+                  e.Q6J("nzTitle", "Resumen de prioridades"),
                   e.xp6(1),
                   e.Q6J("archived", n.archived),
                   e.xp6(1),
@@ -28047,7 +28047,10 @@
                   e.xp6(1),
                   e.Q6J("nzSpan", 12),
                   e.xp6(1),
-                  e.Q6J("nzExtra", s)("nzTitle", "Last Updated Tasks"),
+                  e.Q6J("nzExtra", s)(
+                    "nzTitle",
+                    "Tareas actualizadas recientemente"
+                  ),
                   e.xp6(1),
                   e.Q6J("archived", n.archived),
                   e.xp6(3),
@@ -28107,7 +28110,7 @@
               const s = e.oxw(2);
               return e.KtG((s.tPhaseCheck = n));
             }),
-            e._uU(2, "Phase"),
+            e._uU(2, "Fase"),
             e.qZA(),
             e.BQk();
         }
@@ -28126,7 +28129,7 @@
               const s = e.oxw(2);
               return e.KtG((s.tLabelsCheck = n));
             }),
-            e._uU(2, "Labels"),
+            e._uU(2, "Etiquetas"),
             e.qZA(),
             e.BQk();
         }
@@ -28195,7 +28198,7 @@
               const s = e.oxw();
               return e.KtG(s.projectCheckChange("pLabels", n));
             }),
-            e._uU(20, "Labels"),
+            e._uU(20, "Etiquetas"),
             e.qZA()()()(),
             e.TgZ(21, "div")(22, "span", 9),
             e._uU(23, "What should be included in tasks ?"),
@@ -28214,7 +28217,7 @@
               const s = e.oxw();
               return e.KtG((s.checked = n));
             }),
-            e._uU(30, "Priority"),
+            e._uU(30, "Prioridad"),
             e.qZA()(),
             e.TgZ(31, "div", 15),
             e.YNc(32, Of, 3, 3, "ng-container", 16),
@@ -28526,7 +28529,7 @@
                 const s = e.MAs(3);
                 e.Q6J("nzClosable", !0)("nzVisible", n.show)("nzWidth", 420)(
                   "nzTitle",
-                  "Save as template"
+                  "Guardar como Plantilla"
                 )("nzFooter", s);
               }
             },
@@ -28689,8 +28692,8 @@
               (this.refresh = new e.vpe()),
               (this.membersChange = new e.vpe()),
               (this.members = []),
-              (this.placeholder = "Select Members"),
-              (this.label = "Members"),
+              (this.placeholder = "Seleccionar Miembros"),
+              (this.label = "Miembros"),
               (this.multiple = !1),
               (this.disabled = !1),
               (this.autofocus = !1),
@@ -29102,9 +29105,9 @@
             e.xp6(1),
             e.Q6J("nzLayout", "vertical"),
             e.xp6(1),
-            e.Q6J("label", "Add members by adding their name or email")(
+            e.Q6J("label", "Añade miembros por su nombre o correo electrónico")(
               "placeholder",
-              "Type name or email..."
+              "Escribe un nombre o correo..."
             )("autofocus", A.autofocus)(
               "disableTeamInvites",
               A.adminAndManager()
@@ -29344,7 +29347,7 @@
                   e.Q6J("nzVisible", n.show)("nzClosable", !0)(
                     "nzPlacement",
                     "right"
-                  )("nzTitle", "Project Members");
+                  )("nzTitle", "Miembros");
             },
             dependencies: [
               QA.j,
@@ -29697,7 +29700,7 @@
                 e.Q6J("nzBodyStyle", e.DdM(5, jf))("nzWidth", 650)(
                   "nzVisible",
                   n.drawerVisible
-                )("nzTitle", "Import tasks")("nzFooter", s);
+                )("nzTitle", "Importar Tareas")("nzFooter", s);
               }
             },
             dependencies: [
@@ -31061,7 +31064,7 @@
                   "type",
                   "text",
                   "placeholder",
-                  "Search by name",
+                  "Buscar por Nombre",
                   "nz-input",
                   "",
                   3,
@@ -31609,7 +31612,7 @@
                 "type",
                 "text",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "nz-input",
                 "",
                 3,
@@ -31908,7 +31911,7 @@
         }
       }
       function gg(r, i) {
-        1 & r && (e._UZ(0, "span", 48), e._uU(1, " Change category "));
+        1 & r && (e._UZ(0, "span", 48), e._uU(1, " Cambiar Categoría "));
       }
       function mg(r, i) {
         1 & r && e._UZ(0, "span", 52);
@@ -31963,7 +31966,7 @@
               return s.onBoardSettingsClick("Rename"), e.KtG(s.editColumn(n));
             }),
             e._UZ(7, "span", 35),
-            e._uU(8, " Rename "),
+            e._uU(8, " Renombrar "),
             e.qZA(),
             e.TgZ(9, "li", 36)(10, "ul"),
             e.YNc(11, fg, 6, 8, "li", 37),
@@ -31976,7 +31979,7 @@
               return s.deleteStatus(n), e.KtG(s.onBoardSettingsClick("Delete"));
             }),
             e._UZ(13, "span", 39),
-            e._uU(14, " Delete "),
+            e._uU(14, " Eliminar "),
             e.qZA()()(),
             e.YNc(15, gg, 2, 0, "ng-template", null, 40, e.W1O),
             e.YNc(17, _g, 3, 6, "span", 41),
@@ -32119,7 +32122,7 @@
                 s = e.oxw();
               return e.KtG(s.onCreateButtonClicked(n.id));
             }),
-            e._uU(20, "Add task "),
+            e._uU(20, "Añadir tarea "),
             e.qZA()()();
         }
         if (2 & r) {
@@ -32203,7 +32206,7 @@
               return e.KtG(h.showTaskCreateInput(s.id, o));
             }),
             e._UZ(12, "span", 25),
-            e._uU(13, " Create Task "),
+            e._uU(13, " Crear Tarea "),
             e.qZA()(),
             e.TgZ(14, "nz-dropdown-menu", null, 26)(16, "ul", 27)(17, "li", 28),
             e.NdJ("click", function () {
@@ -32212,7 +32215,7 @@
               return e.KtG(n.assignToMe());
             }),
             e._UZ(18, "span", 29),
-            e._uU(19, " Assign to me "),
+            e._uU(19, " asignarme esta tarea "),
             e.qZA(),
             e.YNc(20, l, 3, 1, "li", 30),
             e.TgZ(21, "li", 28),
@@ -34408,7 +34411,7 @@
             e.Q6J("ngModel", A.task.start_date)("nzFormat", "MMM dd,yyyy")(
               "nzSuffixIcon",
               ""
-            )("nzPlaceHolder", "Set start date")(
+            )("nzPlaceHolder", "Añadir Fecha Inicio")(
               "nzDisabledDate",
               e.lcZ(6, 8, A.task.end_date)
             );
@@ -34561,7 +34564,7 @@
             e.Q6J("ngModel", A.task.end_date)("nzFormat", "MMM dd,yyyy")(
               "nzSuffixIcon",
               ""
-            )("nzPlaceHolder", "Set due date")(
+            )("nzPlaceHolder", "Añadir Fecha Vencimiento")(
               "nzDisabledDate",
               e.lcZ(6, 12, A.task.start_date)
             );
@@ -35316,7 +35319,7 @@
               (this.parentTask = null),
               (this.groupId = null),
               (this.chartStart = null),
-              (this.label = "Add Task"),
+              (this.label = "Añadir Tarea"),
               (this.focusChange = new e.vpe()),
               (this.taskInputVisible = !1),
               (this.creating = !1),
@@ -35626,7 +35629,7 @@
               if (
                 (1 & t &&
                   (e.TgZ(0, "div", 0)(1, "label", 1),
-                  e._uU(2, "Group by: "),
+                  e._uU(2, "Agrupar Por: "),
                   e.qZA(),
                   e.TgZ(3, "button", 2)(4, "span", 3),
                   e._uU(5),
@@ -35872,7 +35875,7 @@
       function Y1(r, i) {
         1 & r &&
           (e.TgZ(0, "div", 35)(1, "span", 36),
-          e._uU(2, "No tasks available"),
+          e._uU(2, "No se encontraron tareas"),
           e.qZA()());
       }
       function q1(r, i) {
@@ -37695,10 +37698,10 @@
       function E_(r, i) {
         1 & r &&
           (e.TgZ(0, "p", 29),
-          e._uU(1, "Coming soon!"),
+          e._uU(1, "Vendrá Pronto!"),
           e.qZA(),
           e.TgZ(2, "p", 29),
-          e._uU(3, "Switch between list view and thumbnail view."),
+          e._uU(3, "Cambiar entre vista de lista y vista en miniatura."),
           e.qZA());
       }
       function L_(r, i) {
@@ -37719,7 +37722,7 @@
           e._UZ(1, "span", 30),
           e._uU(
             2,
-            " All attachments to tasks in this project will appear here. "
+            " Todos los archivos adjuntos a las tareas en este expediente aparecerán aquí. "
           ),
           e.qZA());
       }
@@ -38039,19 +38042,19 @@
                     return n.onQueryParamsChange(o);
                   }),
                   e.TgZ(4, "thead")(5, "tr")(6, "th", 4),
-                  e._uU(7, "Name"),
+                  e._uU(7, "Nombre"),
                   e.qZA(),
                   e.TgZ(8, "th", 4),
-                  e._uU(9, "Attached Task"),
+                  e._uU(9, "Tarea adjunta"),
                   e.qZA(),
                   e.TgZ(10, "th", 4),
-                  e._uU(11, "Size"),
+                  e._uU(11, "Tamaño"),
                   e.qZA(),
                   e.TgZ(12, "th", 4),
-                  e._uU(13, "Uploaded by"),
+                  e._uU(13, "Cargado por"),
                   e.qZA(),
                   e.TgZ(14, "th", 5),
-                  e._uU(15, "Uploaded at"),
+                  e._uU(15, "Cargado el"),
                   e.qZA()()(),
                   e.TgZ(16, "tbody"),
                   e.YNc(17, M_, 21, 13, "tr", 6),
@@ -38193,7 +38196,7 @@
               return e.oxw().applyUpdates(), e.KtG(s.close());
             }),
             e.TgZ(8, "span"),
-            e._uU(9, "Refresh Project"),
+            e._uU(9, "Actualizar tareas"),
             e.qZA()()()()();
         }
         if (2 & r) {
@@ -38796,9 +38799,9 @@
                 (this.GROUP_BY_PRIORITY_VALUE = "priority"),
                 (this.GROUP_BY_PHASE_VALUE = "phase"),
                 (this.GROUP_BY_OPTIONS = [
-                  { label: "Status", value: this.GROUP_BY_STATUS_VALUE },
-                  { label: "Priority", value: this.GROUP_BY_PRIORITY_VALUE },
-                  { label: "Phase", value: this.GROUP_BY_PHASE_VALUE },
+                  { label: "Estado", value: this.GROUP_BY_STATUS_VALUE },
+                  { label: "Prioridad", value: this.GROUP_BY_PRIORITY_VALUE },
+                  { label: "Fase", value: this.GROUP_BY_PHASE_VALUE },
                 ]),
                 (this.groups = []),
                 (this._members = []),
@@ -40846,7 +40849,7 @@
                 (this.teamMember = null),
                 (this.projectId = null),
                 (this.groupId = null),
-                (this.label = "Add Task"),
+                (this.label = "Añadir Tarea"),
                 (this.focusChange = new e.vpe()),
                 (this.taskInputVisible = !1),
                 (this.creating = !1),
@@ -41170,16 +41173,16 @@
                   }),
                   e.qZA()(),
                   e.TgZ(2, "div", 2),
-                  e._uU(3, "Task"),
+                  e._uU(3, "Tarea"),
                   e.qZA(),
                   e.ynx(4),
                   e.TgZ(5, "div", 3),
-                  e._uU(6, "Status"),
+                  e._uU(6, "Estado"),
                   e.qZA(),
                   e.BQk(),
                   e.ynx(7),
                   e.TgZ(8, "div", 4),
-                  e._uU(9, "Priority"),
+                  e._uU(9, "Prioridad"),
                   e.qZA(),
                   e.BQk(),
                   e.ynx(10),
@@ -41190,12 +41193,12 @@
                   e.BQk(),
                   e.ynx(15),
                   e.TgZ(16, "div", 7),
-                  e._uU(17, "Start Date"),
+                  e._uU(17, "Fecha Inicio"),
                   e.qZA(),
                   e.BQk(),
                   e.ynx(18),
                   e.TgZ(19, "div", 8),
-                  e._uU(20, "Due Date"),
+                  e._uU(20, "Fecha Vencimiento"),
                   e.qZA(),
                   e.BQk()),
                   2 & t &&
@@ -41474,7 +41477,7 @@
         );
       })();
       function V0(r, i) {
-        1 & r && (e.TgZ(0, "label", 18), e._uU(1, "Group by: "), e.qZA());
+        1 & r && (e.TgZ(0, "label", 18), e._uU(1, "Agrupar Por: "), e.qZA());
       }
       function W0(r, i) {
         if (
@@ -41687,7 +41690,7 @@
               A.activeTab
             ),
             e.xp6(1),
-            e.Q6J("nzTitle", "Overview"),
+            e.Q6J("nzTitle", "Resumen"),
             e.xp6(1),
             e.Q6J("teamMember", A.teamMember)("projectId", A.projectId),
             e.xp6(1),
@@ -43517,7 +43520,7 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J("nzTooltipTitle", "Refresh project"),
+          e.Q6J("nzTooltipTitle", "Actualizar Tareas"),
             e.xp6(1),
             e.Q6J("nzSpin", A.refreshing)("nzTheme", "outline");
         }
@@ -43535,7 +43538,7 @@
             e.qZA();
         }
         2 & r &&
-          (e.Q6J("nzTooltipTitle", "Save as template"),
+          (e.Q6J("nzTooltipTitle", "Guardar como Plantilla"),
           e.xp6(1),
           e.Q6J("nzTheme", "outline"));
       }
@@ -43554,7 +43557,7 @@
             e._UZ(1, "span", 44),
             e.qZA();
         }
-        2 & r && e.Q6J("nzTooltipTitle", "Project settings");
+        2 & r && e.Q6J("nzTooltipTitle", "Ajustes");
       }
       function X2(r, i) {
         if (1 & r) {
@@ -43571,14 +43574,18 @@
         }
         if (2 & r) {
           const A = e.oxw();
-          e.Q6J("nzTooltipTitle", "Receive a project summary every evening.")(
-            "nzShape",
-            "round"
-          )("nzType", "default"),
+          e.Q6J(
+            "nzTooltipTitle",
+            "Recibir un resumen del expediente cada noche."
+          )("nzShape", "round")("nzType", "default"),
             e.xp6(1),
             e.Q6J("nzTheme", A.project.subscribed ? "fill" : "outline"),
             e.xp6(1),
-            e.hij(" ", A.project.subscribed ? "Unsubscribe" : "Subscribe", " ");
+            e.hij(
+              " ",
+              A.project.subscribed ? "Desinscribirse" : "Suscribirse",
+              " "
+            );
         }
       }
       function $2(r, i) {
@@ -43591,7 +43598,7 @@
               return e.KtG(n.openInviteMembersDrawer());
             }),
             e._UZ(1, "span", 49),
-            e._uU(2, " Invite "),
+            e._uU(2, " Invitar "),
             e.qZA();
         }
       }
@@ -43618,7 +43625,7 @@
               return e.KtG(n.openCreateTaskModal());
             }),
             e._UZ(2, "span", 51),
-            e._uU(3, " Create Task "),
+            e._uU(3, " Crear Tarea "),
             e.qZA(),
             e.YNc(4, tw, 2, 1, "button", 52),
             e.qZA();
@@ -43702,7 +43709,7 @@
         if (
           (1 & r &&
             (e.TgZ(0, "a", 64),
-            e._uU(1, "Updates "),
+            e._uU(1, "Actualizaciones "),
             e.YNc(2, cw, 1, 0, "span", 65),
             e.qZA()),
           2 & r)
@@ -43892,32 +43899,37 @@
                 ]),
                 (this.tabs = [
                   {
-                    label: "Task List",
+                    label: "Tareas",
                     tab: "tasks-list",
                     index: 0,
                     isPinned: !1,
                   },
-                  { label: "Board", tab: "board", index: 1, isPinned: !1 },
+                  { label: "Tablero", tab: "board", index: 1, isPinned: !1 },
                   {
-                    label: "Workload",
+                    label: "Carga de Trabajo",
                     tab: "workload",
                     index: 2,
                     isPinned: !1,
                   },
-                  { label: "Roadmap", tab: "roadmap", index: 3, isPinned: !1 },
                   {
-                    label: "Insights",
+                    label: "Cronograma",
+                    tab: "roadmap",
+                    index: 3,
+                    isPinned: !1,
+                  },
+                  {
+                    label: "Indicadores",
                     tab: "project-insights-member-overview",
                     index: 4,
                     isPinned: !1,
                   },
                   {
-                    label: "Files",
+                    label: "Archivos",
                     tab: "all-attachments",
                     index: 5,
                     isPinned: !1,
                   },
-                  { label: "Members", tab: "members", index: 6, isPinned: !1 },
+                  { label: "Abogados", tab: "members", index: 6, isPinned: !1 },
                 ]),
                 (this.projects = []),
                 (this.project = {}),
@@ -44786,7 +44798,7 @@
                     return n.openImportTasksDrawer();
                   }),
                   e._UZ(29, "span", 17),
-                  e._uU(30, "\xa0 Import Tasks "),
+                  e._uU(30, "\xa0 Importar Tareas "),
                   e.qZA()()(),
                   e.BQk(),
                   e.qZA()(),
@@ -47617,7 +47629,7 @@
               const n = e.oxw();
               return e.KtG(n.showModal());
             }),
-            e._uU(7, "Create Task"),
+            e._uU(7, "Crear Tarea"),
             e.qZA()(),
             e.TgZ(8, "div", 8)(9, "div", 4),
             e.YNc(10, Mv, 1, 0, "nz-empty", 0),
@@ -47878,13 +47890,11 @@
           scrollToDate(t) {
             return (0, ce.Z)(function* () {
               setTimeout(() => {
-                document
-                  .getElementById(`date_${t}`)
-                  ?.scrollIntoView({
-                    behavior: "auto",
-                    block: "center",
-                    inline: "center",
-                  });
+                document.getElementById(`date_${t}`)?.scrollIntoView({
+                  behavior: "auto",
+                  block: "center",
+                  inline: "center",
+                });
               }, 0);
             })();
           }

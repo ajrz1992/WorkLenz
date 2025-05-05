@@ -4083,7 +4083,7 @@
               (this.teamMember = null),
               (this.projectId = null),
               (this.groupId = null),
-              (this.label = "Add Task"),
+              (this.label = "Añadir Tarea"),
               (this.focusChange = new e.vpe()),
               (this.taskInputVisible = !1),
               (this.creating = !1),
@@ -4553,7 +4553,7 @@
         );
       })();
       function bn(o, r) {
-        1 & o && (e.TgZ(0, "label", 14), e._uU(1, "Group by: "), e.qZA());
+        1 & o && (e.TgZ(0, "label", 14), e._uU(1, "Agrupar Por: "), e.qZA());
       }
       function Mn(o, r) {
         if (

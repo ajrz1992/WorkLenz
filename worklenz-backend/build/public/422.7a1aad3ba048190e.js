@@ -1024,11 +1024,11 @@
             n.xp6(1),
             n.Q6J("ngSwitch", Q.name),
             n.xp6(1),
-            n.Q6J("ngSwitchCase", "Low"),
+            n.Q6J("ngSwitchCase", "Baja"),
             n.xp6(1),
-            n.Q6J("ngSwitchCase", "Medium"),
+            n.Q6J("ngSwitchCase", "Media"),
             n.xp6(1),
-            n.Q6J("ngSwitchCase", "High");
+            n.Q6J("ngSwitchCase", "Alta");
         }
       }
       let k = (() => {
@@ -2131,7 +2131,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "type",
                 "text",
                 1,
@@ -2678,7 +2678,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Priority"),
+            t._uU(2, "Prioridad"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 2)(4, "nz-select", 3),
             t.NdJ("ngModelChange", function (O) {
@@ -2899,7 +2899,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Labels"),
+            t._uU(2, "Etiquetas"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 2)(4, "span", 3),
             t.NdJ("nzVisibleChange", function (O) {
@@ -5727,7 +5727,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "type",
                 "text",
                 1,
@@ -9288,11 +9288,11 @@
         ) {
           const a0 = n.oxw(2);
           n.xp6(2),
-            n.hij("Done: ", n.lcZ(3, 3, a0.done), ""),
+            n.hij("Finalizadas: ", n.lcZ(3, 3, a0.done), ""),
             n.xp6(3),
-            n.hij("Doing: ", n.lcZ(6, 5, a0.doing), ""),
+            n.hij("En Proceso: ", n.lcZ(6, 5, a0.doing), ""),
             n.xp6(3),
-            n.hij("Todo: ", n.lcZ(9, 7, a0.todo), "");
+            n.hij("Pendientes: ", n.lcZ(9, 7, a0.todo), "");
         }
       }
       function x(Q, f0) {
@@ -9364,10 +9364,10 @@
               ["class", "position-relative doing", 3, "width", 4, "ngIf"],
               ["class", "position-relative todo", 3, "width", 4, "ngIf"],
               ["titleTemplate", ""],
-              [1, "position-relative", "done"],
+              [1, "position-relative", "Finalizadas"],
               ["nz-typography", ""],
-              [1, "position-relative", "doing"],
-              [1, "position-relative", "todo"],
+              [1, "position-relative", "En Proceso"],
+              [1, "position-relative", "Pendientes"],
               [1, "text-white"],
             ],
             template: function (I, t0) {
@@ -9695,9 +9695,9 @@
               (this.GROUP_BY_PRIORITY_VALUE = "priority"),
               (this.GROUP_BY_PHASE_VALUE = "phase"),
               (this.GROUP_BY_OPTIONS = [
-                { label: "Status", value: this.GROUP_BY_STATUS_VALUE },
-                { label: "Priority", value: this.GROUP_BY_PRIORITY_VALUE },
-                { label: "Phase", value: this.GROUP_BY_PHASE_VALUE },
+                { label: "Estado", value: this.GROUP_BY_STATUS_VALUE },
+                { label: "Prioridad", value: this.GROUP_BY_PRIORITY_VALUE },
+                { label: "Fase", value: this.GROUP_BY_PHASE_VALUE },
               ]),
               (this.groups = []),
               (this._projectId = null),
@@ -10161,7 +10161,7 @@
               (this.projectId = null),
               (this.parentTask = null),
               (this.groupId = null),
-              (this.label = "Add Task"),
+              (this.label = "Añadir Tarea"),
               (this.focusChange = new t.vpe()),
               (this.taskInputVisible = !1),
               (this.creating = !1),
@@ -10832,27 +10832,35 @@
               (this.selectedMembersCount = 0),
               (this.statuses = []),
               (this.sortableColumns = [
-                { label: "Task", key: "name", sort_order: this.ASCEND },
-                { label: "Status", key: "status", sort_order: this.ASCEND },
-                { label: "Priority", key: "priority", sort_order: this.ASCEND },
+                { label: "Tarea", key: "name", sort_order: this.ASCEND },
+                { label: "Estado", key: "status", sort_order: this.ASCEND },
                 {
-                  label: "Start Date",
+                  label: "Prioridad",
+                  key: "priority",
+                  sort_order: this.ASCEND,
+                },
+                {
+                  label: "Fecha Inicio",
                   key: "start_date",
                   sort_order: this.ASCEND,
                 },
-                { label: "End Date", key: "end_date", sort_order: this.ASCEND },
                 {
-                  label: "Completed Date",
+                  label: "Fecha Cierre",
+                  key: "end_date",
+                  sort_order: this.ASCEND,
+                },
+                {
+                  label: "Fecha Completado",
                   key: "completed_at",
                   sort_order: this.ASCEND,
                 },
                 {
-                  label: "Created Data",
+                  label: "Fecha Creación",
                   key: "created_at",
                   sort_order: this.ASCEND,
                 },
                 {
-                  label: "Last Updated",
+                  label: "Ultima Actualización",
                   key: "updated_at",
                   sort_order: this.ASCEND,
                 },
@@ -11086,7 +11094,7 @@
                 "id",
                 "task-search-input",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 3,
                 "ngModel",
                 "ngModelChange",
@@ -11216,7 +11224,7 @@
                 "name",
                 "label",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "nz-input",
                 "",
                 3,
@@ -11231,7 +11239,7 @@
                 "name",
                 "member",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "nz-input",
                 "",
                 3,
@@ -11370,21 +11378,21 @@
                   e.qZA()()(),
                   e.TgZ(12, "button", 11),
                   e._UZ(13, "span", 12),
-                  e._uU(14, " Sort "),
+                  e._uU(14, " Filtrar "),
                   e._UZ(15, "nz-badge", 13)(16, "span", 14),
                   e.qZA(),
                   e.TgZ(17, "nz-dropdown-menu", null, 15)(19, "ul", 16),
                   e.YNc(20, l0, 5, 6, "li", 17),
                   e.qZA()(),
                   e.TgZ(21, "button", 18),
-                  e._uU(22, " Priority "),
+                  e._uU(22, " Prioridad "),
                   e._UZ(23, "nz-badge", 13)(24, "span", 19),
                   e.qZA(),
                   e.TgZ(25, "nz-dropdown-menu", null, 20)(27, "ul", 16),
                   e.YNc(28, P, 6, 6, "li", 21),
                   e.qZA()(),
                   e.TgZ(29, "button", 22),
-                  e._uU(30, " Labels "),
+                  e._uU(30, " Etiquetas "),
                   e._UZ(31, "nz-badge", 13)(32, "span", 14),
                   e.qZA(),
                   e.TgZ(33, "nz-dropdown-menu", null, 23)(35, "ul", 24)(
@@ -11400,7 +11408,7 @@
                   e.ALo(39, "searchByName"),
                   e.qZA()(),
                   e.TgZ(40, "button", 22),
-                  e._uU(41, " Members "),
+                  e._uU(41, " Miembros "),
                   e._UZ(42, "nz-badge", 13)(43, "span", 19),
                   e.qZA(),
                   e.TgZ(44, "nz-dropdown-menu", null, 27)(46, "ul", 28)(
@@ -11417,7 +11425,7 @@
                   e.qZA()(),
                   e._UZ(51, "nz-divider", 30),
                   e.TgZ(52, "label", 31),
-                  e._uU(53, "Group by: "),
+                  e._uU(53, "Agrupar Por: "),
                   e.qZA(),
                   e.TgZ(54, "button", 32)(55, "span", 33),
                   e._uU(56),
@@ -11601,7 +11609,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 7),
-          e._uU(2, "Description"),
+          e._uU(2, "Descripción"),
           e.qZA(),
           e.BQk());
       }
@@ -11609,17 +11617,25 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 8),
-          e._uU(2, "Progress"),
+          e._uU(2, "Progreso"),
           e.qZA(),
           e.BQk());
       }
       function he(l, E) {
         1 & l &&
-          (e.ynx(0), e.TgZ(1, "div", 9), e._uU(2, "Members"), e.qZA(), e.BQk());
+          (e.ynx(0),
+          e.TgZ(1, "div", 9),
+          e._uU(2, "Miembros"),
+          e.qZA(),
+          e.BQk());
       }
       function Ce(l, E) {
         1 & l &&
-          (e.ynx(0), e.TgZ(1, "div", 10), e._uU(2, "Labels"), e.qZA(), e.BQk());
+          (e.ynx(0),
+          e.TgZ(1, "div", 10),
+          e._uU(2, "Etiquetas"),
+          e.qZA(),
+          e.BQk());
       }
       function Le(l, E) {
         if (1 & l) {
@@ -11662,13 +11678,13 @@
       }
       function Fe(l, E) {
         1 & l &&
-          (e.ynx(0), e.TgZ(1, "div", 16), e._uU(2, "Status"), e.qZA(), e.BQk());
+          (e.ynx(0), e.TgZ(1, "div", 16), e._uU(2, "Estado"), e.qZA(), e.BQk());
       }
       function ke(l, E) {
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 17),
-          e._uU(2, "Priority"),
+          e._uU(2, "Prioridad"),
           e.qZA(),
           e.BQk());
       }
@@ -11676,7 +11692,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 18),
-          e._uU(2, "Time Tracking"),
+          e._uU(2, "Tiempo Registrado"),
           e.qZA(),
           e.BQk());
       }
@@ -11684,7 +11700,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 19),
-          e._uU(2, "Estimation"),
+          e._uU(2, "Estimación"),
           e.qZA(),
           e.BQk());
       }
@@ -11692,7 +11708,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 20),
-          e._uU(2, "Start Date"),
+          e._uU(2, "Fecha Inicio"),
           e.qZA(),
           e.BQk());
       }
@@ -11700,7 +11716,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 21),
-          e._uU(2, "Due Date"),
+          e._uU(2, "Fecha Vencimiento"),
           e.qZA(),
           e.BQk());
       }
@@ -11708,7 +11724,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 22),
-          e._uU(2, "Completed Date"),
+          e._uU(2, "Fecha Completado"),
           e.qZA(),
           e.BQk());
       }
@@ -11716,7 +11732,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 23),
-          e._uU(2, "Created Date"),
+          e._uU(2, "Fecha de creación"),
           e.qZA(),
           e.BQk());
       }
@@ -11724,7 +11740,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 24),
-          e._uU(2, "Last Updated"),
+          e._uU(2, "Ultima Actualización"),
           e.qZA(),
           e.BQk());
       }
@@ -11732,7 +11748,7 @@
         1 & l &&
           (e.ynx(0),
           e.TgZ(1, "div", 24),
-          e._uU(2, "Reporter"),
+          e._uU(2, "Reportado"),
           e.qZA(),
           e.BQk());
       }
@@ -11949,7 +11965,7 @@
                 e.YNc(3, Ae, 3, 0, "ng-container", 3),
                 e._UZ(4, "div", 4),
                 e.TgZ(5, "div", 5),
-                e._uU(6, "Task"),
+                e._uU(6, "Tareas"),
                 e.qZA(),
                 e.YNc(7, ve, 3, 0, "ng-container", 3),
                 e.YNc(8, Ze, 3, 0, "ng-container", 3),
@@ -12141,7 +12157,7 @@
                 (1 & p &&
                   (e.TgZ(0, "button", 0),
                   e._UZ(1, "span", 1),
-                  e._uU(2, " Show fields\n"),
+                  e._uU(2, " Mostrar campos\n"),
                   e.qZA(),
                   e.TgZ(3, "nz-dropdown-menu", null, 2)(5, "ul", 3),
                   e.YNc(6, H, 2, 2, "li", 4),
@@ -12668,7 +12684,7 @@
                 "type",
                 "text",
                 "placeholder",
-                "Search by name",
+                "Buscar por Nombre",
                 "nz-input",
                 "",
                 3,
@@ -14380,7 +14396,7 @@
                 e.Q6J("ngModel", o.task.end_date)("nzFormat", "MMM dd,yyyy")(
                   "nzSuffixIcon",
                   ""
-                )("nzPlaceHolder", "Set a due date")(
+                )("nzPlaceHolder", "Elija una fecha")(
                   "nzDisabledDate",
                   e.lcZ(6, 12, o.task.start_date)
                 ));
@@ -16351,7 +16367,7 @@
                 "ngFor",
                 "ngForOf",
               ],
-              ["nz-submenu", "", "nzTitle", "Priority"],
+              ["nz-submenu", "", "nzTitle", "Prioridad"],
               ["nz-submenu", "", "nzTitle", "Phase"],
               ["custom", ""],
               ["labelsTooltipTitle", ""],
@@ -17259,7 +17275,7 @@
             e.Q6J("ngModel", a.group.start_date)("nzFormat", "MMM dd,yyyy")(
               "nzSuffixIcon",
               ""
-            )("nzPlaceHolder", "Set start date")(
+            )("nzPlaceHolder", "Añadir Fecha Inicio")(
               "nzDisabledDate",
               e.lcZ(2, 5, a.group.end_date)
             );
@@ -18624,7 +18640,7 @@
         1 & l &&
           (e.TgZ(0, "div", 18),
           e._UZ(1, "span", 19),
-          e._uU(2, " Show archived "),
+          e._uU(2, " Mostrar archivados "),
           e.qZA()),
           2 & l && (e.xp6(1), e.Q6J("nzType", "loading"));
       }
@@ -18641,7 +18657,7 @@
               const o = e.oxw(2);
               return e.KtG(o.onArchiveChange());
             }),
-            e._uU(1, "Show archived"),
+            e._uU(1, "Mostrar Archivadas"),
             e.qZA();
         }
         if (2 & l) {
@@ -20230,9 +20246,9 @@
               (this.GROUP_BY_PRIORITY_VALUE = "priority"),
               (this.GROUP_BY_PHASE_VALUE = "phase"),
               (this.GROUP_BY_OPTIONS = [
-                { label: "Status", value: this.GROUP_BY_STATUS_VALUE },
-                { label: "Priority", value: this.GROUP_BY_PRIORITY_VALUE },
-                { label: "Phase", value: this.GROUP_BY_PHASE_VALUE },
+                { label: "Estado", value: this.GROUP_BY_STATUS_VALUE },
+                { label: "Prioridad", value: this.GROUP_BY_PRIORITY_VALUE },
+                { label: "Fase", value: this.GROUP_BY_PHASE_VALUE },
               ]),
               (this.groups = []),
               (this._projectId = null),
