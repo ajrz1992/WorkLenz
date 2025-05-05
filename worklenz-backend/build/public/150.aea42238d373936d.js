@@ -4198,7 +4198,7 @@
               (this.templateId = null),
               (this.parentTask = null),
               (this.groupId = null),
-              (this.label = "Add Task"),
+              (this.label = "Añadir Tarea"),
               (this.focusChange = new e.vpe()),
               (this.taskInputVisible = !1),
               (this.creating = !1),
