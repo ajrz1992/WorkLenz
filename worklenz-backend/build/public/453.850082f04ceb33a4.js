@@ -1797,7 +1797,7 @@
                 "tabindex",
                 "1",
                 "placeholder",
-                "+ Add Task",
+                "+ Añadir Tarea",
                 1,
                 "task-name-input-field",
                 "task-input-default",
