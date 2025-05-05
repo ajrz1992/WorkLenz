@@ -434,7 +434,7 @@
             e.TgZ(15, "div", 66)(16, "ul", 18),
             e.YNc(17, ne, 2, 2, "li", 67),
             e.TgZ(18, "li", 68),
-            e._uU(19, "Settings "),
+            e._uU(19, "Ajustes "),
             e.qZA(),
             e.TgZ(20, "li", 69),
             e.NdJ("click", function () {
