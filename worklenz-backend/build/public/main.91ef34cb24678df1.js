@@ -14249,9 +14249,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14318,9 +14316,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14386,9 +14382,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14455,9 +14449,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14524,9 +14516,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14592,9 +14582,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14661,9 +14649,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -14730,9 +14716,7 @@
             "_"
           ),
           weekdays:
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split("_"),
           weekdaysShort: "Dom_Lun_Mar_Mie_Jue_Vie_Sab".split("_"),
           weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           longDateFormat: {
@@ -25211,10 +25195,9 @@
           Gn(["d", "e", "E"], function (d, M, H, X) {
             M[X] = Xe(d);
           });
-        var Zi =
-            "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
-              "_"
-            ),
+        var Zi = "Domingo_Lunes_Martes_Miercoles_Jueves_Viernes_Sabado".split(
+            "_"
+          ),
           lr = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
           li = "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
           ci = re,
@@ -61569,7 +61552,7 @@
             selectAll: "Select current page",
             selectInvert: "Invert current page",
             selectionAll: "Select all data",
-            sortTitle: "Sort",
+            sortTitle: "Filtrar",
             expand: "Expand row",
             collapse: "Collapse row",
             triggerDesc: "Click to sort descending",

@@ -732,7 +732,7 @@
           at.Q6J("ngModel", null == y.project ? null : y.project.start_date)(
             "nzFormat",
             "MMM dd,yyyy"
-          )("nzSuffixIcon", "")("nzPlaceHolder", "Set start date")(
+          )("nzSuffixIcon", "")("nzPlaceHolder", "Añadir Fecha Inicio")(
             "nzDisabledDate",
             at.lcZ(1, 5, null == y.project ? null : y.project.end_date)
           );
@@ -1515,31 +1515,31 @@
                   j.TgZ(7, "nz-table", 6, 7),
                   j.ALo(9, "searchByName"),
                   j.TgZ(10, "thead")(11, "tr")(12, "th", 8),
-                  j._uU(13, "Task"),
+                  j._uU(13, "Tarea"),
                   j.qZA(),
                   j.TgZ(14, "th", 9),
-                  j._uU(15, "Project"),
+                  j._uU(15, "Expediente"),
                   j.qZA(),
                   j.TgZ(16, "th", 9),
-                  j._uU(17, "Status"),
+                  j._uU(17, "Estado"),
                   j.qZA(),
                   j.TgZ(18, "th", 9),
-                  j._uU(19, "Priority"),
+                  j._uU(19, "Prioridad"),
                   j.qZA(),
                   j.TgZ(20, "th", 9),
-                  j._uU(21, "Due Date"),
+                  j._uU(21, "Fecha Vencimiento"),
                   j.qZA(),
                   j.TgZ(22, "th", 9),
-                  j._uU(23, "Completed Date"),
+                  j._uU(23, "Fecha de completado"),
                   j.qZA(),
                   j.TgZ(24, "th", 10),
-                  j._uU(25, "Estimated Time"),
+                  j._uU(25, "Tiempo estimado"),
                   j.qZA(),
                   j.TgZ(26, "th", 10),
-                  j._uU(27, "Logged Time"),
+                  j._uU(27, "Tiempo Registrado"),
                   j.qZA(),
                   j.TgZ(28, "th", 10),
-                  j._uU(29, "Overlogged Time"),
+                  j._uU(29, "Tiempo sobreasignado"),
                   j.qZA()()(),
                   j.TgZ(30, "tbody"),
                   j.YNc(31, i, 24, 20, "tr", 11),
@@ -2007,7 +2007,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.incompleted,
-              " Incomplete Tasks "
+              " Tareas Incompletas "
             ),
             t.xp6(2),
             t.Q6J("nzType", "exclamation-circle")("nzTheme", "outline"),
@@ -2015,7 +2015,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.overdue,
-              " Overdue Tasks "
+              " Tareas Vencidas "
             ),
             t.xp6(2),
             t.Q6J("nzType", "clock-circle")("nzTheme", "outline"),
@@ -2023,7 +2023,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.total_allocated,
-              " Allocated Hours "
+              " Horas asignadas "
             ),
             t.xp6(2),
             t.Q6J("nzType", "clock-circle")("nzTheme", "outline"),
@@ -2031,7 +2031,7 @@
             t.hij(
               " ",
               null == mt.model.stats ? null : mt.model.stats.total_logged,
-              " Logged Hours "
+              " Horas registradas "
             );
         }
       }
@@ -2852,28 +2852,28 @@
                   t.TgZ(5, "nz-table", 4, 5),
                   t.ALo(7, "searchByName"),
                   t.TgZ(8, "thead")(9, "tr")(10, "th", 6),
-                  t._uU(11, "Name"),
+                  t._uU(11, "Nombre"),
                   t.qZA(),
                   t.TgZ(12, "th", 7),
-                  t._uU(13, "Tasks Count"),
+                  t._uU(13, "Conteo de Tareas"),
                   t.qZA(),
                   t.TgZ(14, "th", 7),
-                  t._uU(15, "Completed Tasks"),
+                  t._uU(15, "Tareas Completadas"),
                   t.qZA(),
                   t.TgZ(16, "th", 7),
-                  t._uU(17, "Incomplete Tasks"),
+                  t._uU(17, "Tareas Incompletas"),
                   t.qZA(),
                   t.TgZ(18, "th", 7),
-                  t._uU(19, "Overdue Tasks"),
+                  t._uU(19, "Tareas vencidas"),
                   t.qZA(),
                   t.TgZ(20, "th", 8),
-                  t._uU(21, "Contribution"),
+                  t._uU(21, "Contribución"),
                   t.qZA(),
                   t.TgZ(22, "th", 8),
-                  t._uU(23, "Progress"),
+                  t._uU(23, "Progreso"),
                   t.qZA(),
                   t.TgZ(24, "th", 7),
-                  t._uU(25, "Logged Time"),
+                  t._uU(25, "Tiempo Registrado"),
                   t.qZA()()(),
                   t.TgZ(26, "tbody"),
                   t.YNc(27, f, 17, 8, "tr", 9),
@@ -3399,7 +3399,7 @@
                     t.qZA()(),
                     t.YNc(3, w, 1, 1, "ng-template", null, 3, t.W1O),
                     t.TgZ(5, "nz-form-item", 4)(6, "nz-form-label"),
-                    t._uU(7, "Group by:\xa0"),
+                    t._uU(7, "Agrupar Por:\xa0"),
                     t.qZA(),
                     t.TgZ(8, "nz-form-control")(9, "nz-select", 5),
                     t.NdJ("ngModelChange", function (Rt) {
@@ -3534,7 +3534,7 @@
               const _t = t.oxw();
               return t.KtG(_t.exportMembers());
             }),
-            t._uU(12, "Members"),
+            t._uU(12, "Miembros"),
             t.qZA(),
             t.TgZ(13, "li", 10),
             t.NdJ("click", function () {
@@ -3542,7 +3542,7 @@
               const _t = t.oxw();
               return t.KtG(_t.exportTasks());
             }),
-            t._uU(14, "Tasks"),
+            t._uU(14, "Tareas"),
             t.qZA()()()()()();
         }
         if (2 & ft) {
@@ -3584,11 +3584,11 @@
           t.xp6(1),
             t.Q6J("nzType", "card"),
             t.xp6(1),
-            t.Q6J("nzTitle", "Overview"),
+            t.Q6J("nzTitle", "Resumen"),
             t.xp6(1),
             t.Q6J("projectId", mt.project.id),
             t.xp6(2),
-            t.Q6J("nzTitle", "Members"),
+            t.Q6J("nzTitle", "Miembros"),
             t.xp6(1),
             t.Q6J("projectId", mt.project.id),
             t.xp6(1),
@@ -5454,25 +5454,25 @@
                   t.TgZ(5, "nz-table", 4, 5),
                   t.ALo(7, "searchByName"),
                   t.TgZ(8, "thead")(9, "tr")(10, "th"),
-                  t._uU(11, "Name"),
+                  t._uU(11, "Nombre"),
                   t.qZA(),
                   t.TgZ(12, "th"),
-                  t._uU(13, "Email"),
+                  t._uU(13, "Correo"),
                   t.qZA(),
                   t.TgZ(14, "th", 6),
-                  t._uU(15, "Projects"),
+                  t._uU(15, "Expedientes"),
                   t.qZA(),
                   t.TgZ(16, "th", 6),
-                  t._uU(17, "Tasks"),
+                  t._uU(17, "Tareas"),
                   t.qZA(),
                   t.TgZ(18, "th", 6),
-                  t._uU(19, "Overdue Tasks"),
+                  t._uU(19, "Tareas vencidas"),
                   t.qZA(),
                   t.TgZ(20, "th", 6),
-                  t._uU(21, "Completed Tasks"),
+                  t._uU(21, "Tareas Completadas"),
                   t.qZA(),
                   t.TgZ(22, "th", 6),
-                  t._uU(23, "Ongoing Tasks"),
+                  t._uU(23, "Tareas en curso"),
                   t.qZA()()(),
                   t.TgZ(24, "tbody"),
                   t.YNc(25, xt, 16, 9, "tr", 7),
@@ -6238,7 +6238,7 @@
           t.xp6(1),
             t.Q6J("nzType", "card"),
             t.xp6(1),
-            t.Q6J("nzTitle", "Overview"),
+            t.Q6J("nzTitle", "Resumen"),
             t.xp6(1),
             t.Q6J("teamId", rt.team.id),
             t.xp6(1),
@@ -14866,15 +14866,13 @@
                               (yt.isActive = !0),
                               yt.attr({ text: X }),
                               z ||
-                                yt
-                                  .css(D.style)
-                                  .attr({
-                                    stroke:
-                                      D.borderColor ||
-                                      Ct.color ||
-                                      It.color ||
-                                      "#333333",
-                                  }),
+                                yt.css(D.style).attr({
+                                  stroke:
+                                    D.borderColor ||
+                                    Ct.color ||
+                                    It.color ||
+                                    "#333333",
+                                }),
                               (Tt = yt);
                           }
                           (Tt = ht.tt = Tt),
@@ -15704,11 +15702,9 @@
                           ? (n ||
                               (s.halo = n =
                                 $.renderer.path().add(D.parentGroup)),
-                            n
-                              .show()
-                              [e ? "animate" : "attr"]({
-                                d: this.haloPath(d.size),
-                              }),
+                            n.show()[e ? "animate" : "attr"]({
+                              d: this.haloPath(d.size),
+                            }),
                             n.attr({
                               class:
                                 "highcharts-halo highcharts-color-" +
