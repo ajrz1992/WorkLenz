@@ -407,7 +407,7 @@
         return ["/worklenz/admin-center"];
       };
       function ne(c, U) {
-        1 & c && (e.TgZ(0, "li", 70), e._uU(1, "Admin Center"), e.qZA()),
+        1 & c && (e.TgZ(0, "li", 70), e._uU(1, "Administración"), e.qZA()),
           2 & c && e.Q6J("routerLink", e.DdM(1, ee));
       }
       const ie = function () {
@@ -417,7 +417,7 @@
         if (1 & c) {
           const z = e.EpF();
           e.TgZ(0, "div", 56)(1, "div", 57)(2, "h2", 58),
-            e._uU(3, "Account"),
+            e._uU(3, "Mi Cuenta"),
             e.qZA()(),
             e.TgZ(4, "div", 59)(5, "div", 60)(6, "div", 61),
             e._UZ(7, "nz-avatar", 62),
@@ -434,7 +434,7 @@
             e.TgZ(15, "div", 66)(16, "ul", 18),
             e.YNc(17, ne, 2, 2, "li", 67),
             e.TgZ(18, "li", 68),
-            e._uU(19, "Settings "),
+            e._uU(19, "Ajustes "),
             e.qZA(),
             e.TgZ(20, "li", 69),
             e.NdJ("click", function () {
@@ -442,7 +442,7 @@
               const _ = e.oxw(2);
               return e.KtG(_.signOut());
             }),
-            e._uU(21, "Log Out"),
+            e._uU(21, "Cerrar Sesión"),
             e.qZA()()()();
         }
         if (2 & c) {
