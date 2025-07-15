@@ -976,19 +976,19 @@
           e.BQk());
       }
       function qe(n, o) {
-        1 & n && (e.TgZ(0, "span"), e._uU(1, " Status "), e.qZA());
+        1 & n && (e.TgZ(0, "span"), e._uU(1, " Estado "), e.qZA());
       }
       function Ee(n, o) {
-        1 & n && (e.TgZ(0, "span"), e._uU(1, " Priority "), e.qZA());
+        1 & n && (e.TgZ(0, "span"), e._uU(1, " Prioridad "), e.qZA());
       }
       function Fe(n, o) {
-        1 & n && (e.TgZ(0, "span"), e._uU(1, " Phase "), e.qZA());
+        1 & n && (e.TgZ(0, "span"), e._uU(1, " Fase "), e.qZA());
       }
       function We(n, o) {
-        1 & n && (e.TgZ(0, "span"), e._uU(1, " Start Date "), e.qZA());
+        1 & n && (e.TgZ(0, "span"), e._uU(1, " Fecha Inicio "), e.qZA());
       }
       function Ke(n, o) {
-        1 & n && (e.TgZ(0, "span"), e._uU(1, " End Date "), e.qZA());
+        1 & n && (e.TgZ(0, "span"), e._uU(1, " Fecha Final "), e.qZA());
       }
       function He(n, o) {
         if (
@@ -2164,7 +2164,7 @@
               (this.exporting = !1),
               (this.isDurationLabelSelected_ = !1),
               (this.tabs = [
-                { label: "Overview", tab: "overview" },
+                { label: "Resumen", tab: "overview" },
                 { label: "Time Logs", tab: "time-logs" },
                 { label: "Activity Logs", tab: "activity-logs" },
                 { label: "Tasks", tab: "tasks" },
