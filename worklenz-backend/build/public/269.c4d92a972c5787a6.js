@@ -1425,7 +1425,7 @@
               (this.searchingName = null),
               (this.projectId = null),
               (this.inviting = !1),
-              this.app.setTitle("Admin Center - Teams"),
+              this.app.setTitle("Administración - Equipos"),
               (this.form = this.fb.group({ name: [null, [p.kI.required]] })),
               (this.editTeamForm = this.fb.group({
                 name: [null, [p.kI.required]],
@@ -2151,7 +2151,7 @@
                     2,
                     "nz-page-header-title"
                   ),
-                  n._uU(3, "Admin Center"),
+                  n._uU(3, "Administración"),
                   n.qZA()(),
                   n.TgZ(4, "nz-layout", 2)(5, "nz-sider", 3),
                   n._UZ(6, "worklenz-admin-center-sidebar"),

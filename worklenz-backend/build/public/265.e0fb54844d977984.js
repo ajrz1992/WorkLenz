@@ -5280,7 +5280,7 @@
         1 & o &&
           (e.ynx(0),
           e.TgZ(1, "div", 43)(2, "span", 44),
-          e._uU(3, " No members assigned to the project. "),
+          e._uU(3, "Ningún abogado ha sido asignado al expediente. "),
           e.qZA()(),
           e.BQk());
       }
