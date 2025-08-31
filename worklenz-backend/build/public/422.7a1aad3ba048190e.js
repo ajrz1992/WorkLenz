@@ -3507,7 +3507,7 @@
           (t.Q6J("nzOkText", "Yes")("nzPopconfirmTitle", "Are you sure?")(
             "nzSize",
             "small"
-          )("nzTooltipPlacement", "top")("nzTooltipTitle", "Delete")(
+          )("nzTooltipPlacement", "top")("nzTooltipTitle", "Eliminar")(
             "nzType",
             "default"
           ),
@@ -3528,7 +3528,7 @@
             t.qZA();
         }
         2 & u &&
-          t.Q6J("nzTooltipPlacement", "top")("nzTooltipTitle", "Edit")(
+          t.Q6J("nzTooltipPlacement", "top")("nzTooltipTitle", "Editar")(
             "nzType",
             "default"
           );
@@ -6314,7 +6314,7 @@
                 t.qZA()),
                 2 & M &&
                   (t.xp6(1),
-                  t.Q6J("nzHeader", "Details")("nzActive", !0),
+                  t.Q6J("nzHeader", "Detalles")("nzActive", !0),
                   t.xp6(1),
                   t.Q6J("ngIf", O.service.model.task),
                   t.xp6(8),
@@ -6800,7 +6800,7 @@
               return t.KtG(O.setTodayAsDefault());
             }),
             t._UZ(7, "span", 20),
-            t._uU(8, "Add Timelog "),
+            t._uU(8, "Añadir Registro de Tiempo "),
             t.qZA()()();
         }
       }
@@ -7827,7 +7827,7 @@
                   return O.exportExcel();
                 }),
                 t._UZ(7, "span", 5),
-                t._uU(8, " Export to Excel "),
+                t._uU(8, " Exportar a Excel "),
                 t.qZA()()(),
                 t._UZ(9, "nz-divider", 6),
                 t.YNc(10, _, 9, 0, "div", 7),
@@ -7845,7 +7845,7 @@
                   t.xp6(1),
                   t.Q6J("nzType", "secondary"),
                   t.xp6(2),
-                  t.hij("Total Logged: ", O.totalLogged, ""),
+                  t.hij("Total Registrado: ", O.totalLogged, ""),
                   t.xp6(2),
                   t.Q6J("ngIf", O.taskId),
                   t.xp6(1),
@@ -8452,9 +8452,9 @@
             t.xp6(1),
             t.Q6J("nzTitle", "Info"),
             t.xp6(2),
-            t.Q6J("nzTitle", "Time Log"),
+            t.Q6J("nzTitle", "Registro Tiempo"),
             t.xp6(2),
-            t.Q6J("nzTitle", "Activity Log"));
+            t.Q6J("nzTitle", "Registro de Actividad"));
       }
       function wn(u, J) {
         if (
@@ -16757,7 +16757,7 @@
                   e.xp6(2),
                   e.Q6J("ngIf", !o.isSelectionHasSubTasks()),
                   e.xp6(1),
-                  e.Q6J("nzTooltipTitle", "Delete")(
+                  e.Q6J("nzTooltipTitle", "Eliminar")(
                     "nzLoading",
                     o.deletingTasks
                   )("nzPopconfirmShowArrow", !0)("nzPopconfirmBackdrop", !0)(
