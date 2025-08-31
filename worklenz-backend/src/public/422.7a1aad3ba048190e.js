@@ -1935,7 +1935,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Assignees"),
+            t._uU(2, "Asignados"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 2)(4, "div", 3),
             t.NdJ("nzVisibleChange", function (O) {
@@ -2343,7 +2343,7 @@
         if (
           (1 & u &&
             (t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label", 2),
-            t._uU(2, "Due Date"),
+            t._uU(2, "Fecha de Vencimiento"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 3),
             t.YNc(4, W1, 9, 14, "div", 4),
@@ -2365,8 +2365,8 @@
               (this.service = O),
               (this.utils = L),
               (this.auth = d0),
-              (this.START_DATE_SET_TEXT = "Show start date"),
-              (this.START_DATE_RESET_TEXT = "Hide start date"),
+              (this.START_DATE_SET_TEXT = "Mostrar Fecha de Inicio"),
+              (this.START_DATE_RESET_TEXT = "Ocultar Fecha de Inicio"),
               (this.currentDateToggleBtnText = this.START_DATE_SET_TEXT),
               (this.showStartDateSection = !1);
           }
@@ -2518,7 +2518,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Time Estimation"),
+            t._uU(2, "Tiempo Estimado"),
             t.qZA(),
             t.TgZ(3, "nz-form-control")(4, "div", 2)(5, "nz-form-control", 3)(
               6,
@@ -3263,7 +3263,7 @@
       function N(u, J) {
         1 & u &&
           (t.TgZ(0, "span", 8),
-          t._uU(1, "Add a more detailed description..."),
+          t._uU(1, "Añadir una descripción mas detallada..."),
           t.qZA());
       }
       function W(u, J) {
@@ -4635,7 +4635,7 @@
             t.xp6(1),
             t.Q6J("ngIf", d.uploading),
             t.xp6(2),
-            t.Oqu(d.uploading ? "Uploading" : "Choose or drop file to upload");
+            t.Oqu(d.uploading ? "Uploading" : "Elegir o soltar archivo para subir");
         }
       }
       let rt = (() => {
@@ -5312,7 +5312,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Add a comment...",
+                "Añadir un comentario...",
                 "nzMentionTrigger",
                 "",
                 1,
@@ -5798,7 +5798,7 @@
               if (
                 (1 & M &&
                   (t.TgZ(0, "nz-form-item", 0)(1, "nz-form-label"),
-                  t._uU(2, "When done, notify"),
+                  t._uU(2, "Cuando finalice, notificar"),
                   t.qZA(),
                   t.TgZ(3, "nz-form-control", 1)(4, "div", 2),
                   t.NdJ("nzVisibleChange", function (d0) {
@@ -5881,7 +5881,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Phase"),
+            t._uU(2, "Fase"),
             t.qZA(),
             t.TgZ(3, "nz-form-control")(4, "nz-select", 2),
             t.NdJ("ngModelChange", function (O) {
@@ -6025,7 +6025,7 @@
         if (
           (1 & u &&
             (t.TgZ(0, "nz-form-item", 8)(1, "nz-form-label"),
-            t._uU(2, "Task Key"),
+            t._uU(2, "Código Tarea"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 9)(4, "nz-tag"),
             t._uU(5),
@@ -6040,7 +6040,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "div", 11)(1, "span"),
-            t._uU(2, "Sub-Tasks"),
+            t._uU(2, "Sub-Tareas"),
             t.qZA(),
             t.TgZ(3, "button", 12),
             t.NdJ("click", function (O) {
@@ -6314,11 +6314,11 @@
                 t.qZA()),
                 2 & M &&
                   (t.xp6(1),
-                  t.Q6J("nzHeader", "Details")("nzActive", !0),
+                  t.Q6J("nzHeader", "Detalles")("nzActive", !0),
                   t.xp6(1),
                   t.Q6J("ngIf", O.service.model.task),
                   t.xp6(8),
-                  t.Q6J("nzHeader", "Description")("nzActive", !0),
+                  t.Q6J("nzHeader", "Descripción")("nzActive", !0),
                   t.xp6(2),
                   t.Q6J("ngIf", !O.isSubTask()),
                   t.xp6(1),
@@ -6330,7 +6330,7 @@
                     "px"
                   ),
                   t.ekj("pb-3", !O.commentsInputFocused),
-                  t.Q6J("nzHeader", "Comments")("nzActive", !0),
+                  t.Q6J("nzHeader", "Comentarios")("nzActive", !0),
                   t.xp6(5),
                   t.Q6J("ngIf", O.isEditTask() && O.isTaskAvailable()));
             },
@@ -18810,7 +18810,7 @@
             p = e.oxw().$implicit,
             o = e.oxw();
           e.xp6(6),
-            e.Q6J("projectId", o.projectId)("label", "Add sub-task")(
+            e.Q6J("projectId", o.projectId)("label", "Añadir sub-tarea")(
               "parentTask",
               a.id
             )("groupId", p.id)("subTaskInput", !0);
