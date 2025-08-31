@@ -1935,7 +1935,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Assignees"),
+            t._uU(2, "Asignados"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 2)(4, "div", 3),
             t.NdJ("nzVisibleChange", function (O) {
@@ -2343,7 +2343,7 @@
         if (
           (1 & u &&
             (t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label", 2),
-            t._uU(2, "Due Date"),
+            t._uU(2, "Fecha de vencimiento"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 3),
             t.YNc(4, W1, 9, 14, "div", 4),
@@ -2518,14 +2518,14 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Time Estimation"),
+            t._uU(2, "Tiempo Estimado"),
             t.qZA(),
             t.TgZ(3, "nz-form-control")(4, "div", 2)(5, "nz-form-control", 3)(
               6,
               "small",
               4
             ),
-            t._uU(7, "Hours"),
+            t._uU(7, "Horas"),
             t.qZA(),
             t.TgZ(8, "nz-input-number", 5),
             t.NdJ("ngModelChange", function (O) {
@@ -2539,7 +2539,7 @@
             }),
             t.qZA()(),
             t.TgZ(9, "nz-form-control")(10, "small", 4),
-            t._uU(11, "Minutes"),
+            t._uU(11, "Minutos"),
             t.qZA(),
             t.TgZ(12, "nz-input-number", 6),
             t.NdJ("ngModelChange", function (O) {
@@ -3263,7 +3263,7 @@
       function N(u, J) {
         1 & u &&
           (t.TgZ(0, "span", 8),
-          t._uU(1, "Add a more detailed description..."),
+          t._uU(1, "Añadir una descripción mas detallada..."),
           t.qZA());
       }
       function W(u, J) {
@@ -4635,7 +4635,7 @@
             t.xp6(1),
             t.Q6J("ngIf", d.uploading),
             t.xp6(2),
-            t.Oqu(d.uploading ? "Uploading" : "Choose or drop file to upload");
+            t.Oqu(d.uploading ? "Uploading" : "Elija o suelte el archivo para cargar");
         }
       }
       let rt = (() => {
@@ -5798,7 +5798,7 @@
               if (
                 (1 & M &&
                   (t.TgZ(0, "nz-form-item", 0)(1, "nz-form-label"),
-                  t._uU(2, "When done, notify"),
+                  t._uU(2, "Cuando finalice, notificar"),
                   t.qZA(),
                   t.TgZ(3, "nz-form-control", 1)(4, "div", 2),
                   t.NdJ("nzVisibleChange", function (d0) {
@@ -5881,7 +5881,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label"),
-            t._uU(2, "Phase"),
+            t._uU(2, "Fase"),
             t.qZA(),
             t.TgZ(3, "nz-form-control")(4, "nz-select", 2),
             t.NdJ("ngModelChange", function (O) {
@@ -6025,7 +6025,7 @@
         if (
           (1 & u &&
             (t.TgZ(0, "nz-form-item", 8)(1, "nz-form-label"),
-            t._uU(2, "Task Key"),
+            t._uU(2, "ID Tarea"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 9)(4, "nz-tag"),
             t._uU(5),
@@ -6040,7 +6040,7 @@
         if (1 & u) {
           const d = t.EpF();
           t.TgZ(0, "div", 11)(1, "span"),
-            t._uU(2, "Sub-Tasks"),
+            t._uU(2, "Sub-Tareas"),
             t.qZA(),
             t.TgZ(3, "button", 12),
             t.NdJ("click", function (O) {
@@ -6318,7 +6318,7 @@
                   t.xp6(1),
                   t.Q6J("ngIf", O.service.model.task),
                   t.xp6(8),
-                  t.Q6J("nzHeader", "Description")("nzActive", !0),
+                  t.Q6J("nzHeader", "Descripción")("nzActive", !0),
                   t.xp6(2),
                   t.Q6J("ngIf", !O.isSubTask()),
                   t.xp6(1),
@@ -6330,7 +6330,7 @@
                     "px"
                   ),
                   t.ekj("pb-3", !O.commentsInputFocused),
-                  t.Q6J("nzHeader", "Comments")("nzActive", !0),
+                  t.Q6J("nzHeader", "Comentarios")("nzActive", !0),
                   t.xp6(5),
                   t.Q6J("ngIf", O.isEditTask() && O.isTaskAvailable()));
             },
@@ -16368,7 +16368,7 @@
                 "ngForOf",
               ],
               ["nz-submenu", "", "nzTitle", "Prioridad"],
-              ["nz-submenu", "", "nzTitle", "Phase"],
+              ["nz-submenu", "", "nzTitle", "Fase"],
               ["custom", ""],
               ["labelsTooltipTitle", ""],
               ["labelsDropdown", "nzDropdownMenu"],
@@ -18818,7 +18818,7 @@
             p = e.oxw().$implicit,
             o = e.oxw();
           e.xp6(6),
-            e.Q6J("projectId", o.projectId)("label", "Add sub-task")(
+            e.Q6J("projectId", o.projectId)("label", "Añadir sub-tarea")(
               "parentTask",
               a.id
             )("groupId", p.id)("subTaskInput", !0);
