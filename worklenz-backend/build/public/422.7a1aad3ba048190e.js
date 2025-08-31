@@ -2343,7 +2343,7 @@
         if (
           (1 & u &&
             (t.TgZ(0, "nz-form-item", 1)(1, "nz-form-label", 2),
-            t._uU(2, "Fecha de vencimiento"),
+            t._uU(2, "Fecha vencimiento"),
             t.qZA(),
             t.TgZ(3, "nz-form-control", 3),
             t.YNc(4, W1, 9, 14, "div", 4),
@@ -3612,7 +3612,7 @@
             t.Q6J("projectId", d.service.model.task.project_id)(
               "groupId",
               d.groupId
-            )("label", "Add sub-task")(
+            )("label", "Añadir sub-tarea")(
               "parentTask",
               d.service.model.task.id || null
             )("subTaskInput", !0);
@@ -5312,7 +5312,7 @@
                 "nz-input",
                 "",
                 "placeholder",
-                "Add a comment...",
+                "Añadir un comentario...",
                 "nzMentionTrigger",
                 "",
                 1,
@@ -5798,7 +5798,7 @@
               if (
                 (1 & M &&
                   (t.TgZ(0, "nz-form-item", 0)(1, "nz-form-label"),
-                  t._uU(2, "Cuando finalice, notificar"),
+                  t._uU(2, "Notificar"),
                   t.qZA(),
                   t.TgZ(3, "nz-form-control", 1)(4, "div", 2),
                   t.NdJ("nzVisibleChange", function (d0) {
