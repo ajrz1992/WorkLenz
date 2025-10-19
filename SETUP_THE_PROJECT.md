@@ -4,21 +4,20 @@ Getting started with development is a breeze! Follow these steps and you'll be c
 
 ## Requirements
 
-- Node.js version v18 or newer - [Node.js](https://nodejs.org/en/download/current)
-- Postgres version v15.6 - [PostgreSQL](https://www.postgresql.org/download/)
-- Redis version v4.6.7 (not used yet. setup only.)
+- Node.js version v20 or newer - [Node.js](https://nodejs.org/en/download/)
+- PostgreSQL version v15 or newer - [PostgreSQL](https://www.postgresql.org/download/)
+- S3-compatible storage (like MinIO) for file storage
 
 ## Prerequisites
 
-- `$ npm install -g ts-node`
-- `$ npm install -g typescript`
-- `$ npm install -g grunt grunt-cli`
+- `$ npm install -g typescript` (optional, but recommended)
 
 ## Installation
 **Clone the repository:**
 
    ```bash
    git clone https://github.com/Worklenz/worklenz.git
+   cd worklenz
    ```
 
 ### Frontend installation
@@ -32,13 +31,14 @@ Getting started with development is a breeze! Follow these steps and you'll be c
 
    ```bash
    npm install
+   ```
    
 3. **Run the frontend:**
    ```bash
    npm start
    ```
    
-4. Navigate to [http://localhost:4200](http://localhost:4200)
+4. Navigate to [http://localhost:5173](http://localhost:5173) (development server)
 
 ### Backend installation
    
@@ -54,13 +54,34 @@ Getting started with development is a breeze! Follow these steps and you'll be c
 
 3. **Configure Environment Variables:**
 
-   - Create a copy of the `.env.template` file and name it `.env`.
-   - Update the required fields in `.env` with the specific information.
+   - Create a copy of the `.env.example` file and name it `.env`.
+   - Update the required fields in `.env` with your specific configuration.
 
-4. **Restore Database**
+4. **Set up Database**
    - Create a new database named `worklenz_db` on your local PostgreSQL server. 
-   - Update the `DATABASE_NAME` and `PASSWORD` in the  `database/6_user_permission.sql` with your DB credentials.
-   - Open a query console and execute the queries from the .sql files in the `database` directories, following the provided order.
+   - Update the database connection details in your `.env` file.
+   - Execute the SQL setup files in the correct order:
+   
+   ```bash
+   # From your PostgreSQL client or command line
+   psql -U your_username -d worklenz_db -f database/sql/0_extensions.sql
+   psql -U your_username -d worklenz_db -f database/sql/1_tables.sql
+   psql -U your_username -d worklenz_db -f database/sql/indexes.sql
+   psql -U your_username -d worklenz_db -f database/sql/4_functions.sql
+   psql -U your_username -d worklenz_db -f database/sql/triggers.sql
+   psql -U your_username -d worklenz_db -f database/sql/3_views.sql
+   psql -U your_username -d worklenz_db -f database/sql/2_dml.sql
+   psql -U your_username -d worklenz_db -f database/sql/5_database_user.sql
+   ```
+   
+   Alternatively, you can use the provided shell script:
+   
+   ```bash
+   # Make sure the script is executable
+   chmod +x database/00-init-db.sh
+   # Run the script (may need modifications for local execution)
+   ./database/00-init-db.sh
+   ```
 
 5. **Install Dependencies:**
 
@@ -68,48 +89,47 @@ Getting started with development is a breeze! Follow these steps and you'll be c
    npm install
    ```
 
-   This command installs all the necessary libraries required to run the project.
-
 6. **Run the Development Server:**
 
-   **a. Start the TypeScript compiler:**
+   **Option 1: Combined development mode (Recommended)**
+   
+   ```bash
+   npm run dev:all
+   ```
+   
+   This single command runs both the build watch process and the server with auto-restart. No need to run `npm run dev` and `npm start` separately.
 
-   Open a new terminal window and run the following command:
+   **Option 2: Separate commands**
+   
+   ```bash
+   # Terminal 1: Build and watch for changes
+   npm run dev
+   
+   # Terminal 2: Start the server
+   npm start
+   ```
 
-      ```bash
-      grunt dev
-      ```
+   The first option (`npm run dev:all`) is recommended as it simplifies the development workflow.
 
-   This starts the `grunt` task runner, which compiles TypeScript code into JavaScript.
+## Docker Setup (Alternative)
 
-   **b. Start the development server:**
+For an easier setup, you can use Docker and Docker Compose:
 
-   Open another separate terminal window and run the following command:
+1. Make sure you have Docker and Docker Compose installed on your system.
 
-      ```bash
-      npm start
-      ```
+2. From the root directory, run:
 
-   This starts the development server allowing you to work on the project.
+   ```bash
+   docker-compose up -d
+   ```
 
-7. **Run the Production Server:**
+3. Access the application:
+   - Frontend: http://localhost:5000 (Docker production build)
+   - Backend API: http://localhost:3000
+   - MinIO Console: http://localhost:9001 (login with minioadmin/minioadmin)
 
-   **a. Compile TypeScript to JavaScript:**
+4. To stop the services:
 
-   Open a new terminal window and run the following command:
-
-      ```bash
-      grunt build
-      ```
-
-   This starts the `grunt` task runner, which compiles TypeScript code into JavaScript for production use.
-
-   **b. Start the production server:**
-
-   Once the compilation is complete, run the following command in the same terminal window:
-
-      ```bash
-      npm start
-      ```
-
-   This starts the production server for your application.
+   ```bash
+   docker-compose down
+   ```

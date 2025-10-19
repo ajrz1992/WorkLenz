@@ -53,7 +53,7 @@ export async function getTaskPhaseDetails(task_id: string) {
     const q = `SELECT phase_id FROM task_phase WHERE task_id = $1`;
     const result = await db.query(q, [task_id]);
     const [data] = result.rows;
-    return data ? data : {phase_id: null};
+    return data ? data : { phase_id: null };
   } catch (e) {
     log_error(e);
   }
@@ -199,6 +199,32 @@ export async function logPhaseChange(activityLog: IActivityLog) {
   if (old_value !== new_value) {
     activityLog.user_id = getLoggedInUserIdFromSocket(activityLog.socket);
     activityLog.attribute_type = IActivityLogAttributeTypes.PHASE;
+    activityLog.log_type = IActivityLogChangeType.UPDATE;
+
+    insertToActivityLogs(activityLog);
+  }
+}
+
+export async function logProgressChange(activityLog: IActivityLog) {
+  const { task_id, new_value, old_value } = activityLog;
+  if (!task_id || !activityLog.socket) return;
+
+  if (old_value !== new_value) {
+    activityLog.user_id = getLoggedInUserIdFromSocket(activityLog.socket);
+    activityLog.attribute_type = IActivityLogAttributeTypes.PROGRESS;
+    activityLog.log_type = IActivityLogChangeType.UPDATE;
+
+    insertToActivityLogs(activityLog);
+  }
+}
+
+export async function logWeightChange(activityLog: IActivityLog) {
+  const { task_id, new_value, old_value } = activityLog;
+  if (!task_id || !activityLog.socket) return;
+
+  if (old_value !== new_value) {
+    activityLog.user_id = getLoggedInUserIdFromSocket(activityLog.socket);
+    activityLog.attribute_type = IActivityLogAttributeTypes.WEIGHT;
     activityLog.log_type = IActivityLogChangeType.UPDATE;
 
     insertToActivityLogs(activityLog);

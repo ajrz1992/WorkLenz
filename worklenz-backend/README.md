@@ -1,81 +1,136 @@
 # Worklenz Backend
 
-1. **Open your IDE:**
+This is the Express.js/TypeScript backend for the Worklenz project management application.
 
-   Open the project directory in your preferred code editor or IDE like Visual Studio Code.
+## Prerequisites
 
-2. **Configure Environment Variables:**
+- Node.js >= 20.0.0
+- npm >= 8.11.0
+- PostgreSQL >= 12
 
-  - Create a copy of the `.env.template` file and name it `.env`.
-  - Update the required fields in `.env` with the specific information.
+## Getting Started
 
-3. **Restore Database**
-  - Create a new database named `worklenz_db` on your local PostgreSQL server.
-   - Update the `DATABASE_NAME` and `PASSWORD` in the  `database/6_user_permission.sql` with your DB credentials.
-  - Open a query console and execute the queries from the .sql files in the `database` directories, following the provided order.
+### 1. Environment Configuration
 
-4. **Install Dependencies:**
+Create a `.env` file from the template:
 
-   ```bash
-   npm install
-   ```
+```bash
+cp .env.template .env
+```
 
-   This command installs all the necessary libraries required to run the project.
+Update the `.env` file with your specific configuration. Key variables include:
 
-5. **Run the Development Server:**
+- **Database**: `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `DB_HOST`, `DB_PORT`
+- **Server**: `PORT`, `NODE_ENV`, `SESSION_SECRET`, `COOKIE_SECRET`
+- **Frontend**: `FRONTEND_URL`, `SERVER_CORS`
+- **Storage**: Configure either S3 or Azure Blob Storage
+- **Authentication**: Google OAuth credentials if needed
 
-   **a. Start the TypeScript compiler:**
+### 2. Database Setup
 
-   Open a new terminal window and run the following command:
+Create and initialize the database:
 
-      ```bash
-      grunt dev
-      ```
+```bash
+# Create database
+createdb worklenz_db
 
-   This starts the `grunt` task runner, which compiles TypeScript code into JavaScript.
+# Run SQL setup files in order
+psql -U postgres -d worklenz_db -f database/sql/0_extensions.sql
+psql -U postgres -d worklenz_db -f database/sql/1_tables.sql
+psql -U postgres -d worklenz_db -f database/sql/indexes.sql
+psql -U postgres -d worklenz_db -f database/sql/4_functions.sql
+psql -U postgres -d worklenz_db -f database/sql/triggers.sql
+psql -U postgres -d worklenz_db -f database/sql/3_views.sql
+psql -U postgres -d worklenz_db -f database/sql/2_dml.sql
+psql -U postgres -d worklenz_db -f database/sql/5_database_user.sql
+```
 
-   **b. Start the development server:**
+Or use the provided script:
 
-   Open another separate terminal window and run the following command:
+```bash
+chmod +x database/00-init-db.sh
+./database/00-init-db.sh
+```
 
-      ```bash
-      npm start
-      ```
+### 3. Install Dependencies
 
-   This starts the development server allowing you to work on the project.
+```bash
+npm install
+```
 
-6. **Run the Production Server:**
+## Development
 
-   **a. Compile TypeScript to JavaScript:**
+### Quick Start
 
-   Open a new terminal window and run the following command:
+Run both build watch and server with auto-restart:
 
-      ```bash
-      grunt build
-      ```
+```bash
+npm run dev:all
+```
 
-   This starts the `grunt` task runner, which compiles TypeScript code into JavaScript for production use.
+This single command replaces the need to run `npm run dev` and `npm start` separately. It:
+- Builds the TypeScript code in development mode
+- Watches for file changes and rebuilds automatically
+- Runs the server with nodemon for auto-restart on changes
 
-   **b. Start the production server:**
+### Alternative Development Commands
 
-   Once the compilation is complete, run the following command in the same terminal window:
+```bash
+# Build and watch files only (no server)
+npm run dev
 
-      ```bash
-      npm start
-      ```
+# Build once for development
+npm run build:dev
 
-   This starts the production server for your application.
+# Start server only (after building)
+npm start
+```
 
-### CLI
+## NPM Scripts
 
-- Create controller: `$ node new controller Test`
-- Create angular release: `$ node new release`
+| Script | Description |
+|--------|-------------|
+| `npm start` | Start the server |
+| `npm run dev` | Build and watch files for development |
+| `npm run dev:all` | Build, watch, and auto-restart server for development (recommended) |
+| `npm run build` | Standard build |
+| `npm run build:dev` | Development build |
+| `npm run build:prod` | Production build with minification and compression |
+| `npm test` | Run Jest tests |
+| `npm run test:watch` | Run tests in watch mode |
+| `npm run clean` | Clean build directory |
+| `npm run compile` | Compile TypeScript |
+| `npm run compile:dev` | Compile TypeScript for development |
+| `npm run watch` | Watch TypeScript and asset files |
+| `npm run watch:ts` | Watch TypeScript files only |
+| `npm run watch:assets` | Watch asset files only |
 
-### Developement Rules
+## API Documentation
 
-- Controllers should only generate/create using the CLI (`node new controller Projects`)
-- Validations should only be done using a middleware placed under src/validators/ and used inside the routers (E.g., api-router.ts)
-- Validators should only generate/create using the CLI (`node new vaidator projects-params`)
+The API follows RESTful design principles with endpoints prefixed with `/api/`.
 
-## Pull submodules
-- git submodule update --init --recursive
+### Authentication
+
+The API uses JWT tokens for authentication. Protected routes require a valid token in the Authorization header.
+
+### File Storage
+
+The application supports both S3-compatible storage and Azure Blob Storage for file uploads. Configure your preferred storage option in the `.env` file.
+
+## Development Guidelines
+
+- Code should be written in TypeScript
+- Follow the established patterns for controllers, services, and middlewares
+- Add proper error handling for all API endpoints
+- Write unit tests for critical functionality
+- Document API endpoints with clear descriptions and examples
+
+## Running Tests
+
+```bash
+npm test
+```
+
+## Docker Support
+
+The backend can be run in a Docker container. See the main project README for Docker setup instructions.

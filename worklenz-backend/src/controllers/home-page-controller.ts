@@ -114,7 +114,7 @@ export default class HomePageController extends WorklenzControllerBase {
              p.team_id,
              p.name AS project_name,
              p.color_code AS project_color,
-             (SELECT id FROM task_statuses WHERE id = t.status_id) AS status,
+             (SELECT name FROM task_statuses WHERE id = t.status_id) AS status,
              (SELECT color_code
               FROM sys_task_status_categories
               WHERE id = (SELECT category_id FROM task_statuses WHERE id = t.status_id)) AS status_color,
@@ -137,6 +137,10 @@ export default class HomePageController extends WorklenzControllerBase {
                                 WHERE category_id NOT IN (SELECT id
                                                           FROM sys_task_status_categories
                                                           WHERE is_done IS FALSE))
+        AND NOT EXISTS(SELECT project_id
+                       FROM archived_projects
+                       WHERE project_id = p.id
+                         AND user_id = $2)
         ${groupByClosure}
       ORDER BY t.end_date ASC`;
 
@@ -158,9 +162,13 @@ export default class HomePageController extends WorklenzControllerBase {
                                          WHERE category_id NOT IN (SELECT id
                                                                    FROM sys_task_status_categories
                                                                    WHERE is_done IS FALSE))
+                 AND NOT EXISTS(SELECT project_id
+                                FROM archived_projects
+                                WHERE project_id = p.id
+                                  AND user_id = $3)
                  ${groupByClosure}`;
 
-    const result = await db.query(q, [teamId, userId]);
+    const result = await db.query(q, [teamId, userId, userId]);
     const [row] = result.rows;
     return row;
   }
