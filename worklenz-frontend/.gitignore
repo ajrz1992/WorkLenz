@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# Angular build/cache
+.angular/
+
 # testing
 /coverage
 
