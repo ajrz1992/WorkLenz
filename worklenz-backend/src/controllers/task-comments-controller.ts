@@ -359,7 +359,7 @@ export default class TaskCommentsController extends WorklenzControllerBase {
     const settingsUrl = `${getBaseUrl()}/worklenz/settings/notifications`;
 
     const data: ICommentEmailNotification = {
-      greeting: `Hi ${config.receiverName}`,
+      greeting: `Hola ${config.receiverName}`,
       summary: subject,
       team: config.teamName,
       project_name: config.projectName,

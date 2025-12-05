@@ -47,7 +47,7 @@ export default class ProjectCommentsController extends WorklenzControllerBase {
     const subject = config.message.replace(HTML_TAG_REGEXP, "");
 
     const data: IProjectCommentEmailNotification = {
-      greeting: `Hi ${config.receiverName}`,
+      greeting: `Hola ${config.receiverName}`,
       summary: subject,
       team: config.teamName,
       project_name: config.projectName,

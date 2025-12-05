@@ -99,8 +99,8 @@ export default class DbTaskStatusChangeListener {
       };
 
       const payload: ITaskMovedToDoneRecord = {
-        greeting: `Hi ${data.user_name}`,
-        summary: "Great news! a task just got completed!",
+        greeting: `Hola ${data.user_name}`,
+        summary: "Buenas Noticias! una tarea ha sido completada!",
         settings_url: settingsUrl,
         task
       };

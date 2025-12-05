@@ -25,8 +25,8 @@ async function onDailyDigestJobTick() {
     let sentCount = 0;
 
     for (const digest of dataset) {
-      digest.greeting = `Hi ${digest.name},`;
-      digest.note = `Here's your ${moment().format("dddd")} update!`;
+      digest.greeting = `Hola ${digest.name},`;
+      digest.note = `Aquí esta su ${moment().format("dddd")} actualización!`;
       digest.base_url = `${getBaseUrl()}/worklenz`;
       digest.settings_url = `${getBaseUrl()}/worklenz/settings/notifications`;
 
